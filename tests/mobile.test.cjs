@@ -57,6 +57,8 @@ test('mobile: categories, estimated marks, photo intake UI and no horizontal ove
       const navHeight = await page.locator('.mobile-nav').evaluate(n=>n.getBoundingClientRect().height);
       assert.ok(navHeight >= 100, 'bottom nav height '+navHeight);
       assert.equal(await page.locator('#mobileMenu').isVisible(), false);
+      assert.equal(await page.locator('.top-actions [data-page="profile"]').count(), 0, 'no top-right profile button');
+      assert.match(await page.locator('.mobile-nav [data-page="profile"]').textContent(), /体調管理/);
       assert.equal(await page.locator('#sidebar').isVisible(), false, 'no workspace on the left');
       await page.locator('.mobile-nav [data-action="openMenu"]').click();
       await page.locator('#sidebar.open').waitFor();await page.waitForTimeout(300);
@@ -105,6 +107,20 @@ test('mobile: categories, estimated marks, photo intake UI and no horizontal ove
       await page.locator('#foodForm button[type="submit"]').click();
       await page.locator('#queryInput').fill('キリン 午後の紅茶');
       assert.equal(await page.locator('.food-row').count(), 1);
+      // the × button clears the search box
+      await page.locator('#queryInput').fill('コロッケ');
+      await page.locator('.catalog-toolbar .clear-x').click();
+      assert.equal(await page.locator('#queryInput').inputValue(), '');
+      // supermarket deli: per-piece amounts, default status is "already eaten"
+      await page.locator('[data-cat="all"]').click();
+      await page.locator('#queryInput').fill('カニクリームコロッケ');
+      await page.locator('.food-row', {hasText:'カニクリームコロッケ（1個）'}).locator('[data-action="addEntry"]').click();
+      assert.equal(await page.locator('#entryForm [name="status"]').inputValue(), 'eaten');
+      assert.match(await page.locator('#entryForm label', {hasText:'数量'}).textContent(), /個/);
+      await page.locator('[data-action="qtyStep"][data-dir="1"]').click();
+      await page.locator('[data-action="qtyStep"][data-dir="1"]').click();
+      assert.equal(await page.locator('#entryForm [name="amount"]').inputValue(), '3');
+      await page.locator('#entryForm button[type="submit"]').click();
       await page.locator('#queryInput').fill('');
       // konbini: identical products are listed once; store-specific items stay separate
       await page.locator('[data-cat="コンビニ"]').click();
