@@ -4755,116 +4755,6 @@
     ]
   },
   {
-    "id": "e234c46de3",
-    "store": "セブン‐イレブン",
-    "name": "緑茶 600ml",
-    "kcal": 0,
-    "protein": 0.0,
-    "fat": 0.0,
-    "carbs": 0.6,
-    "salt": 0.0,
-    "fiber": 0.0,
-    "price": 160,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（茶）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "eeee1afe61",
-    "store": "セブン‐イレブン",
-    "name": "ブラックコーヒー（ホット R）",
-    "kcal": 6,
-    "protein": 0.3,
-    "fat": 0.0,
-    "carbs": 1.1,
-    "salt": 0.0,
-    "fiber": 0.0,
-    "price": 120,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（コーヒー）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "e2d499cd55",
-    "store": "セブン‐イレブン",
-    "name": "カフェラテ（ホット R）",
-    "kcal": 90,
-    "protein": 4.0,
-    "fat": 4.0,
-    "carbs": 9.0,
-    "salt": 0.2,
-    "fiber": 0.0,
-    "price": 200,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（カフェラテ）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "e99787f767",
-    "store": "セブン‐イレブン",
-    "name": "スポーツドリンク 500ml",
-    "kcal": 105,
-    "protein": 0.0,
-    "fat": 0.0,
-    "carbs": 25.5,
-    "salt": 0.5,
-    "fiber": 0.0,
-    "price": 170,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（スポーツドリンク）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "e8bbfdd3c8",
-    "store": "セブン‐イレブン",
-    "name": "コーラ 500ml",
-    "kcal": 230,
-    "protein": 0.0,
-    "fat": 0.0,
-    "carbs": 57.0,
-    "salt": 0.0,
-    "fiber": 0.0,
-    "price": 180,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（コーラ）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
     "id": "efb9d744a4",
     "store": "セブン‐イレブン",
     "name": "素焼きナッツ（小袋）",
@@ -6792,116 +6682,6 @@
     "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
     "quality": "estimate",
     "note": "内容物（野菜ジュース）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "e6c4555a4d",
-    "store": "ファミリーマート",
-    "name": "緑茶 600ml",
-    "kcal": 0,
-    "protein": 0.0,
-    "fat": 0.0,
-    "carbs": 0.6,
-    "salt": 0.0,
-    "fiber": 0.0,
-    "price": 160,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（茶）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "eff68a110d",
-    "store": "ファミリーマート",
-    "name": "ブラックコーヒー（ホット R）",
-    "kcal": 6,
-    "protein": 0.3,
-    "fat": 0.0,
-    "carbs": 1.1,
-    "salt": 0.0,
-    "fiber": 0.0,
-    "price": 120,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（コーヒー）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "ea4781b6c5",
-    "store": "ファミリーマート",
-    "name": "カフェラテ（ホット R）",
-    "kcal": 90,
-    "protein": 4.0,
-    "fat": 4.0,
-    "carbs": 9.0,
-    "salt": 0.2,
-    "fiber": 0.0,
-    "price": 200,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（カフェラテ）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "ef878b5a16",
-    "store": "ファミリーマート",
-    "name": "スポーツドリンク 500ml",
-    "kcal": 105,
-    "protein": 0.0,
-    "fat": 0.0,
-    "carbs": 25.5,
-    "salt": 0.5,
-    "fiber": 0.0,
-    "price": 170,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（スポーツドリンク）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "eaf330d153",
-    "store": "ファミリーマート",
-    "name": "コーラ 500ml",
-    "kcal": 230,
-    "protein": 0.0,
-    "fat": 0.0,
-    "carbs": 57.0,
-    "salt": 0.0,
-    "fiber": 0.0,
-    "price": 180,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（コーラ）から算出した想定値。価格も目安です。",
     "time": "any",
     "kind": "drink",
     "price_type": "approx",
@@ -8860,116 +8640,6 @@
     "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
     "quality": "estimate",
     "note": "内容物（野菜ジュース）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "e418fa3250",
-    "store": "ローソン",
-    "name": "緑茶 600ml",
-    "kcal": 0,
-    "protein": 0.0,
-    "fat": 0.0,
-    "carbs": 0.6,
-    "salt": 0.0,
-    "fiber": 0.0,
-    "price": 160,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（茶）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "e697ecb095",
-    "store": "ローソン",
-    "name": "ブラックコーヒー（ホット R）",
-    "kcal": 6,
-    "protein": 0.3,
-    "fat": 0.0,
-    "carbs": 1.1,
-    "salt": 0.0,
-    "fiber": 0.0,
-    "price": 120,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（コーヒー）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "ec65bf678c",
-    "store": "ローソン",
-    "name": "カフェラテ（ホット R）",
-    "kcal": 90,
-    "protein": 4.0,
-    "fat": 4.0,
-    "carbs": 9.0,
-    "salt": 0.2,
-    "fiber": 0.0,
-    "price": 200,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（カフェラテ）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "e0dd97f296",
-    "store": "ローソン",
-    "name": "スポーツドリンク 500ml",
-    "kcal": 105,
-    "protein": 0.0,
-    "fat": 0.0,
-    "carbs": 25.5,
-    "salt": 0.5,
-    "fiber": 0.0,
-    "price": 170,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（スポーツドリンク）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "e2c36a49dc",
-    "store": "ローソン",
-    "name": "コーラ 500ml",
-    "kcal": 230,
-    "protein": 0.0,
-    "fat": 0.0,
-    "carbs": 57.0,
-    "salt": 0.0,
-    "fiber": 0.0,
-    "price": 180,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（コーラ）から算出した想定値。価格も目安です。",
     "time": "any",
     "kind": "drink",
     "price_type": "approx",
@@ -21629,1150 +21299,6 @@
     ]
   },
   {
-    "id": "e25440df6f",
-    "store": "自販機",
-    "name": "ミネラルウォーター 555ml",
-    "kcal": 0,
-    "protein": 0.0,
-    "fat": 0.0,
-    "carbs": 0.0,
-    "salt": 0.0,
-    "fiber": 0.0,
-    "price": 130,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（水）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "e1810c3470",
-    "store": "自販機",
-    "name": "緑茶 525ml",
-    "kcal": 0,
-    "protein": 0.0,
-    "fat": 0.0,
-    "carbs": 0.5,
-    "salt": 0.0,
-    "fiber": 0.0,
-    "price": 160,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（茶）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "ef64bce322",
-    "store": "自販機",
-    "name": "ほうじ茶 525ml",
-    "kcal": 0,
-    "protein": 0.0,
-    "fat": 0.0,
-    "carbs": 0.5,
-    "salt": 0.0,
-    "fiber": 0.0,
-    "price": 160,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（茶）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "e846814594",
-    "store": "自販機",
-    "name": "麦茶 600ml",
-    "kcal": 0,
-    "protein": 0.0,
-    "fat": 0.0,
-    "carbs": 0.6,
-    "salt": 0.0,
-    "fiber": 0.0,
-    "price": 160,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（茶）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "e6d2ec276e",
-    "store": "自販機",
-    "name": "ウーロン茶 525ml",
-    "kcal": 0,
-    "protein": 0.0,
-    "fat": 0.0,
-    "carbs": 0.5,
-    "salt": 0.0,
-    "fiber": 0.0,
-    "price": 160,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（茶）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "e4c3bedfd7",
-    "store": "自販機",
-    "name": "ジャスミン茶 600ml",
-    "kcal": 0,
-    "protein": 0.0,
-    "fat": 0.0,
-    "carbs": 0.6,
-    "salt": 0.0,
-    "fiber": 0.0,
-    "price": 160,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（茶）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "ecb9381e3d",
-    "store": "自販機",
-    "name": "ブレンド茶 600ml",
-    "kcal": 0,
-    "protein": 0.0,
-    "fat": 0.0,
-    "carbs": 0.6,
-    "salt": 0.0,
-    "fiber": 0.0,
-    "price": 160,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（茶）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "e223b6a993",
-    "store": "自販機",
-    "name": "無糖紅茶 500ml",
-    "kcal": 0,
-    "protein": 0.0,
-    "fat": 0.0,
-    "carbs": 0.5,
-    "salt": 0.0,
-    "fiber": 0.0,
-    "price": 170,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（茶）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "e4e008991a",
-    "store": "自販機",
-    "name": "レモンティー 500ml",
-    "kcal": 150,
-    "protein": 0.0,
-    "fat": 0.0,
-    "carbs": 37.5,
-    "salt": 0.0,
-    "fiber": 0.0,
-    "price": 170,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（加糖紅茶）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "ef88c70acd",
-    "store": "自販機",
-    "name": "ミルクティー 500ml",
-    "kcal": 185,
-    "protein": 3.5,
-    "fat": 3.0,
-    "carbs": 36.5,
-    "salt": 0.5,
-    "fiber": 0.0,
-    "price": 170,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（ミルクティー）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "e4972bcfff",
-    "store": "自販機",
-    "name": "ブラック缶コーヒー 185g",
-    "kcal": 7,
-    "protein": 0.4,
-    "fat": 0.0,
-    "carbs": 1.3,
-    "salt": 0.0,
-    "fiber": 0.0,
-    "price": 140,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（コーヒー）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "eb1fd86a59",
-    "store": "自販機",
-    "name": "ボトル缶ブラックコーヒー 400ml",
-    "kcal": 16,
-    "protein": 0.8,
-    "fat": 0.0,
-    "carbs": 2.8,
-    "salt": 0.0,
-    "fiber": 0.0,
-    "price": 190,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（コーヒー）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "e87f83557d",
-    "store": "自販機",
-    "name": "微糖缶コーヒー 185g",
-    "kcal": 37,
-    "protein": 0.4,
-    "fat": 0.0,
-    "carbs": 8.3,
-    "salt": 0.0,
-    "fiber": 0.0,
-    "price": 140,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（微糖コーヒー）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "eb4ab3abe6",
-    "store": "自販機",
-    "name": "カフェオレ缶 185g",
-    "kcal": 92,
-    "protein": 3.3,
-    "fat": 3.0,
-    "carbs": 13.3,
-    "salt": 0.2,
-    "fiber": 0.0,
-    "price": 140,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（カフェオレ）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "e810823529",
-    "store": "自販機",
-    "name": "ペットボトルカフェラテ 500ml",
-    "kcal": 225,
-    "protein": 10.0,
-    "fat": 10.0,
-    "carbs": 22.5,
-    "salt": 0.5,
-    "fiber": 0.0,
-    "price": 190,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（カフェラテ）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "e0fc5318cd",
-    "store": "自販機",
-    "name": "コーラ 500ml",
-    "kcal": 230,
-    "protein": 0.0,
-    "fat": 0.0,
-    "carbs": 57.0,
-    "salt": 0.0,
-    "fiber": 0.0,
-    "price": 200,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（コーラ）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "ea23e8effb",
-    "store": "自販機",
-    "name": "コーラ ゼロ 500ml",
-    "kcal": 0,
-    "protein": 0.0,
-    "fat": 0.0,
-    "carbs": 0.0,
-    "salt": 0.0,
-    "fiber": 0.0,
-    "price": 200,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（水）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "e1636eba54",
-    "store": "自販機",
-    "name": "サイダー 500ml",
-    "kcal": 210,
-    "protein": 0.0,
-    "fat": 0.0,
-    "carbs": 52.5,
-    "salt": 0.0,
-    "fiber": 0.0,
-    "price": 190,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（炭酸飲料）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "edc60166da",
-    "store": "自販機",
-    "name": "レモン炭酸 500ml",
-    "kcal": 210,
-    "protein": 0.0,
-    "fat": 0.0,
-    "carbs": 52.5,
-    "salt": 0.0,
-    "fiber": 0.0,
-    "price": 190,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（炭酸飲料）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "e78ee743d5",
-    "store": "自販機",
-    "name": "グレープ炭酸 500ml",
-    "kcal": 210,
-    "protein": 0.0,
-    "fat": 0.0,
-    "carbs": 52.5,
-    "salt": 0.0,
-    "fiber": 0.0,
-    "price": 190,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（炭酸飲料）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "eae62d735f",
-    "store": "自販機",
-    "name": "強炭酸水 500ml",
-    "kcal": 0,
-    "protein": 0.0,
-    "fat": 0.0,
-    "carbs": 0.0,
-    "salt": 0.0,
-    "fiber": 0.0,
-    "price": 130,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（水）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "e3fb10a603",
-    "store": "自販機",
-    "name": "スポーツドリンク 500ml",
-    "kcal": 105,
-    "protein": 0.0,
-    "fat": 0.0,
-    "carbs": 25.5,
-    "salt": 0.5,
-    "fiber": 0.0,
-    "price": 180,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（スポーツドリンク）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "eb6936dd73",
-    "store": "自販機",
-    "name": "スポーツドリンク ゼロ 500ml",
-    "kcal": 0,
-    "protein": 0.0,
-    "fat": 0.0,
-    "carbs": 0.0,
-    "salt": 0.0,
-    "fiber": 0.0,
-    "price": 180,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（水）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "e836e4f542",
-    "store": "自販機",
-    "name": "経口補水系ドリンク 500ml",
-    "kcal": 52,
-    "protein": 0.0,
-    "fat": 0.0,
-    "carbs": 12.8,
-    "salt": 0.2,
-    "fiber": 0.0,
-    "price": 200,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（スポーツドリンク・水）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "eb3f0a299f",
-    "store": "自販機",
-    "name": "乳酸菌飲料（希釈済）500ml",
-    "kcal": 200,
-    "protein": 1.0,
-    "fat": 0.0,
-    "carbs": 50.0,
-    "salt": 0.0,
-    "fiber": 0.5,
-    "price": 180,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（果実飲料）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "e3b37ec94c",
-    "store": "自販機",
-    "name": "オレンジ果汁100% 350ml",
-    "kcal": 147,
-    "protein": 2.4,
-    "fat": 0.0,
-    "carbs": 37.4,
-    "salt": 0.0,
-    "fiber": 0.7,
-    "price": 170,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（オレンジジュース）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "efa9403576",
-    "store": "自販機",
-    "name": "りんご果汁100% 350ml",
-    "kcal": 154,
-    "protein": 0.3,
-    "fat": 0.3,
-    "carbs": 41.3,
-    "salt": 0.0,
-    "fiber": 0.0,
-    "price": 170,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（りんご果汁）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "eb6c967de2",
-    "store": "自販機",
-    "name": "野菜ジュース 190g",
-    "kcal": 57,
-    "protein": 1.1,
-    "fat": 0.0,
-    "carbs": 13.3,
-    "salt": 0.2,
-    "fiber": 1.3,
-    "price": 140,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（野菜ジュース）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "e85da01a43",
-    "store": "自販機",
-    "name": "トマトジュース 190g",
-    "kcal": 28,
-    "protein": 1.3,
-    "fat": 0.2,
-    "carbs": 7.6,
-    "salt": 0.0,
-    "fiber": 1.3,
-    "price": 140,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（トマト）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "e240d08fa0",
-    "store": "自販機",
-    "name": "エナジードリンク 355ml",
-    "kcal": 163,
-    "protein": 0.0,
-    "fat": 0.0,
-    "carbs": 40.1,
-    "salt": 0.4,
-    "fiber": 0.0,
-    "price": 230,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（エナジードリンク）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "e0ef2375b3",
-    "store": "自販機",
-    "name": "エナジードリンク ゼロ 355ml",
-    "kcal": 0,
-    "protein": 0.0,
-    "fat": 0.0,
-    "carbs": 0.0,
-    "salt": 0.0,
-    "fiber": 0.0,
-    "price": 230,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（水）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "e7d0c99302",
-    "store": "自販機",
-    "name": "ホットココア 190g",
-    "kcal": 133,
-    "protein": 4.9,
-    "fat": 4.8,
-    "carbs": 18.1,
-    "salt": 0.2,
-    "fiber": 1.3,
-    "price": 140,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（ココア）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "e17dff63ca",
-    "store": "自販機",
-    "name": "コーンポタージュ 185g",
-    "kcal": 148,
-    "protein": 3.7,
-    "fat": 8.3,
-    "carbs": 14.8,
-    "salt": 1.3,
-    "fiber": 1.1,
-    "price": 140,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（クリームスープ）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "soup",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "e11170962b",
-    "store": "自販機",
-    "name": "おしるこ 190g",
-    "kcal": 146,
-    "protein": 3.4,
-    "fat": 0.4,
-    "carbs": 32.4,
-    "salt": 0.0,
-    "fiber": 3.4,
-    "price": 140,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（あんこ・水）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "sweet",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "e40dd09f58",
-    "store": "自販機",
-    "name": "プロテインドリンク 500ml",
-    "kcal": 250,
-    "protein": 30.0,
-    "fat": 1.0,
-    "carbs": 30.0,
-    "salt": 0.5,
-    "fiber": 0.0,
-    "price": 250,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（プロテイン飲料）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "e16a63ccc0",
-    "store": "自販機",
-    "name": "炭酸飲料 ゼロカロリー 500ml",
-    "kcal": 0,
-    "protein": 0.0,
-    "fat": 0.0,
-    "carbs": 0.0,
-    "salt": 0.0,
-    "fiber": 0.0,
-    "price": 190,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（水）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "eff6d4ced6",
-    "store": "自販機",
-    "name": "ゼリー飲料（エネルギー）180g",
-    "kcal": 108,
-    "protein": 0.0,
-    "fat": 0.0,
-    "carbs": 27.0,
-    "salt": 0.0,
-    "fiber": 0.5,
-    "price": 220,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（ゼリー）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "ec8935f37b",
-    "store": "セブン‐イレブン",
-    "name": "ミネラルウォーター 600ml",
-    "kcal": 0,
-    "protein": 0.0,
-    "fat": 0.0,
-    "carbs": 0.0,
-    "salt": 0.0,
-    "fiber": 0.0,
-    "price": 110,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（水）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "e540ecd407",
-    "store": "セブン‐イレブン",
-    "name": "麦茶 600ml",
-    "kcal": 0,
-    "protein": 0.0,
-    "fat": 0.0,
-    "carbs": 0.6,
-    "salt": 0.0,
-    "fiber": 0.0,
-    "price": 140,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（茶）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "e9fb7bfe3d",
-    "store": "セブン‐イレブン",
-    "name": "ほうじ茶 600ml",
-    "kcal": 0,
-    "protein": 0.0,
-    "fat": 0.0,
-    "carbs": 0.6,
-    "salt": 0.0,
-    "fiber": 0.0,
-    "price": 160,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（茶）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "e4b6b37d1c",
-    "store": "セブン‐イレブン",
-    "name": "ウーロン茶 600ml",
-    "kcal": 0,
-    "protein": 0.0,
-    "fat": 0.0,
-    "carbs": 0.6,
-    "salt": 0.0,
-    "fiber": 0.0,
-    "price": 160,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（茶）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "e41c1a3b6a",
-    "store": "セブン‐イレブン",
-    "name": "無糖紅茶 500ml",
-    "kcal": 0,
-    "protein": 0.0,
-    "fat": 0.0,
-    "carbs": 0.5,
-    "salt": 0.0,
-    "fiber": 0.0,
-    "price": 160,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（茶）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "e5451cabe7",
-    "store": "セブン‐イレブン",
-    "name": "ミルクティー 500ml",
-    "kcal": 185,
-    "protein": 3.5,
-    "fat": 3.0,
-    "carbs": 36.5,
-    "salt": 0.5,
-    "fiber": 0.0,
-    "price": 170,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（ミルクティー）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "efa8ae6b5d",
-    "store": "セブン‐イレブン",
-    "name": "アイスコーヒー（R）",
-    "kcal": 10,
-    "protein": 0.5,
-    "fat": 0.0,
-    "carbs": 1.8,
-    "salt": 0.0,
-    "fiber": 0.0,
-    "price": 130,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（コーヒー）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "e8042ff92d",
-    "store": "セブン‐イレブン",
-    "name": "アイスカフェラテ（R）",
-    "kcal": 112,
-    "protein": 5.0,
-    "fat": 5.0,
-    "carbs": 11.2,
-    "salt": 0.2,
-    "fiber": 0.0,
-    "price": 220,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（カフェラテ）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "e55577e696",
-    "store": "セブン‐イレブン",
-    "name": "ペットボトルブラックコーヒー 500ml",
-    "kcal": 20,
-    "protein": 1.0,
-    "fat": 0.0,
-    "carbs": 3.5,
-    "salt": 0.0,
-    "fiber": 0.0,
-    "price": 170,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（コーヒー）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "ea5e936f70",
-    "store": "セブン‐イレブン",
-    "name": "チルドカップカフェラテ 240ml",
-    "kcal": 108,
-    "protein": 4.8,
-    "fat": 4.8,
-    "carbs": 10.8,
-    "salt": 0.2,
-    "fiber": 0.0,
-    "price": 180,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（カフェラテ）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "e8ec09c816",
-    "store": "セブン‐イレブン",
-    "name": "サイダー 500ml",
-    "kcal": 210,
-    "protein": 0.0,
-    "fat": 0.0,
-    "carbs": 52.5,
-    "salt": 0.0,
-    "fiber": 0.0,
-    "price": 170,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（炭酸飲料）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "e3d14ae5bd",
-    "store": "セブン‐イレブン",
-    "name": "炭酸水 500ml",
-    "kcal": 0,
-    "protein": 0.0,
-    "fat": 0.0,
-    "carbs": 0.0,
-    "salt": 0.0,
-    "fiber": 0.0,
-    "price": 110,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（水）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "e02afd0afb",
-    "store": "セブン‐イレブン",
-    "name": "オレンジ果汁100% 200ml",
-    "kcal": 84,
-    "protein": 1.4,
-    "fat": 0.0,
-    "carbs": 21.4,
-    "salt": 0.0,
-    "fiber": 0.4,
-    "price": 120,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（オレンジジュース）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "ea6f62de57",
-    "store": "セブン‐イレブン",
-    "name": "トマトジュース 200ml",
-    "kcal": 30,
-    "protein": 1.4,
-    "fat": 0.2,
-    "carbs": 8.0,
-    "salt": 0.0,
-    "fiber": 1.4,
-    "price": 120,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（トマト）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "e9e71601b6",
-    "store": "セブン‐イレブン",
-    "name": "エナジードリンク 355ml",
-    "kcal": 163,
-    "protein": 0.0,
-    "fat": 0.0,
-    "carbs": 40.1,
-    "salt": 0.4,
-    "fiber": 0.0,
-    "price": 230,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（エナジードリンク）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
     "id": "e448405493",
     "store": "セブン‐イレブン",
     "name": "ゼリー飲料（エネルギー）180g",
@@ -22883,336 +21409,6 @@
     ]
   },
   {
-    "id": "ef8f5c23f4",
-    "store": "ファミリーマート",
-    "name": "ミネラルウォーター 600ml",
-    "kcal": 0,
-    "protein": 0.0,
-    "fat": 0.0,
-    "carbs": 0.0,
-    "salt": 0.0,
-    "fiber": 0.0,
-    "price": 110,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（水）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "e6f4c33ab0",
-    "store": "ファミリーマート",
-    "name": "麦茶 600ml",
-    "kcal": 0,
-    "protein": 0.0,
-    "fat": 0.0,
-    "carbs": 0.6,
-    "salt": 0.0,
-    "fiber": 0.0,
-    "price": 140,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（茶）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "ec8abae7fe",
-    "store": "ファミリーマート",
-    "name": "ほうじ茶 600ml",
-    "kcal": 0,
-    "protein": 0.0,
-    "fat": 0.0,
-    "carbs": 0.6,
-    "salt": 0.0,
-    "fiber": 0.0,
-    "price": 160,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（茶）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "efbfa6dc29",
-    "store": "ファミリーマート",
-    "name": "ウーロン茶 600ml",
-    "kcal": 0,
-    "protein": 0.0,
-    "fat": 0.0,
-    "carbs": 0.6,
-    "salt": 0.0,
-    "fiber": 0.0,
-    "price": 160,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（茶）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "eab7c891c6",
-    "store": "ファミリーマート",
-    "name": "無糖紅茶 500ml",
-    "kcal": 0,
-    "protein": 0.0,
-    "fat": 0.0,
-    "carbs": 0.5,
-    "salt": 0.0,
-    "fiber": 0.0,
-    "price": 160,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（茶）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "e2e33a81a1",
-    "store": "ファミリーマート",
-    "name": "ミルクティー 500ml",
-    "kcal": 185,
-    "protein": 3.5,
-    "fat": 3.0,
-    "carbs": 36.5,
-    "salt": 0.5,
-    "fiber": 0.0,
-    "price": 170,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（ミルクティー）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "e2e14a016c",
-    "store": "ファミリーマート",
-    "name": "アイスコーヒー（R）",
-    "kcal": 10,
-    "protein": 0.5,
-    "fat": 0.0,
-    "carbs": 1.8,
-    "salt": 0.0,
-    "fiber": 0.0,
-    "price": 130,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（コーヒー）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "e0727e2422",
-    "store": "ファミリーマート",
-    "name": "アイスカフェラテ（R）",
-    "kcal": 112,
-    "protein": 5.0,
-    "fat": 5.0,
-    "carbs": 11.2,
-    "salt": 0.2,
-    "fiber": 0.0,
-    "price": 220,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（カフェラテ）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "e030fcd19c",
-    "store": "ファミリーマート",
-    "name": "ペットボトルブラックコーヒー 500ml",
-    "kcal": 20,
-    "protein": 1.0,
-    "fat": 0.0,
-    "carbs": 3.5,
-    "salt": 0.0,
-    "fiber": 0.0,
-    "price": 170,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（コーヒー）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "e89c3a8ad1",
-    "store": "ファミリーマート",
-    "name": "チルドカップカフェラテ 240ml",
-    "kcal": 108,
-    "protein": 4.8,
-    "fat": 4.8,
-    "carbs": 10.8,
-    "salt": 0.2,
-    "fiber": 0.0,
-    "price": 180,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（カフェラテ）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "eb621f91c7",
-    "store": "ファミリーマート",
-    "name": "サイダー 500ml",
-    "kcal": 210,
-    "protein": 0.0,
-    "fat": 0.0,
-    "carbs": 52.5,
-    "salt": 0.0,
-    "fiber": 0.0,
-    "price": 170,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（炭酸飲料）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "e76dcab908",
-    "store": "ファミリーマート",
-    "name": "炭酸水 500ml",
-    "kcal": 0,
-    "protein": 0.0,
-    "fat": 0.0,
-    "carbs": 0.0,
-    "salt": 0.0,
-    "fiber": 0.0,
-    "price": 110,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（水）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "e19be49958",
-    "store": "ファミリーマート",
-    "name": "オレンジ果汁100% 200ml",
-    "kcal": 84,
-    "protein": 1.4,
-    "fat": 0.0,
-    "carbs": 21.4,
-    "salt": 0.0,
-    "fiber": 0.4,
-    "price": 120,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（オレンジジュース）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "e292845b9f",
-    "store": "ファミリーマート",
-    "name": "トマトジュース 200ml",
-    "kcal": 30,
-    "protein": 1.4,
-    "fat": 0.2,
-    "carbs": 8.0,
-    "salt": 0.0,
-    "fiber": 1.4,
-    "price": 120,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（トマト）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "eb06ef6a30",
-    "store": "ファミリーマート",
-    "name": "エナジードリンク 355ml",
-    "kcal": 163,
-    "protein": 0.0,
-    "fat": 0.0,
-    "carbs": 40.1,
-    "salt": 0.4,
-    "fiber": 0.0,
-    "price": 230,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（エナジードリンク）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
     "id": "e0a39d0713",
     "store": "ファミリーマート",
     "name": "ゼリー飲料（エネルギー）180g",
@@ -23314,336 +21510,6 @@
     "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
     "quality": "estimate",
     "note": "内容物（ココア）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "e2be2bdd8b",
-    "store": "ローソン",
-    "name": "ミネラルウォーター 600ml",
-    "kcal": 0,
-    "protein": 0.0,
-    "fat": 0.0,
-    "carbs": 0.0,
-    "salt": 0.0,
-    "fiber": 0.0,
-    "price": 110,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（水）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "e2eb47dad1",
-    "store": "ローソン",
-    "name": "麦茶 600ml",
-    "kcal": 0,
-    "protein": 0.0,
-    "fat": 0.0,
-    "carbs": 0.6,
-    "salt": 0.0,
-    "fiber": 0.0,
-    "price": 140,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（茶）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "e2897db92d",
-    "store": "ローソン",
-    "name": "ほうじ茶 600ml",
-    "kcal": 0,
-    "protein": 0.0,
-    "fat": 0.0,
-    "carbs": 0.6,
-    "salt": 0.0,
-    "fiber": 0.0,
-    "price": 160,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（茶）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "eb242d2eef",
-    "store": "ローソン",
-    "name": "ウーロン茶 600ml",
-    "kcal": 0,
-    "protein": 0.0,
-    "fat": 0.0,
-    "carbs": 0.6,
-    "salt": 0.0,
-    "fiber": 0.0,
-    "price": 160,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（茶）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "e424077e9a",
-    "store": "ローソン",
-    "name": "無糖紅茶 500ml",
-    "kcal": 0,
-    "protein": 0.0,
-    "fat": 0.0,
-    "carbs": 0.5,
-    "salt": 0.0,
-    "fiber": 0.0,
-    "price": 160,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（茶）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "eb5ca130d4",
-    "store": "ローソン",
-    "name": "ミルクティー 500ml",
-    "kcal": 185,
-    "protein": 3.5,
-    "fat": 3.0,
-    "carbs": 36.5,
-    "salt": 0.5,
-    "fiber": 0.0,
-    "price": 170,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（ミルクティー）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "e3a573d28e",
-    "store": "ローソン",
-    "name": "アイスコーヒー（R）",
-    "kcal": 10,
-    "protein": 0.5,
-    "fat": 0.0,
-    "carbs": 1.8,
-    "salt": 0.0,
-    "fiber": 0.0,
-    "price": 130,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（コーヒー）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "ecb2701800",
-    "store": "ローソン",
-    "name": "アイスカフェラテ（R）",
-    "kcal": 112,
-    "protein": 5.0,
-    "fat": 5.0,
-    "carbs": 11.2,
-    "salt": 0.2,
-    "fiber": 0.0,
-    "price": 220,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（カフェラテ）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "e962fad4d2",
-    "store": "ローソン",
-    "name": "ペットボトルブラックコーヒー 500ml",
-    "kcal": 20,
-    "protein": 1.0,
-    "fat": 0.0,
-    "carbs": 3.5,
-    "salt": 0.0,
-    "fiber": 0.0,
-    "price": 170,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（コーヒー）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "e9bcc151cc",
-    "store": "ローソン",
-    "name": "チルドカップカフェラテ 240ml",
-    "kcal": 108,
-    "protein": 4.8,
-    "fat": 4.8,
-    "carbs": 10.8,
-    "salt": 0.2,
-    "fiber": 0.0,
-    "price": 180,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（カフェラテ）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "ede5ff0b5e",
-    "store": "ローソン",
-    "name": "サイダー 500ml",
-    "kcal": 210,
-    "protein": 0.0,
-    "fat": 0.0,
-    "carbs": 52.5,
-    "salt": 0.0,
-    "fiber": 0.0,
-    "price": 170,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（炭酸飲料）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "e70d51a113",
-    "store": "ローソン",
-    "name": "炭酸水 500ml",
-    "kcal": 0,
-    "protein": 0.0,
-    "fat": 0.0,
-    "carbs": 0.0,
-    "salt": 0.0,
-    "fiber": 0.0,
-    "price": 110,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（水）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "ef1b254c85",
-    "store": "ローソン",
-    "name": "オレンジ果汁100% 200ml",
-    "kcal": 84,
-    "protein": 1.4,
-    "fat": 0.0,
-    "carbs": 21.4,
-    "salt": 0.0,
-    "fiber": 0.4,
-    "price": 120,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（オレンジジュース）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "e6520b0de9",
-    "store": "ローソン",
-    "name": "トマトジュース 200ml",
-    "kcal": 30,
-    "protein": 1.4,
-    "fat": 0.2,
-    "carbs": 8.0,
-    "salt": 0.0,
-    "fiber": 1.4,
-    "price": 120,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（トマト）から算出した想定値。価格も目安です。",
-    "time": "any",
-    "kind": "drink",
-    "price_type": "approx",
-    "est": [
-      "nutrition",
-      "price"
-    ]
-  },
-  {
-    "id": "ee63d0f735",
-    "store": "ローソン",
-    "name": "エナジードリンク 355ml",
-    "kcal": 163,
-    "protein": 0.0,
-    "fat": 0.0,
-    "carbs": 40.1,
-    "salt": 0.4,
-    "fiber": 0.0,
-    "price": 230,
-    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
-    "quality": "estimate",
-    "note": "内容物（エナジードリンク）から算出した想定値。価格も目安です。",
     "time": "any",
     "kind": "drink",
     "price_type": "approx",
@@ -24113,5 +21979,4589 @@
       "nutrition",
       "price"
     ]
+  },
+  {
+    "id": "e462694eac",
+    "store": "ファミリーマート",
+    "name": "にごりの旨み 緑茶 600ml",
+    "kcal": 0,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 0.6,
+    "salt": 0.0,
+    "fiber": 0.0,
+    "price": 129,
+    "source": "https://www.family.co.jp/goods/drink.html",
+    "quality": "estimate",
+    "note": "ファミリーマート公式の税込価格。栄養は公式サイトに掲載がないため内容物（茶）から算出した想定値。",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "exact",
+    "est": [
+      "nutrition"
+    ]
+  },
+  {
+    "id": "e8c97d8b7d",
+    "store": "ファミリーマート",
+    "name": "香ばしいコク 麦茶 600ml",
+    "kcal": 0,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 0.6,
+    "salt": 0.0,
+    "fiber": 0.0,
+    "price": 129,
+    "source": "https://www.family.co.jp/goods/drink.html",
+    "quality": "estimate",
+    "note": "ファミリーマート公式の税込価格。栄養は公式サイトに掲載がないため内容物（茶）から算出した想定値。",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "exact",
+    "est": [
+      "nutrition"
+    ]
+  },
+  {
+    "id": "efd4d34a5c",
+    "store": "ファミリーマート",
+    "name": "茶流彩彩 ジャスミン茶 600ml",
+    "kcal": 0,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 0.6,
+    "salt": 0.0,
+    "fiber": 0.0,
+    "price": 129,
+    "source": "https://www.family.co.jp/goods/drink.html",
+    "quality": "estimate",
+    "note": "ファミリーマート公式の税込価格。栄養は公式サイトに掲載がないため内容物（茶）から算出した想定値。",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "exact",
+    "est": [
+      "nutrition"
+    ]
+  },
+  {
+    "id": "e3ee735b88",
+    "store": "ファミリーマート",
+    "name": "茶流彩彩 コーン茶 600ml",
+    "kcal": 0,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 0.6,
+    "salt": 0.0,
+    "fiber": 0.0,
+    "price": 129,
+    "source": "https://www.family.co.jp/goods/drink.html",
+    "quality": "estimate",
+    "note": "ファミリーマート公式の税込価格。栄養は公式サイトに掲載がないため内容物（茶）から算出した想定値。",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "exact",
+    "est": [
+      "nutrition"
+    ]
+  },
+  {
+    "id": "efccab142c",
+    "store": "ファミリーマート",
+    "name": "香り華やか 台湾烏龍茶 600ml",
+    "kcal": 0,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 0.6,
+    "salt": 0.0,
+    "fiber": 0.0,
+    "price": 129,
+    "source": "https://www.family.co.jp/goods/drink.html",
+    "quality": "estimate",
+    "note": "ファミリーマート公式の税込価格。栄養は公式サイトに掲載がないため内容物（茶）から算出した想定値。",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "exact",
+    "est": [
+      "nutrition"
+    ]
+  },
+  {
+    "id": "e2b013404e",
+    "store": "ファミリーマート",
+    "name": "Afternoon Tea監修 アールグレイティー無糖 600ml",
+    "kcal": 0,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 0.6,
+    "salt": 0.0,
+    "fiber": 0.0,
+    "price": 129,
+    "source": "https://www.family.co.jp/goods/drink.html",
+    "quality": "estimate",
+    "note": "ファミリーマート公式の税込価格。栄養は公式サイトに掲載がないため内容物（茶）から算出した想定値。",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "exact",
+    "est": [
+      "nutrition"
+    ]
+  },
+  {
+    "id": "e854cfc4c9",
+    "store": "ファミリーマート",
+    "name": "Afternoon Tea監修 ルイボスティー 600ml",
+    "kcal": 0,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 0.6,
+    "salt": 0.0,
+    "fiber": 0.0,
+    "price": 129,
+    "source": "https://www.family.co.jp/goods/drink.html",
+    "quality": "estimate",
+    "note": "ファミリーマート公式の税込価格。栄養は公式サイトに掲載がないため内容物（茶）から算出した想定値。",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "exact",
+    "est": [
+      "nutrition"
+    ]
+  },
+  {
+    "id": "ed2641e74a",
+    "store": "ファミリーマート",
+    "name": "Afternoon Tea監修 ロイヤルミルクティー 500ml",
+    "kcal": 185,
+    "protein": 3.5,
+    "fat": 3.0,
+    "carbs": 36.5,
+    "salt": 0.5,
+    "fiber": 0.0,
+    "price": 150,
+    "source": "https://www.family.co.jp/goods/drink.html",
+    "quality": "estimate",
+    "note": "ファミリーマート公式の税込価格。栄養は公式サイトに掲載がないため内容物（ミルクティー）から算出した想定値。",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "exact",
+    "est": [
+      "nutrition"
+    ]
+  },
+  {
+    "id": "e61d996275",
+    "store": "ファミリーマート",
+    "name": "新潟県津南の天然水 600ml",
+    "kcal": 0,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 0.0,
+    "salt": 0.0,
+    "fiber": 0.0,
+    "price": 118,
+    "source": "https://www.family.co.jp/goods/drink.html",
+    "quality": "estimate",
+    "note": "ファミリーマート公式の税込価格。栄養は公式サイトに掲載がないため内容物（水）から算出した想定値。",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "exact",
+    "est": [
+      "nutrition"
+    ]
+  },
+  {
+    "id": "eb8d975ce7",
+    "store": "ファミリーマート",
+    "name": "強炭酸水 1000ml（500ml分）",
+    "kcal": 0,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 0.0,
+    "salt": 0.0,
+    "fiber": 0.0,
+    "price": 69,
+    "source": "https://www.family.co.jp/goods/drink.html",
+    "quality": "estimate",
+    "note": "ファミリーマート公式の税込価格。栄養は公式サイトに掲載がないため内容物（水）から算出した想定値。",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "exact",
+    "est": [
+      "nutrition"
+    ]
+  },
+  {
+    "id": "ede5debed5",
+    "store": "ファミリーマート",
+    "name": "Family's BOSS ブラック 450ml",
+    "kcal": 18,
+    "protein": 0.9,
+    "fat": 0.0,
+    "carbs": 3.1,
+    "salt": 0.0,
+    "fiber": 0.0,
+    "price": 150,
+    "source": "https://www.family.co.jp/goods/drink.html",
+    "quality": "estimate",
+    "note": "ファミリーマート公式の税込価格。栄養は公式サイトに掲載がないため内容物（コーヒー）から算出した想定値。",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "exact",
+    "est": [
+      "nutrition"
+    ]
+  },
+  {
+    "id": "e54059af62",
+    "store": "ファミリーマート",
+    "name": "Family's BOSS ラテ 450ml",
+    "kcal": 202,
+    "protein": 9.0,
+    "fat": 9.0,
+    "carbs": 20.2,
+    "salt": 0.5,
+    "fiber": 0.0,
+    "price": 160,
+    "source": "https://www.family.co.jp/goods/drink.html",
+    "quality": "estimate",
+    "note": "ファミリーマート公式の税込価格。栄養は公式サイトに掲載がないため内容物（カフェラテ）から算出した想定値。",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "exact",
+    "est": [
+      "nutrition"
+    ]
+  },
+  {
+    "id": "ef25da0bec",
+    "store": "ファミリーマート",
+    "name": "Family's BOSS 微糖 185ml",
+    "kcal": 37,
+    "protein": 0.4,
+    "fat": 0.0,
+    "carbs": 8.3,
+    "salt": 0.0,
+    "fiber": 0.0,
+    "price": 110,
+    "source": "https://www.family.co.jp/goods/drink.html",
+    "quality": "estimate",
+    "note": "ファミリーマート公式の税込価格。栄養は公式サイトに掲載がないため内容物（微糖コーヒー）から算出した想定値。",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "exact",
+    "est": [
+      "nutrition"
+    ]
+  },
+  {
+    "id": "eb60650b15",
+    "store": "ファミリーマート",
+    "name": "Family's BOSS オリジナル 185ml",
+    "kcal": 92,
+    "protein": 3.3,
+    "fat": 3.0,
+    "carbs": 13.3,
+    "salt": 0.2,
+    "fiber": 0.0,
+    "price": 110,
+    "source": "https://www.family.co.jp/goods/drink.html",
+    "quality": "estimate",
+    "note": "ファミリーマート公式の税込価格。栄養は公式サイトに掲載がないため内容物（カフェオレ）から算出した想定値。",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "exact",
+    "est": [
+      "nutrition"
+    ]
+  },
+  {
+    "id": "e6d6c86cf7",
+    "store": "ファミリーマート",
+    "name": "ファミマの牛乳 500ml（200ml分）",
+    "kcal": 126,
+    "protein": 6.8,
+    "fat": 7.8,
+    "carbs": 9.9,
+    "salt": 0.2,
+    "fiber": 0.0,
+    "price": 76,
+    "source": "https://www.family.co.jp/goods/drink.html",
+    "quality": "estimate",
+    "note": "ファミリーマート公式の税込価格。栄養は公式サイトに掲載がないため内容物（牛乳）から算出した想定値。",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "exact",
+    "est": [
+      "nutrition"
+    ]
+  },
+  {
+    "id": "e8643b1c93",
+    "store": "ファミリーマート",
+    "name": "カフェラテ 砂糖不使用 240ml",
+    "kcal": 67,
+    "protein": 5.9,
+    "fat": 1.5,
+    "carbs": 8.9,
+    "salt": 0.3,
+    "fiber": 0.0,
+    "price": 210,
+    "source": "https://www.family.co.jp/goods/drink.html",
+    "quality": "estimate",
+    "note": "ファミリーマート公式の税込価格。栄養は公式サイトに掲載がないため内容物（低脂肪乳・コーヒー）から算出した想定値。",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "exact",
+    "est": [
+      "nutrition"
+    ]
+  },
+  {
+    "id": "e93833f0c7",
+    "store": "ファミリーマート",
+    "name": "カフェラテ レギュラー 240ml",
+    "kcal": 108,
+    "protein": 4.8,
+    "fat": 4.8,
+    "carbs": 10.8,
+    "salt": 0.2,
+    "fiber": 0.0,
+    "price": 210,
+    "source": "https://www.family.co.jp/goods/drink.html",
+    "quality": "estimate",
+    "note": "ファミリーマート公式の税込価格。栄養は公式サイトに掲載がないため内容物（カフェラテ）から算出した想定値。",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "exact",
+    "est": [
+      "nutrition"
+    ]
+  },
+  {
+    "id": "e6d4e8dfe4",
+    "store": "ファミリーマート",
+    "name": "ブラックコーヒー 無糖 240ml",
+    "kcal": 10,
+    "protein": 0.5,
+    "fat": 0.0,
+    "carbs": 1.7,
+    "salt": 0.0,
+    "fiber": 0.0,
+    "price": 174,
+    "source": "https://www.family.co.jp/goods/drink.html",
+    "quality": "estimate",
+    "note": "ファミリーマート公式の税込価格。栄養は公式サイトに掲載がないため内容物（コーヒー）から算出した想定値。",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "exact",
+    "est": [
+      "nutrition"
+    ]
+  },
+  {
+    "id": "e931e37216",
+    "store": "ファミリーマート",
+    "name": "のむヨーグルトプレーン",
+    "kcal": 130,
+    "protein": 5.8,
+    "fat": 1.0,
+    "carbs": 24.4,
+    "salt": 0.2,
+    "fiber": 0.0,
+    "price": 160,
+    "source": "https://www.family.co.jp/goods/drink.html",
+    "quality": "estimate",
+    "note": "ファミリーマート公式の税込価格。栄養は公式サイトに掲載がないため内容物（飲むヨーグルト）から算出した想定値。",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "exact",
+    "est": [
+      "nutrition"
+    ]
+  },
+  {
+    "id": "eeb10127e2",
+    "store": "ファミリーマート",
+    "name": "のむヨーグルトいちご",
+    "kcal": 130,
+    "protein": 5.8,
+    "fat": 1.0,
+    "carbs": 24.4,
+    "salt": 0.2,
+    "fiber": 0.0,
+    "price": 183,
+    "source": "https://www.family.co.jp/goods/drink.html",
+    "quality": "estimate",
+    "note": "ファミリーマート公式の税込価格。栄養は公式サイトに掲載がないため内容物（飲むヨーグルト）から算出した想定値。",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "exact",
+    "est": [
+      "nutrition"
+    ]
+  },
+  {
+    "id": "e77d6e5209",
+    "store": "ファミリーマート",
+    "name": "4種の果実のフルーツミックス 500ml",
+    "kcal": 200,
+    "protein": 1.0,
+    "fat": 0.0,
+    "carbs": 50.0,
+    "salt": 0.0,
+    "fiber": 0.5,
+    "price": 120,
+    "source": "https://www.family.co.jp/goods/drink.html",
+    "quality": "estimate",
+    "note": "ファミリーマート公式の税込価格。栄養は公式サイトに掲載がないため内容物（果実飲料）から算出した想定値。",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "exact",
+    "est": [
+      "nutrition"
+    ]
+  },
+  {
+    "id": "eb76a46604",
+    "store": "ファミリーマート",
+    "name": "オレンジサイダー 500ml",
+    "kcal": 210,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 52.5,
+    "salt": 0.0,
+    "fiber": 0.0,
+    "price": 140,
+    "source": "https://www.family.co.jp/goods/drink.html",
+    "quality": "estimate",
+    "note": "ファミリーマート公式の税込価格。栄養は公式サイトに掲載がないため内容物（炭酸飲料）から算出した想定値。",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "exact",
+    "est": [
+      "nutrition"
+    ]
+  },
+  {
+    "id": "e1b1846a21",
+    "store": "ファミリーマート",
+    "name": "国産抹茶100%使用 抹茶ラテ",
+    "kcal": 108,
+    "protein": 4.8,
+    "fat": 4.8,
+    "carbs": 10.8,
+    "salt": 0.2,
+    "fiber": 0.0,
+    "price": 208,
+    "source": "https://www.family.co.jp/goods/drink.html",
+    "quality": "estimate",
+    "note": "ファミリーマート公式の税込価格。栄養は公式サイトに掲載がないため内容物（カフェラテ）から算出した想定値。",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "exact",
+    "est": [
+      "nutrition"
+    ]
+  },
+  {
+    "id": "ed24b8d180",
+    "store": "ファミリーマート",
+    "name": "ホットレモン 490ml",
+    "kcal": 196,
+    "protein": 1.0,
+    "fat": 0.0,
+    "carbs": 49.0,
+    "salt": 0.0,
+    "fiber": 0.5,
+    "price": 150,
+    "source": "https://www.family.co.jp/goods/drink.html",
+    "quality": "estimate",
+    "note": "ファミリーマート公式の税込価格。栄養は公式サイトに掲載がないため内容物（果実飲料）から算出した想定値。",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "exact",
+    "est": [
+      "nutrition"
+    ]
+  },
+  {
+    "id": "e32a749e98",
+    "store": "ローソン",
+    "name": "MACHI café コーヒー（S）",
+    "kcal": 6,
+    "protein": 0.3,
+    "fat": 0.0,
+    "carbs": 1.1,
+    "salt": 0.0,
+    "fiber": 0.0,
+    "price": 130,
+    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
+    "quality": "estimate",
+    "note": "内容物（コーヒー）から算出した想定値。価格も目安です。",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "est": [
+      "nutrition",
+      "price"
+    ]
+  },
+  {
+    "id": "edc8caf49a",
+    "store": "ローソン",
+    "name": "MACHI café アイスコーヒー（M）",
+    "kcal": 10,
+    "protein": 0.5,
+    "fat": 0.0,
+    "carbs": 1.8,
+    "salt": 0.0,
+    "fiber": 0.0,
+    "price": 230,
+    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
+    "quality": "estimate",
+    "note": "内容物（コーヒー）から算出した想定値。価格も目安です。",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "est": [
+      "nutrition",
+      "price"
+    ]
+  },
+  {
+    "id": "eff85a5721",
+    "store": "ローソン",
+    "name": "MACHI café カフェラテ（M）",
+    "kcal": 117,
+    "protein": 5.2,
+    "fat": 5.2,
+    "carbs": 11.7,
+    "salt": 0.3,
+    "fiber": 0.0,
+    "price": 230,
+    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
+    "quality": "estimate",
+    "note": "内容物（カフェラテ）から算出した想定値。価格も目安です。",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "est": [
+      "nutrition",
+      "price"
+    ]
+  },
+  {
+    "id": "e300c850f9",
+    "store": "ローソン",
+    "name": "MACHI café アイスカフェラテ（M）",
+    "kcal": 108,
+    "protein": 4.8,
+    "fat": 4.8,
+    "carbs": 10.8,
+    "salt": 0.2,
+    "fiber": 0.0,
+    "price": 260,
+    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
+    "quality": "estimate",
+    "note": "内容物（カフェラテ）から算出した想定値。価格も目安です。",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "est": [
+      "nutrition",
+      "price"
+    ]
+  },
+  {
+    "id": "dacde1c71b",
+    "store": "サントリー",
+    "name": "C.C.レモン 500ml",
+    "kcal": 180,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 45.0,
+    "salt": 0.2,
+    "fiber": null,
+    "price": 216,
+    "source": "https://products.suntory.co.jp/d/4901777232310/",
+    "quality": "official",
+    "note": "サントリー公式の栄養成分（500ml当たり）から500ml分に換算。価格はメーカー希望小売価格（税抜）に消費税8%を加えた額。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber"
+    ]
+  },
+  {
+    "id": "dc70ca1d6c",
+    "store": "サントリー",
+    "name": "ペプシ〈生〉 BIG COLA 600ml",
+    "kcal": 276,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 69.6,
+    "salt": 0.3,
+    "fiber": null,
+    "price": 238,
+    "source": "https://products.suntory.co.jp/d/4901777361232/",
+    "quality": "official",
+    "note": "サントリー公式の栄養成分（100ml当たり）から600ml分に換算。価格はメーカー希望小売価格（税抜）に消費税8%を加えた額。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber"
+    ]
+  },
+  {
+    "id": "d4eea908fe",
+    "store": "サントリー",
+    "name": "ペプシ〈生〉 BIG ZERO 600ml",
+    "kcal": 0,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 0.0,
+    "salt": 0.06,
+    "fiber": 0.0,
+    "price": 238,
+    "source": "https://products.suntory.co.jp/d/4901777361256/",
+    "quality": "official",
+    "note": "サントリー公式の栄養成分（100ml当たり）から600ml分に換算。価格はメーカー希望小売価格（税抜）に消費税8%を加えた額。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber"
+    ]
+  },
+  {
+    "id": "d30cf477d9",
+    "store": "サントリー",
+    "name": "GREEN DA・KA・RA 600ml",
+    "kcal": 108,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 26.4,
+    "salt": 0.6,
+    "fiber": null,
+    "price": 205,
+    "source": "https://products.suntory.co.jp/d/4901777336704/",
+    "quality": "official",
+    "note": "サントリー公式の栄養成分（100ml当たり）から600ml分に換算。価格はメーカー希望小売価格（税抜）に消費税8%を加えた額。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber"
+    ]
+  },
+  {
+    "id": "d3a7556811",
+    "store": "サントリー",
+    "name": "サントリー天然水 550ml",
+    "kcal": 0,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 0.0,
+    "salt": 0.01,
+    "fiber": 0.0,
+    "price": 205,
+    "source": "https://products.suntory.co.jp/d/4901777216884/",
+    "quality": "official",
+    "note": "サントリー公式の栄養成分（100ml当たり）から550ml分に換算。価格はメーカー希望小売価格（税抜）に消費税8%を加えた額。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber"
+    ]
+  },
+  {
+    "id": "d6c08b0f93",
+    "store": "サントリー",
+    "name": "なっちゃん オレンジ 425ml",
+    "kcal": 191,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 48.0,
+    "salt": 0.3,
+    "fiber": null,
+    "price": 259,
+    "source": "https://products.suntory.co.jp/d/4901777301078/",
+    "quality": "official",
+    "note": "サントリー公式の栄養成分（100ml当たり）から425ml分に換算。価格はメーカー希望小売価格（税抜）に消費税8%を加えた額。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber"
+    ]
+  },
+  {
+    "id": "dcaae26921",
+    "store": "サントリー",
+    "name": "クラフトボス 世界のTEA すっきり無糖 600ml",
+    "kcal": 0,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 0.0,
+    "salt": 0.1,
+    "fiber": 0.0,
+    "price": 227,
+    "source": "https://products.suntory.co.jp/d/4901777432017/",
+    "quality": "official",
+    "note": "サントリー公式の栄養成分（100ml当たり）から600ml分に換算。価格はメーカー希望小売価格（税抜）に消費税8%を加えた額。購入場所：スーパー・コンビニ",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ"
+    ],
+    "est": [
+      "fiber"
+    ]
+  },
+  {
+    "id": "d77d62ecfd",
+    "store": "サントリー",
+    "name": "胡麻麦茶（特定保健用食品）350ml",
+    "kcal": 0,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 0.0,
+    "salt": 0.05,
+    "fiber": 0.0,
+    "price": 184,
+    "source": "https://products.suntory.co.jp/d/4901777235533/",
+    "quality": "official",
+    "note": "サントリー公式の栄養成分（350ml当たり）から350ml分に換算。価格はメーカー希望小売価格（税抜）に消費税8%を加えた額。購入場所：スーパー・コンビニ",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ"
+    ],
+    "est": [
+      "fiber"
+    ]
+  },
+  {
+    "id": "db4cd0127d",
+    "store": "サントリー",
+    "name": "ジンジャーエール 200ml缶",
+    "kcal": 66,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 16.6,
+    "salt": 0.08,
+    "fiber": null,
+    "price": 148,
+    "source": "https://products.suntory.co.jp/d/4901777000056/",
+    "quality": "official",
+    "note": "サントリー公式の栄養成分（100ml当たり）から200ml分に換算。価格はメーカー希望小売価格（税抜）に消費税8%を加えた額。購入場所：スーパー・コンビニ",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ"
+    ],
+    "est": [
+      "fiber"
+    ]
+  },
+  {
+    "id": "d939276d51",
+    "store": "サントリー",
+    "name": "伊右衛門 600ml",
+    "kcal": 0,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 0.0,
+    "salt": 0.1,
+    "fiber": 0.0,
+    "price": 200,
+    "source": "https://products.suntory.co.jp/softdrink/ingredient.html",
+    "quality": "official",
+    "note": "サントリー公式の栄養成分（100ml当たり）から600ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "d92b319d66",
+    "store": "サントリー",
+    "name": "伊右衛門 焙じ茶 600ml",
+    "kcal": 0,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 0.0,
+    "salt": 0.1,
+    "fiber": 0.0,
+    "price": 200,
+    "source": "https://products.suntory.co.jp/softdrink/ingredient.html",
+    "quality": "official",
+    "note": "サントリー公式の栄養成分（100ml当たり）から600ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "df527ad977",
+    "store": "サントリー",
+    "name": "伊右衛門 特茶s（特定保健用食品）500ml",
+    "kcal": 0,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 0.0,
+    "salt": 0.05,
+    "fiber": 0.0,
+    "price": 210,
+    "source": "https://products.suntory.co.jp/softdrink/ingredient.html",
+    "quality": "official",
+    "note": "サントリー公式の栄養成分（500ml当たり）から500ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "d2b23574ff",
+    "store": "サントリー",
+    "name": "サントリー烏龍茶 525ml",
+    "kcal": 0,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 0.0,
+    "salt": 0.2,
+    "fiber": 0.0,
+    "price": 180,
+    "source": "https://products.suntory.co.jp/softdrink/ingredient.html",
+    "quality": "official",
+    "note": "サントリー公式の栄養成分（100ml当たり）から525ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "d6e96d79bb",
+    "store": "サントリー",
+    "name": "サントリー黒烏龍茶OTPP（特定保健用食品）350ml",
+    "kcal": 0,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 0.0,
+    "salt": 0.07,
+    "fiber": 0.0,
+    "price": 200,
+    "source": "https://products.suntory.co.jp/softdrink/ingredient.html",
+    "quality": "official",
+    "note": "サントリー公式の栄養成分（350ml当たり）から350ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "dbebcbeddd",
+    "store": "サントリー",
+    "name": "ボス レインボーマウンテンブレンド 185g缶",
+    "kcal": 65,
+    "protein": 0.9,
+    "fat": 1.1,
+    "carbs": 13.0,
+    "salt": 0.2,
+    "fiber": null,
+    "price": 130,
+    "source": "https://products.suntory.co.jp/softdrink/ingredient.html",
+    "quality": "official",
+    "note": "サントリー公式の栄養成分（100g当たり）から185g分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "d8956f885d",
+    "store": "サントリー",
+    "name": "ボス 贅沢微糖 185g缶",
+    "kcal": 37,
+    "protein": 0.9,
+    "fat": 0.7,
+    "carbs": 6.7,
+    "salt": 0.2,
+    "fiber": null,
+    "price": 130,
+    "source": "https://products.suntory.co.jp/softdrink/ingredient.html",
+    "quality": "official",
+    "note": "サントリー公式の栄養成分（100g当たり）から185g分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "d8eac18448",
+    "store": "サントリー",
+    "name": "ボス 無糖ブラック 185g缶",
+    "kcal": 0,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 0.9,
+    "salt": 0.09,
+    "fiber": 0.0,
+    "price": 130,
+    "source": "https://products.suntory.co.jp/softdrink/ingredient.html",
+    "quality": "official",
+    "note": "サントリー公式の栄養成分（100g当たり）から185g分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "d5a0257eae",
+    "store": "サントリー",
+    "name": "ボス カフェオレ 185g缶",
+    "kcal": 81,
+    "protein": 1.9,
+    "fat": 1.9,
+    "carbs": 15.4,
+    "salt": 0.2,
+    "fiber": null,
+    "price": 130,
+    "source": "https://products.suntory.co.jp/softdrink/ingredient.html",
+    "quality": "official",
+    "note": "サントリー公式の栄養成分（100g当たり）から185g分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "d41f3b94f7",
+    "store": "サントリー",
+    "name": "プレミアムボス ブラック 285g",
+    "kcal": 0,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 1.4,
+    "salt": 0.1,
+    "fiber": null,
+    "price": 170,
+    "source": "https://products.suntory.co.jp/softdrink/ingredient.html",
+    "quality": "official",
+    "note": "サントリー公式の栄養成分（100g当たり）から285g分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "d7b492a19b",
+    "store": "サントリー",
+    "name": "クラフトボス ブラック 500ml",
+    "kcal": 0,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 2.5,
+    "salt": 0.2,
+    "fiber": null,
+    "price": 200,
+    "source": "https://products.suntory.co.jp/softdrink/ingredient.html",
+    "quality": "official",
+    "note": "サントリー公式の栄養成分（100ml当たり）から500ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "d85b4efce4",
+    "store": "サントリー",
+    "name": "クラフトボス ラテ 500ml",
+    "kcal": 155,
+    "protein": 2.5,
+    "fat": 4.0,
+    "carbs": 27.5,
+    "salt": 0.7,
+    "fiber": null,
+    "price": 200,
+    "source": "https://products.suntory.co.jp/softdrink/ingredient.html",
+    "quality": "official",
+    "note": "サントリー公式の栄養成分（100ml当たり）から500ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "dabcefcb6d",
+    "store": "サントリー",
+    "name": "クラフトボス 微糖 500ml",
+    "kcal": 95,
+    "protein": 3.8,
+    "fat": 3.8,
+    "carbs": 15.5,
+    "salt": 0.8,
+    "fiber": null,
+    "price": 200,
+    "source": "https://products.suntory.co.jp/softdrink/ingredient.html",
+    "quality": "official",
+    "note": "サントリー公式の栄養成分（100ml当たり）から500ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "d8fac7f022",
+    "store": "サントリー",
+    "name": "クラフトボス ミルクラテ 500ml",
+    "kcal": 205,
+    "protein": 3.5,
+    "fat": 8.5,
+    "carbs": 28.5,
+    "salt": 0.5,
+    "fiber": null,
+    "price": 200,
+    "source": "https://products.suntory.co.jp/softdrink/ingredient.html",
+    "quality": "official",
+    "note": "サントリー公式の栄養成分（100ml当たり）から500ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "d5989da960",
+    "store": "サントリー",
+    "name": "クラフトボス 甘くないイタリアーノ 500ml",
+    "kcal": 125,
+    "protein": 4.0,
+    "fat": 6.0,
+    "carbs": 13.5,
+    "salt": 0.9,
+    "fiber": null,
+    "price": 200,
+    "source": "https://products.suntory.co.jp/softdrink/ingredient.html",
+    "quality": "official",
+    "note": "サントリー公式の栄養成分（100ml当たり）から500ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "d16ea1640f",
+    "store": "サントリー",
+    "name": "スターバックス カフェラテ 200ml",
+    "kcal": 132,
+    "protein": 5.6,
+    "fat": 4.0,
+    "carbs": 18.4,
+    "salt": 0.2,
+    "fiber": null,
+    "price": 232,
+    "source": "https://products.suntory.co.jp/softdrink/ingredient.html",
+    "quality": "official",
+    "note": "サントリー公式の栄養成分（200ml当たり）から200ml分に換算。価格は店頭価格の目安。購入場所：コンビニ",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "コンビニ"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "de82ad975e",
+    "store": "サントリー",
+    "name": "スターバックス COFFEE OF THE DAY ブラック 500ml",
+    "kcal": 0,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 2.0,
+    "salt": 0.1,
+    "fiber": null,
+    "price": 232,
+    "source": "https://products.suntory.co.jp/softdrink/ingredient.html",
+    "quality": "official",
+    "note": "サントリー公式の栄養成分（100ml当たり）から500ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "d102596ee8",
+    "store": "コカ･コーラ",
+    "name": "コカ・コーラ 500ml",
+    "kcal": 225,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 56.5,
+    "salt": 0.0,
+    "fiber": null,
+    "price": 175,
+    "source": "https://www.coca-cola.com/jp/ja/brands/coca-cola/products",
+    "quality": "official",
+    "note": "コカ･コーラ公式の栄養成分（100ml当たり）から500ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "d8dceb1b3c",
+    "store": "コカ･コーラ",
+    "name": "コカ・コーラ ゼロ 500ml",
+    "kcal": 0,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 0.0,
+    "salt": 0.05,
+    "fiber": 0.0,
+    "price": 175,
+    "source": "https://www.coca-cola.com/jp/ja/brands/coca-cola/products",
+    "quality": "official",
+    "note": "コカ･コーラ公式の栄養成分（100ml当たり）から500ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "d05db93ac1",
+    "store": "コカ･コーラ",
+    "name": "アクエリアス 500ml",
+    "kcal": 90,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 23.0,
+    "salt": 0.5,
+    "fiber": null,
+    "price": 175,
+    "source": "https://www.coca-cola.com/jp/ja/brands/aquarius/products",
+    "quality": "official",
+    "note": "コカ･コーラ公式の栄養成分（100ml当たり）から500ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "d6b9a34cc1",
+    "store": "コカ･コーラ",
+    "name": "アクエリアス ゼロ 500ml",
+    "kcal": 0,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 3.5,
+    "salt": 0.5,
+    "fiber": null,
+    "price": 175,
+    "source": "https://www.coca-cola.com/jp/ja/brands/aquarius/products",
+    "quality": "official",
+    "note": "コカ･コーラ公式の栄養成分（100ml当たり）から500ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "d4d03f7a17",
+    "store": "コカ･コーラ",
+    "name": "アクエリアス 経口補水液 ORS 500ml",
+    "kcal": 55,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 13.5,
+    "salt": 1.2,
+    "fiber": null,
+    "price": 216,
+    "source": "https://www.coca-cola.com/jp/ja/brands/aquarius/products",
+    "quality": "official",
+    "note": "コカ･コーラ公式の栄養成分（100ml当たり）から500ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "d90b8a2cc2",
+    "store": "コカ･コーラ",
+    "name": "綾鷹 525ml",
+    "kcal": 0,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 0.0,
+    "salt": 0.1,
+    "fiber": 0.0,
+    "price": 175,
+    "source": "https://www.coca-cola.com/jp/ja/brands/ayataka/products",
+    "quality": "official",
+    "note": "コカ･コーラ公式の栄養成分（100ml当たり）から525ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "da2fe659de",
+    "store": "コカ･コーラ",
+    "name": "綾鷹 濃い緑茶 525ml",
+    "kcal": 0,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 0.0,
+    "salt": 0.1,
+    "fiber": 0.0,
+    "price": 185,
+    "source": "https://www.coca-cola.com/jp/ja/brands/ayataka/products",
+    "quality": "official",
+    "note": "コカ･コーラ公式の栄養成分（1050ml当たり）から525ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "db30d17aa1",
+    "store": "コカ･コーラ",
+    "name": "綾鷹カフェ 濃い抹茶ラテ 440ml",
+    "kcal": 194,
+    "protein": 2.2,
+    "fat": 3.1,
+    "carbs": 38.7,
+    "salt": 0.4,
+    "fiber": null,
+    "price": 195,
+    "source": "https://www.coca-cola.com/jp/ja/brands/ayataka/products",
+    "quality": "official",
+    "note": "コカ･コーラ公式の栄養成分（100ml当たり）から440ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "dbd2c94e6e",
+    "store": "コカ･コーラ",
+    "name": "爽健美茶 600ml",
+    "kcal": 0,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 0.0,
+    "salt": 0.1,
+    "fiber": 0.0,
+    "price": 175,
+    "source": "https://www.coca-cola.com/jp/ja/brands/sokenbicha/products",
+    "quality": "official",
+    "note": "コカ･コーラ公式の栄養成分（100ml当たり）から600ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "db6a72d2cc",
+    "store": "コカ･コーラ",
+    "name": "やかんの麦茶 from 爽健美茶 650ml",
+    "kcal": 0,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 3.2,
+    "salt": 0.1,
+    "fiber": null,
+    "price": 165,
+    "source": "https://www.coca-cola.com/jp/ja/brands/yakan/products",
+    "quality": "official",
+    "note": "コカ･コーラ公式の栄養成分（100ml当たり）から650ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "dbd543d707",
+    "store": "コカ･コーラ",
+    "name": "い･ろ･は･す 天然水 540ml",
+    "kcal": 0,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 0.0,
+    "salt": 0.01,
+    "fiber": 0.0,
+    "price": 140,
+    "source": "https://www.coca-cola.com/jp/ja/brands/i-lohas/products",
+    "quality": "official",
+    "note": "コカ･コーラ公式の栄養成分（100ml当たり）から540ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "dfd098c657",
+    "store": "コカ･コーラ",
+    "name": "い･ろ･は･す もも 540ml",
+    "kcal": 97,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 24.8,
+    "salt": 0.2,
+    "fiber": null,
+    "price": 165,
+    "source": "https://www.coca-cola.com/jp/ja/brands/i-lohas/products",
+    "quality": "official",
+    "note": "コカ･コーラ公式の栄養成分（100ml当たり）から540ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "d67e3906f4",
+    "store": "コカ･コーラ",
+    "name": "い･ろ･は･す 塩とれもん 540ml",
+    "kcal": 97,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 24.8,
+    "salt": 0.5,
+    "fiber": null,
+    "price": 165,
+    "source": "https://www.coca-cola.com/jp/ja/brands/i-lohas/products",
+    "quality": "official",
+    "note": "コカ･コーラ公式の栄養成分（100ml当たり）から540ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "dd47f18409",
+    "store": "コカ･コーラ",
+    "name": "ジョージア エメラルドマウンテンブレンド 185g缶",
+    "kcal": 63,
+    "protein": 1.1,
+    "fat": 0.9,
+    "carbs": 12.6,
+    "salt": 0.2,
+    "fiber": null,
+    "price": 130,
+    "source": "https://www.coca-cola.com/jp/ja/brands/georgia/products",
+    "quality": "official",
+    "note": "コカ･コーラ公式の栄養成分（100g当たり）から185g分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "d878e71030",
+    "store": "コカ･コーラ",
+    "name": "ジョージア ゴールデンドリップ 微糖 185g缶",
+    "kcal": 39,
+    "protein": 1.1,
+    "fat": 1.1,
+    "carbs": 6.1,
+    "salt": 0.2,
+    "fiber": null,
+    "price": 130,
+    "source": "https://www.coca-cola.com/jp/ja/brands/georgia/products",
+    "quality": "official",
+    "note": "コカ･コーラ公式の栄養成分（100g当たり）から185g分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "dd9948d568",
+    "store": "コカ･コーラ",
+    "name": "ジョージア プラチナムブラック 185g缶",
+    "kcal": 0,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 1.3,
+    "salt": 0.1,
+    "fiber": null,
+    "price": 130,
+    "source": "https://www.coca-cola.com/jp/ja/brands/georgia/products",
+    "quality": "official",
+    "note": "コカ･コーラ公式の栄養成分（100g当たり）から185g分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "d960c13f19",
+    "store": "コカ･コーラ",
+    "name": "ジョージア 香る微糖 370ml",
+    "kcal": 70,
+    "protein": 2.2,
+    "fat": 1.9,
+    "carbs": 11.1,
+    "salt": 0.4,
+    "fiber": null,
+    "price": 170,
+    "source": "https://www.coca-cola.com/jp/ja/brands/georgia/products",
+    "quality": "official",
+    "note": "コカ･コーラ公式の栄養成分（100ml当たり）から370ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "d890726ec7",
+    "store": "コカ･コーラ",
+    "name": "ジョージア ブラック 500ml",
+    "kcal": 0,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 3.5,
+    "salt": 0.2,
+    "fiber": null,
+    "price": 175,
+    "source": "https://www.coca-cola.com/jp/ja/brands/georgia/products",
+    "quality": "official",
+    "note": "コカ･コーラ公式の栄養成分（100ml当たり）から500ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "d00179d63e",
+    "store": "コカ･コーラ",
+    "name": "ジョージア カフェラテ 500ml",
+    "kcal": 145,
+    "protein": 2.5,
+    "fat": 3.0,
+    "carbs": 27.5,
+    "salt": 0.5,
+    "fiber": null,
+    "price": 175,
+    "source": "https://www.coca-cola.com/jp/ja/brands/georgia/products",
+    "quality": "official",
+    "note": "コカ･コーラ公式の栄養成分（100ml当たり）から500ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "d87cf50b41",
+    "store": "コカ･コーラ",
+    "name": "ジョージア カフェラテ プロテイン 500ml",
+    "kcal": 175,
+    "protein": 15.5,
+    "fat": 3.0,
+    "carbs": 21.5,
+    "salt": 0.5,
+    "fiber": null,
+    "price": 195,
+    "source": "https://www.coca-cola.com/jp/ja/brands/georgia/products",
+    "quality": "official",
+    "note": "コカ･コーラ公式の栄養成分（100ml当たり）から500ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "d0916601a2",
+    "store": "コカ･コーラ",
+    "name": "ジョージア マックスコーヒー 250g缶",
+    "kcal": 120,
+    "protein": 1.5,
+    "fat": 1.8,
+    "carbs": 24.5,
+    "salt": 0.2,
+    "fiber": null,
+    "price": 140,
+    "source": "https://www.coca-cola.com/jp/ja/brands/georgia/products",
+    "quality": "official",
+    "note": "コカ･コーラ公式の栄養成分（100g当たり）から250g分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "d507ecdb0a",
+    "store": "コカ･コーラ",
+    "name": "ジョージア 贅沢ミルクココア 280ml",
+    "kcal": 151,
+    "protein": 2.5,
+    "fat": 3.1,
+    "carbs": 28.0,
+    "salt": 0.2,
+    "fiber": null,
+    "price": 160,
+    "source": "https://www.coca-cola.com/jp/ja/brands/georgia/products",
+    "quality": "official",
+    "note": "コカ･コーラ公式の栄養成分（100ml当たり）から280ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "d174221cde",
+    "store": "コカ･コーラ",
+    "name": "ファンタ グレープ 500ml",
+    "kcal": 200,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 50.0,
+    "salt": 0.05,
+    "fiber": null,
+    "price": 175,
+    "source": "https://www.coca-cola.com/jp/ja/brands/fanta/products",
+    "quality": "official",
+    "note": "コカ･コーラ公式の栄養成分（100ml当たり）から500ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "de0bb875f3",
+    "store": "コカ･コーラ",
+    "name": "ファンタ オレンジ 500ml",
+    "kcal": 200,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 50.0,
+    "salt": 0.05,
+    "fiber": null,
+    "price": 175,
+    "source": "https://www.coca-cola.com/jp/ja/brands/fanta/products",
+    "quality": "official",
+    "note": "コカ･コーラ公式の栄養成分（100ml当たり）から500ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "d21b9d2d52",
+    "store": "コカ･コーラ",
+    "name": "ファンタ メロンソーダ 500ml",
+    "kcal": 240,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 60.0,
+    "salt": 0.0,
+    "fiber": null,
+    "price": 175,
+    "source": "https://www.coca-cola.com/jp/ja/brands/fanta/products",
+    "quality": "official",
+    "note": "コカ･コーラ公式の栄養成分（100ml当たり）から500ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "d49aa12ef6",
+    "store": "コカ･コーラ",
+    "name": "紅茶花伝 ロイヤルミルクティー 440ml",
+    "kcal": 163,
+    "protein": 3.1,
+    "fat": 3.5,
+    "carbs": 29.9,
+    "salt": 0.4,
+    "fiber": null,
+    "price": 175,
+    "source": "https://www.coca-cola.com/jp/ja/brands/kochakaden/products",
+    "quality": "official",
+    "note": "コカ･コーラ公式の栄養成分（100ml当たり）から440ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "d2d1e95295",
+    "store": "コカ･コーラ",
+    "name": "紅茶花伝 無糖 アールグレイアイスティー 440ml",
+    "kcal": 0,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 0.0,
+    "salt": 0.1,
+    "fiber": 0.0,
+    "price": 175,
+    "source": "https://www.coca-cola.com/jp/ja/brands/kochakaden/products",
+    "quality": "official",
+    "note": "コカ･コーラ公式の栄養成分（100ml当たり）から440ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "d36b607dc9",
+    "store": "コカ･コーラ",
+    "name": "紅茶花伝 ガーデンレモンティー 440ml",
+    "kcal": 136,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 34.3,
+    "salt": 0.0,
+    "fiber": null,
+    "price": 175,
+    "source": "https://www.coca-cola.com/jp/ja/brands/kochakaden/products",
+    "quality": "official",
+    "note": "コカ･コーラ公式の栄養成分（100ml当たり）から440ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "d56cf7ee53",
+    "store": "コカ･コーラ",
+    "name": "ミニッツメイド オレンジブレンド マルチビタミン 350ml",
+    "kcal": 182,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 45.5,
+    "salt": 0.0,
+    "fiber": null,
+    "price": 165,
+    "source": "https://www.coca-cola.com/jp/ja/brands/minute-maid/products",
+    "quality": "official",
+    "note": "コカ･コーラ公式の栄養成分（100ml当たり）から350ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "de3811a3dc",
+    "store": "コカ･コーラ",
+    "name": "ミニッツメイド 朝バナナ 180g",
+    "kcal": 194,
+    "protein": 1.1,
+    "fat": 0.0,
+    "carbs": 47.5,
+    "salt": 0.07,
+    "fiber": null,
+    "price": 216,
+    "source": "https://www.coca-cola.com/jp/ja/brands/minute-maid/products",
+    "quality": "official",
+    "note": "コカ･コーラ公式の栄養成分（180g当たり）から180g分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "d06539d3b3",
+    "store": "コカ･コーラ",
+    "name": "ミニッツメイド スムージー プロテイン マンゴー 180g",
+    "kcal": 122,
+    "protein": 8.0,
+    "fat": 0.0,
+    "carbs": 22.5,
+    "salt": 0.09,
+    "fiber": null,
+    "price": 238,
+    "source": "https://www.coca-cola.com/jp/ja/brands/minute-maid/products",
+    "quality": "official",
+    "note": "コカ･コーラ公式の栄養成分（180g当たり）から180g分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "d05b226533",
+    "store": "コカ･コーラ",
+    "name": "Qoo オレンジ 280ml",
+    "kcal": 123,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 30.8,
+    "salt": 0.0,
+    "fiber": null,
+    "price": 140,
+    "source": "https://www.coca-cola.com/jp/ja/brands/qoo/products",
+    "quality": "official",
+    "note": "コカ･コーラ公式の栄養成分（100ml当たり）から280ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "db2599f446",
+    "store": "コカ･コーラ",
+    "name": "Qoo りんご 280ml",
+    "kcal": 134,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 33.6,
+    "salt": 0.1,
+    "fiber": null,
+    "price": 140,
+    "source": "https://www.coca-cola.com/jp/ja/brands/qoo/products",
+    "quality": "official",
+    "note": "コカ･コーラ公式の栄養成分（100ml当たり）から280ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "d42651d2c3",
+    "store": "コカ･コーラ",
+    "name": "リアルゴールド 490ml",
+    "kcal": 274,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 68.6,
+    "salt": 0.05,
+    "fiber": null,
+    "price": 175,
+    "source": "https://www.coca-cola.com/jp/ja/brands/real/products",
+    "quality": "official",
+    "note": "コカ･コーラ公式の栄養成分（100ml当たり）から490ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "d46420abf0",
+    "store": "コカ･コーラ",
+    "name": "コスタコーヒー プレミアムブラック 265ml",
+    "kcal": 0,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 1.9,
+    "salt": 0.2,
+    "fiber": null,
+    "price": 195,
+    "source": "https://www.coca-cola.com/jp/ja/brands/costacoffee/products",
+    "quality": "official",
+    "note": "コカ･コーラ公式の栄養成分（100ml当たり）から265ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "d194ec14cd",
+    "store": "コカ･コーラ",
+    "name": "コスタコーヒー プレミアムラテ 265ml",
+    "kcal": 101,
+    "protein": 2.1,
+    "fat": 1.9,
+    "carbs": 19.1,
+    "salt": 0.4,
+    "fiber": null,
+    "price": 195,
+    "source": "https://www.coca-cola.com/jp/ja/brands/costacoffee/products",
+    "quality": "official",
+    "note": "コカ･コーラ公式の栄養成分（100ml当たり）から265ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "d4856ca136",
+    "store": "コカ･コーラ",
+    "name": "コスタコーヒー ノンスイートラテ 265ml",
+    "kcal": 48,
+    "protein": 2.1,
+    "fat": 2.1,
+    "carbs": 5.0,
+    "salt": 0.4,
+    "fiber": null,
+    "price": 195,
+    "source": "https://www.coca-cola.com/jp/ja/brands/costacoffee/products",
+    "quality": "official",
+    "note": "コカ･コーラ公式の栄養成分（100ml当たり）から265ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "d252c89001",
+    "store": "キリン",
+    "name": "午後の紅茶 ストレートティー 500ml",
+    "kcal": 75,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 19.0,
+    "salt": 0.1,
+    "fiber": null,
+    "price": 175,
+    "source": "https://products.kirin.co.jp/softdrink/nutrition/softdrink/",
+    "quality": "official",
+    "note": "キリン公式の栄養成分（100ml当たり）から500ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "db1dcc433f",
+    "store": "キリン",
+    "name": "午後の紅茶 ミルクティー 500ml",
+    "kcal": 175,
+    "protein": 2.5,
+    "fat": 2.5,
+    "carbs": 35.5,
+    "salt": 0.4,
+    "fiber": null,
+    "price": 175,
+    "source": "https://products.kirin.co.jp/softdrink/nutrition/softdrink/",
+    "quality": "official",
+    "note": "キリン公式の栄養成分（100ml当たり）から500ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "d998abe8e0",
+    "store": "キリン",
+    "name": "午後の紅茶 レモンティー 500ml",
+    "kcal": 135,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 34.0,
+    "salt": 0.1,
+    "fiber": null,
+    "price": 175,
+    "source": "https://products.kirin.co.jp/softdrink/nutrition/softdrink/",
+    "quality": "official",
+    "note": "キリン公式の栄養成分（100ml当たり）から500ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "d440d4f476",
+    "store": "キリン",
+    "name": "午後の紅茶 おいしい無糖 500ml",
+    "kcal": 0,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 0.0,
+    "salt": 0.05,
+    "fiber": 0.0,
+    "price": 175,
+    "source": "https://products.kirin.co.jp/softdrink/nutrition/softdrink/",
+    "quality": "official",
+    "note": "キリン公式の栄養成分（100ml当たり）から500ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "d78728ca00",
+    "store": "キリン",
+    "name": "午後の紅茶 おいしい無糖 ミルクティー 500ml",
+    "kcal": 50,
+    "protein": 3.0,
+    "fat": 3.0,
+    "carbs": 3.0,
+    "salt": 0.4,
+    "fiber": null,
+    "price": 175,
+    "source": "https://products.kirin.co.jp/softdrink/nutrition/softdrink/",
+    "quality": "official",
+    "note": "キリン公式の栄養成分（100ml当たり）から500ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "db4e1b73a1",
+    "store": "キリン",
+    "name": "午後の紅茶 TEA LATTE with ESPRESSO 500ml",
+    "kcal": 155,
+    "protein": 2.5,
+    "fat": 2.5,
+    "carbs": 30.0,
+    "salt": 0.4,
+    "fiber": null,
+    "price": 195,
+    "source": "https://products.kirin.co.jp/softdrink/nutrition/softdrink/",
+    "quality": "official",
+    "note": "キリン公式の栄養成分（100ml当たり）から500ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "d2fe968362",
+    "store": "キリン",
+    "name": "午後の紅茶 芳醇ロイヤルミルクティー 280g缶",
+    "kcal": 112,
+    "protein": 1.7,
+    "fat": 1.7,
+    "carbs": 22.4,
+    "salt": 0.2,
+    "fiber": null,
+    "price": 150,
+    "source": "https://products.kirin.co.jp/softdrink/nutrition/softdrink/",
+    "quality": "official",
+    "note": "キリン公式の栄養成分（100g当たり）から280g分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "df6cfc1f7a",
+    "store": "キリン",
+    "name": "午後の紅茶 アイスミルクティー デ モーニング 500ml",
+    "kcal": 155,
+    "protein": 2.5,
+    "fat": 2.5,
+    "carbs": 30.5,
+    "salt": 0.4,
+    "fiber": null,
+    "price": 175,
+    "source": "https://products.kirin.co.jp/softdrink/nutrition/softdrink/",
+    "quality": "official",
+    "note": "キリン公式の栄養成分（100ml当たり）から500ml分に換算。価格は店頭価格の目安。購入場所：ローソン",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "ローソン"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "d6f11fca1d",
+    "store": "キリン",
+    "name": "生茶 525ml",
+    "kcal": 0,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 0.0,
+    "salt": 0.2,
+    "fiber": 0.0,
+    "price": 175,
+    "source": "https://products.kirin.co.jp/softdrink/nutrition/softdrink/",
+    "quality": "official",
+    "note": "キリン公式の栄養成分（100ml当たり）から525ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "da5d71f83e",
+    "store": "キリン",
+    "name": "生茶 ほうじ煎茶 525ml",
+    "kcal": 0,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 0.0,
+    "salt": 0.1,
+    "fiber": 0.0,
+    "price": 175,
+    "source": "https://products.kirin.co.jp/softdrink/nutrition/softdrink/",
+    "quality": "official",
+    "note": "キリン公式の栄養成分（100ml当たり）から525ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "dd13603bec",
+    "store": "キリン",
+    "name": "さわやか香ばし麦茶 600ml",
+    "kcal": 0,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 0.0,
+    "salt": 0.2,
+    "fiber": 0.0,
+    "price": 165,
+    "source": "https://products.kirin.co.jp/softdrink/nutrition/softdrink/",
+    "quality": "official",
+    "note": "キリン公式の栄養成分（100ml当たり）から600ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "db49e66a88",
+    "store": "キリン",
+    "name": "香ばし麦茶（自動販売機専用）555ml",
+    "kcal": 0,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 0.0,
+    "salt": 0.1,
+    "fiber": 0.0,
+    "price": 150,
+    "source": "https://products.kirin.co.jp/softdrink/nutrition/softdrink/",
+    "quality": "official",
+    "note": "キリン公式の栄養成分（100ml当たり）から555ml分に換算。価格は店頭価格の目安。購入場所：自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "自販機"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "d1f8c5d5db",
+    "store": "キリン",
+    "name": "ヘルシア 緑茶 350ml",
+    "kcal": 14,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 3.9,
+    "salt": 0.1,
+    "fiber": null,
+    "price": 200,
+    "source": "https://products.kirin.co.jp/softdrink/nutrition/softdrink/",
+    "quality": "official",
+    "note": "キリン公式の栄養成分（350ml当たり）から350ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "d246f497e0",
+    "store": "キリン",
+    "name": "キリン×ファンケル カロリミット ブレンド茶 600ml",
+    "kcal": 14,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 8.4,
+    "salt": 0.2,
+    "fiber": null,
+    "price": 195,
+    "source": "https://products.kirin.co.jp/softdrink/nutrition/softdrink/",
+    "quality": "official",
+    "note": "キリン公式の栄養成分（600ml当たり）から600ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "d17d662844",
+    "store": "キリン",
+    "name": "ファイア ワンデイ ブラック 600ml",
+    "kcal": 0,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 3.6,
+    "salt": 0.06,
+    "fiber": null,
+    "price": 175,
+    "source": "https://products.kirin.co.jp/softdrink/nutrition/softdrink/",
+    "quality": "official",
+    "note": "キリン公式の栄養成分（100ml当たり）から600ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "dbbe1b123c",
+    "store": "キリン",
+    "name": "ファイア ワンデイ ラテ微糖 600ml",
+    "kcal": 114,
+    "protein": 4.2,
+    "fat": 3.0,
+    "carbs": 17.4,
+    "salt": 0.7,
+    "fiber": null,
+    "price": 175,
+    "source": "https://products.kirin.co.jp/softdrink/nutrition/softdrink/",
+    "quality": "official",
+    "note": "キリン公式の栄養成分（100ml当たり）から600ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "d5b8e1ae8d",
+    "store": "キリン",
+    "name": "ファイア 挽きたて微糖 185g缶",
+    "kcal": 28,
+    "protein": 0.9,
+    "fat": 0.9,
+    "carbs": 3.9,
+    "salt": 0.1,
+    "fiber": null,
+    "price": 130,
+    "source": "https://products.kirin.co.jp/softdrink/nutrition/softdrink/",
+    "quality": "official",
+    "note": "キリン公式の栄養成分（100g当たり）から185g分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "d5b81fcf3d",
+    "store": "キリン",
+    "name": "ファイア ブラック 185g缶",
+    "kcal": 0,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 0.9,
+    "salt": 0.07,
+    "fiber": 0.0,
+    "price": 130,
+    "source": "https://products.kirin.co.jp/softdrink/nutrition/softdrink/",
+    "quality": "official",
+    "note": "キリン公式の栄養成分（100g当たり）から185g分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "da6793a383",
+    "store": "キリン",
+    "name": "ファイア 直火ブレンド 185g缶",
+    "kcal": 63,
+    "protein": 1.5,
+    "fat": 0.9,
+    "carbs": 12.0,
+    "salt": 0.2,
+    "fiber": null,
+    "price": 130,
+    "source": "https://products.kirin.co.jp/softdrink/nutrition/softdrink/",
+    "quality": "official",
+    "note": "キリン公式の栄養成分（100g当たり）から185g分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "dcfb5c4b2c",
+    "store": "キリン",
+    "name": "ファイア 贅沢デミタス（自動販売機専用）165g缶",
+    "kcal": 53,
+    "protein": 1.3,
+    "fat": 0.8,
+    "carbs": 9.9,
+    "salt": 0.2,
+    "fiber": null,
+    "price": 130,
+    "source": "https://products.kirin.co.jp/softdrink/nutrition/softdrink/",
+    "quality": "official",
+    "note": "キリン公式の栄養成分（100g当たり）から165g分に換算。価格は店頭価格の目安。購入場所：自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "自販機"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "db8e7ae08b",
+    "store": "キリン",
+    "name": "小岩井 Theカフェオレ 500ml",
+    "kcal": 195,
+    "protein": 3.5,
+    "fat": 4.0,
+    "carbs": 36.5,
+    "salt": 0.6,
+    "fiber": null,
+    "price": 175,
+    "source": "https://products.kirin.co.jp/softdrink/nutrition/softdrink/",
+    "quality": "official",
+    "note": "キリン公式の栄養成分（100ml当たり）から500ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "de1d4cef8e",
+    "store": "キリン",
+    "name": "キリン LOVES SPORTS 555ml",
+    "kcal": 78,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 18.9,
+    "salt": 0.7,
+    "fiber": null,
+    "price": 165,
+    "source": "https://products.kirin.co.jp/softdrink/nutrition/softdrink/",
+    "quality": "official",
+    "note": "キリン公式の栄養成分（100ml当たり）から555ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "d7e9433269",
+    "store": "キリン",
+    "name": "キリンレモン 500ml",
+    "kcal": 165,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 41.5,
+    "salt": 0.3,
+    "fiber": null,
+    "price": 175,
+    "source": "https://products.kirin.co.jp/softdrink/nutrition/softdrink/",
+    "quality": "official",
+    "note": "キリン公式の栄養成分（100ml当たり）から500ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "d0fd293471",
+    "store": "キリン",
+    "name": "メッツ コーラ 480ml（特定保健用食品）",
+    "kcal": 0,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 6.7,
+    "salt": 0.0,
+    "fiber": null,
+    "price": 195,
+    "source": "https://products.kirin.co.jp/softdrink/nutrition/softdrink/",
+    "quality": "official",
+    "note": "キリン公式の栄養成分（480ml当たり）から480ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "dae4f47b70",
+    "store": "キリン",
+    "name": "世界のKitchenから ソルティライチ 500ml",
+    "kcal": 170,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 42.0,
+    "salt": 0.6,
+    "fiber": null,
+    "price": 175,
+    "source": "https://products.kirin.co.jp/softdrink/nutrition/softdrink/",
+    "quality": "official",
+    "note": "キリン公式の栄養成分（100ml当たり）から500ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "d750b4c30e",
+    "store": "キリン",
+    "name": "小岩井 純水りんご 430ml",
+    "kcal": 189,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 47.3,
+    "salt": 0.2,
+    "fiber": null,
+    "price": 175,
+    "source": "https://products.kirin.co.jp/softdrink/nutrition/softdrink/",
+    "quality": "official",
+    "note": "キリン公式の栄養成分（100ml当たり）から430ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "dffb13acee",
+    "store": "キリン",
+    "name": "トロピカーナ 100％ オレンジ 330ml",
+    "kcal": 172,
+    "protein": 3.0,
+    "fat": 0.0,
+    "carbs": 40.0,
+    "salt": 0.2,
+    "fiber": null,
+    "price": 195,
+    "source": "https://products.kirin.co.jp/softdrink/nutrition/softdrink/",
+    "quality": "official",
+    "note": "キリン公式の栄養成分（330ml当たり）から330ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "d47abe3f99",
+    "store": "キリン",
+    "name": "トロピカーナ 100％ オレンジ 250ml紙",
+    "kcal": 129,
+    "protein": 2.3,
+    "fat": 0.0,
+    "carbs": 30.0,
+    "salt": 0.01,
+    "fiber": null,
+    "price": 150,
+    "source": "https://products.kirin.co.jp/softdrink/nutrition/softdrink/",
+    "quality": "official",
+    "note": "キリン公式の栄養成分（250ml当たり）から250ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "d70b372be2",
+    "store": "キリン",
+    "name": "キリン トマトジュース 濃縮トマト還元 190g缶",
+    "kcal": 37,
+    "protein": 1.3,
+    "fat": 0.0,
+    "carbs": 8.0,
+    "salt": 0.6,
+    "fiber": null,
+    "price": 120,
+    "source": "https://products.kirin.co.jp/softdrink/nutrition/softdrink/",
+    "quality": "official",
+    "note": "キリン公式の栄養成分（190g当たり）から190g分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "d2a8ffdd66",
+    "store": "キリン",
+    "name": "キリン 無添加野菜 48種の濃い野菜100％（200ml）",
+    "kcal": 48,
+    "protein": 1.7,
+    "fat": 0.0,
+    "carbs": 11.0,
+    "salt": 0.1,
+    "fiber": null,
+    "price": 90,
+    "source": "https://products.kirin.co.jp/softdrink/nutrition/softdrink/",
+    "quality": "official",
+    "note": "キリン公式の栄養成分（200ml当たり）から200ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "d783831edc",
+    "store": "キリン",
+    "name": "キリン 自然が磨いた天然水 2L（500ml分）",
+    "kcal": 0,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 0.0,
+    "salt": 0.01,
+    "fiber": 0.0,
+    "price": 40,
+    "source": "https://products.kirin.co.jp/softdrink/nutrition/softdrink/",
+    "quality": "official",
+    "note": "キリン公式の栄養成分（100ml当たり）から500ml分に換算。価格は店頭価格の目安。購入場所：スーパー",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "d81712cba1",
+    "store": "アサヒ飲料",
+    "name": "三ツ矢サイダー 500ml",
+    "kcal": 210,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 55.0,
+    "salt": 0.1,
+    "fiber": null,
+    "price": 175,
+    "source": "https://www.asahiinryo.co.jp/products/list/nutrition/0002.html",
+    "quality": "official",
+    "note": "アサヒ飲料公式の栄養成分（100ml当たり）から500ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "dbe1e5ca3f",
+    "store": "アサヒ飲料",
+    "name": "三ツ矢サイダーZERO 500ml",
+    "kcal": 0,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 2.5,
+    "salt": 0.1,
+    "fiber": null,
+    "price": 175,
+    "source": "https://www.asahiinryo.co.jp/products/list/nutrition/0002.html",
+    "quality": "official",
+    "note": "アサヒ飲料公式の栄養成分（100ml当たり）から500ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "dba1b8076e",
+    "store": "アサヒ飲料",
+    "name": "三ツ矢 特濃オレンジスカッシュ 500ml",
+    "kcal": 250,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 60.0,
+    "salt": 1.0,
+    "fiber": null,
+    "price": 175,
+    "source": "https://www.asahiinryo.co.jp/products/list/nutrition/0002.html",
+    "quality": "official",
+    "note": "アサヒ飲料公式の栄養成分（100ml当たり）から500ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "d3890995d5",
+    "store": "アサヒ飲料",
+    "name": "ウィルキンソン タンサン 500ml",
+    "kcal": 0,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 0.0,
+    "salt": 0.0,
+    "fiber": 0.0,
+    "price": 150,
+    "source": "https://www.asahiinryo.co.jp/products/list/nutrition/0002.html",
+    "quality": "official",
+    "note": "アサヒ飲料公式の栄養成分（100ml当たり）から500ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "dda2df8053",
+    "store": "アサヒ飲料",
+    "name": "ウィルキンソン タンサン レモン 500ml",
+    "kcal": 0,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 0.0,
+    "salt": 0.0,
+    "fiber": 0.0,
+    "price": 150,
+    "source": "https://www.asahiinryo.co.jp/products/list/nutrition/0002.html",
+    "quality": "official",
+    "note": "アサヒ飲料公式の栄養成分（100ml当たり）から500ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "df61d0c4e1",
+    "store": "アサヒ飲料",
+    "name": "ウィルキンソン ジンジャエール 500ml",
+    "kcal": 185,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 46.5,
+    "salt": 0.0,
+    "fiber": null,
+    "price": 175,
+    "source": "https://www.asahiinryo.co.jp/products/list/nutrition/0002.html",
+    "quality": "official",
+    "note": "アサヒ飲料公式の栄養成分（100ml当たり）から500ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "db603082cd",
+    "store": "アサヒ飲料",
+    "name": "ワンダ モーニングショット 185g缶",
+    "kcal": 63,
+    "protein": 1.1,
+    "fat": 0.7,
+    "carbs": 13.1,
+    "salt": 0.2,
+    "fiber": null,
+    "price": 130,
+    "source": "https://www.asahiinryo.co.jp/products/list/nutrition/0001.html",
+    "quality": "official",
+    "note": "アサヒ飲料公式の栄養成分（100g当たり）から185g分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "d4cb4fe703",
+    "store": "アサヒ飲料",
+    "name": "ワンダ 金の微糖 185g缶",
+    "kcal": 35,
+    "protein": 1.1,
+    "fat": 0.9,
+    "carbs": 5.7,
+    "salt": 0.2,
+    "fiber": null,
+    "price": 130,
+    "source": "https://www.asahiinryo.co.jp/products/list/nutrition/0001.html",
+    "quality": "official",
+    "note": "アサヒ飲料公式の栄養成分（100g当たり）から185g分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "d39633c01d",
+    "store": "アサヒ飲料",
+    "name": "ワンダ ブラック ザ アロマ 185g缶",
+    "kcal": 0,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 0.9,
+    "salt": 0.07,
+    "fiber": 0.0,
+    "price": 130,
+    "source": "https://www.asahiinryo.co.jp/products/list/nutrition/0001.html",
+    "quality": "official",
+    "note": "アサヒ飲料公式の栄養成分（100g当たり）から185g分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "dab0fcfef5",
+    "store": "アサヒ飲料",
+    "name": "ワンダ 特製カフェオレ 185g缶",
+    "kcal": 72,
+    "protein": 1.5,
+    "fat": 1.3,
+    "carbs": 13.7,
+    "salt": 0.2,
+    "fiber": null,
+    "price": 130,
+    "source": "https://www.asahiinryo.co.jp/products/list/nutrition/0001.html",
+    "quality": "official",
+    "note": "アサヒ飲料公式の栄養成分（100g当たり）から185g分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "d639c47771",
+    "store": "アサヒ飲料",
+    "name": "ワンダ モーニングアメリカーノ ブラック 500ml",
+    "kcal": 0,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 1.5,
+    "salt": 0.1,
+    "fiber": null,
+    "price": 175,
+    "source": "https://www.asahiinryo.co.jp/products/list/nutrition/0001.html",
+    "quality": "official",
+    "note": "アサヒ飲料公式の栄養成分（100ml当たり）から500ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "d4d1ca00ec",
+    "store": "アサヒ飲料",
+    "name": "ドトール カフェ・オ・レ 480ml",
+    "kcal": 178,
+    "protein": 2.9,
+    "fat": 2.4,
+    "carbs": 35.5,
+    "salt": 0.5,
+    "fiber": null,
+    "price": 175,
+    "source": "https://www.asahiinryo.co.jp/products/list/nutrition/0001.html",
+    "quality": "official",
+    "note": "アサヒ飲料公式の栄養成分（100ml当たり）から480ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "d19621b7fd",
+    "store": "アサヒ飲料",
+    "name": "アサヒ 十六茶 630ml",
+    "kcal": 0,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 0.0,
+    "salt": 0.1,
+    "fiber": 0.0,
+    "price": 165,
+    "source": "https://www.asahiinryo.co.jp/products/list/nutrition/0003.html",
+    "quality": "official",
+    "note": "アサヒ飲料公式の栄養成分（100ml当たり）から630ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "d313bb6591",
+    "store": "アサヒ飲料",
+    "name": "アサヒ 十六茶麦茶 660ml",
+    "kcal": 0,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 2.0,
+    "salt": 0.2,
+    "fiber": null,
+    "price": 165,
+    "source": "https://www.asahiinryo.co.jp/products/list/nutrition/0003.html",
+    "quality": "official",
+    "note": "アサヒ飲料公式の栄養成分（100ml当たり）から660ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "d97996be30",
+    "store": "アサヒ飲料",
+    "name": "アサヒ 颯 620ml",
+    "kcal": 0,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 0.0,
+    "salt": 0.2,
+    "fiber": 0.0,
+    "price": 165,
+    "source": "https://www.asahiinryo.co.jp/products/list/nutrition/0003.html",
+    "quality": "official",
+    "note": "アサヒ飲料公式の栄養成分（100ml当たり）から620ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "d47d19644d",
+    "store": "アサヒ飲料",
+    "name": "和の紅茶 ミルクティー 500ml",
+    "kcal": 150,
+    "protein": 3.5,
+    "fat": 1.0,
+    "carbs": 31.5,
+    "salt": 0.3,
+    "fiber": null,
+    "price": 175,
+    "source": "https://www.asahiinryo.co.jp/products/list/nutrition/0003.html",
+    "quality": "official",
+    "note": "アサヒ飲料公式の栄養成分（100ml当たり）から500ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "dcb33c10d9",
+    "store": "アサヒ飲料",
+    "name": "アサヒ ロイヤルミルクティー 280g缶",
+    "kcal": 112,
+    "protein": 2.2,
+    "fat": 1.4,
+    "carbs": 22.4,
+    "salt": 0.2,
+    "fiber": null,
+    "price": 150,
+    "source": "https://www.asahiinryo.co.jp/products/list/nutrition/0003.html",
+    "quality": "official",
+    "note": "アサヒ飲料公式の栄養成分（100g当たり）から280g分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "dafce0473e",
+    "store": "アサヒ飲料",
+    "name": "アサヒ 一級茶葉烏龍茶 500ml",
+    "kcal": 0,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 0.0,
+    "salt": 0.1,
+    "fiber": 0.0,
+    "price": 165,
+    "source": "https://www.asahiinryo.co.jp/products/list/nutrition/0003.html",
+    "quality": "official",
+    "note": "アサヒ飲料公式の栄養成分（100ml当たり）から500ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "d495e8535e",
+    "store": "アサヒ飲料",
+    "name": "アサヒ おいしい水 天然水 600ml",
+    "kcal": 0,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 0.0,
+    "salt": 0.0,
+    "fiber": 0.0,
+    "price": 120,
+    "source": "https://www.asahiinryo.co.jp/products/list/nutrition/0004.html",
+    "quality": "official",
+    "note": "アサヒ飲料公式の栄養成分（100ml当たり）から600ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "d596a887c7",
+    "store": "アサヒ飲料",
+    "name": "アサヒ おいしい水 天然水 レモン水 無糖 600ml",
+    "kcal": 0,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 0.0,
+    "salt": 0.06,
+    "fiber": 0.0,
+    "price": 140,
+    "source": "https://www.asahiinryo.co.jp/products/list/nutrition/0004.html",
+    "quality": "official",
+    "note": "アサヒ飲料公式の栄養成分（100ml当たり）から600ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "d04111ae99",
+    "store": "アサヒ飲料",
+    "name": "カルピスウォーター 500ml",
+    "kcal": 230,
+    "protein": 1.5,
+    "fat": 0.0,
+    "carbs": 55.0,
+    "salt": 0.2,
+    "fiber": null,
+    "price": 175,
+    "source": "https://www.asahiinryo.co.jp/products/list/nutrition/0012.html",
+    "quality": "official",
+    "note": "アサヒ飲料公式の栄養成分（100ml当たり）から500ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "d09d5d7432",
+    "store": "アサヒ飲料",
+    "name": "カルピスソーダ 500ml",
+    "kcal": 260,
+    "protein": 1.0,
+    "fat": 0.0,
+    "carbs": 65.0,
+    "salt": 0.2,
+    "fiber": null,
+    "price": 175,
+    "source": "https://www.asahiinryo.co.jp/products/list/nutrition/0012.html",
+    "quality": "official",
+    "note": "アサヒ飲料公式の栄養成分（100ml当たり）から500ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "d61c50d6a9",
+    "store": "アサヒ飲料",
+    "name": "カルピス（原液20ml・希釈100ml）",
+    "kcal": 46,
+    "protein": 0.4,
+    "fat": 0.0,
+    "carbs": 11.0,
+    "salt": 0.02,
+    "fiber": null,
+    "price": 30,
+    "source": "https://www.asahiinryo.co.jp/products/list/nutrition/0012.html",
+    "quality": "official",
+    "note": "アサヒ飲料公式の栄養成分（100ml当たり）から100ml分に換算。価格は店頭価格の目安。購入場所：スーパー",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "dbc0eede58",
+    "store": "アサヒ飲料",
+    "name": "ぐんぐんグルト 3種の乳酸菌 500ml",
+    "kcal": 115,
+    "protein": 1.5,
+    "fat": 0.0,
+    "carbs": 26.0,
+    "salt": 0.5,
+    "fiber": null,
+    "price": 175,
+    "source": "https://www.asahiinryo.co.jp/products/list/nutrition/0012.html",
+    "quality": "official",
+    "note": "アサヒ飲料公式の栄養成分（100ml当たり）から500ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "d86c4eb19c",
+    "store": "アサヒ飲料",
+    "name": "ドデカミン 500ml",
+    "kcal": 95,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 23.5,
+    "salt": 0.5,
+    "fiber": null,
+    "price": 175,
+    "source": "https://www.asahiinryo.co.jp/products/list/nutrition/0005.html",
+    "quality": "official",
+    "note": "アサヒ飲料公式の栄養成分（100ml当たり）から500ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "d2c597af3f",
+    "store": "アサヒ飲料",
+    "name": "アサヒ スーパーH2O 600ml",
+    "kcal": 72,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 17.4,
+    "salt": 0.6,
+    "fiber": null,
+    "price": 165,
+    "source": "https://www.asahiinryo.co.jp/products/list/nutrition/0005.html",
+    "quality": "official",
+    "note": "アサヒ飲料公式の栄養成分（100ml当たり）から600ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "db621004d5",
+    "store": "アサヒ飲料",
+    "name": "バヤリース オレンジ 470ml",
+    "kcal": 202,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 51.7,
+    "salt": 0.3,
+    "fiber": null,
+    "price": 165,
+    "source": "https://www.asahiinryo.co.jp/products/list/nutrition/0006.html",
+    "quality": "official",
+    "note": "アサヒ飲料公式の栄養成分（100ml当たり）から470ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "d570cac396",
+    "store": "アサヒ飲料",
+    "name": "Welch’s グレープ100 470ml",
+    "kcal": 263,
+    "protein": 1.9,
+    "fat": 0.0,
+    "carbs": 65.8,
+    "salt": 0.1,
+    "fiber": null,
+    "price": 195,
+    "source": "https://www.asahiinryo.co.jp/products/list/nutrition/0006.html",
+    "quality": "official",
+    "note": "アサヒ飲料公式の栄養成分（100ml当たり）から470ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "d5ea6f728e",
+    "store": "アサヒ飲料",
+    "name": "ほっとレモン 280ml",
+    "kcal": 115,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 28.0,
+    "salt": 0.3,
+    "fiber": null,
+    "price": 150,
+    "source": "https://www.asahiinryo.co.jp/products/list/nutrition/0006.html",
+    "quality": "official",
+    "note": "アサヒ飲料公式の栄養成分（100ml当たり）から280ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "d9025d887c",
+    "store": "アサヒ飲料",
+    "name": "バンホーテン ココア 280g",
+    "kcal": 140,
+    "protein": 2.0,
+    "fat": 2.2,
+    "carbs": 28.0,
+    "salt": 0.2,
+    "fiber": null,
+    "price": 160,
+    "source": "https://www.asahiinryo.co.jp/products/list/nutrition/0007.html",
+    "quality": "official",
+    "note": "アサヒ飲料公式の栄養成分（100g当たり）から280g分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "d13b5294b7",
+    "store": "アサヒ飲料",
+    "name": "アサヒ おしるこ 185g缶",
+    "kcal": 166,
+    "protein": 3.5,
+    "fat": 0.0,
+    "carbs": 37.0,
+    "salt": 0.4,
+    "fiber": null,
+    "price": 140,
+    "source": "https://www.asahiinryo.co.jp/products/list/nutrition/0007.html",
+    "quality": "official",
+    "note": "アサヒ飲料公式の栄養成分（100g当たり）から185g分に換算。価格は店頭価格の目安。購入場所：自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "自販機"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "dd69c3afa1",
+    "store": "アサヒ飲料",
+    "name": "アサヒ コクうま コーンポタージュ 185g缶",
+    "kcal": 87,
+    "protein": 1.3,
+    "fat": 1.9,
+    "carbs": 16.3,
+    "salt": 1.5,
+    "fiber": null,
+    "price": 140,
+    "source": "https://www.asahiinryo.co.jp/products/list/nutrition/0007.html",
+    "quality": "official",
+    "note": "アサヒ飲料公式の栄養成分（100g当たり）から185g分に換算。価格は店頭価格の目安。購入場所：自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "自販機"
+    ],
+    "est": [
+      "fiber",
+      "price"
+    ]
+  },
+  {
+    "id": "d50d548041",
+    "store": "伊藤園",
+    "name": "お～いお茶 緑茶 600ml",
+    "kcal": 0,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 0.0,
+    "salt": 0.2,
+    "fiber": 0.0,
+    "price": 238,
+    "source": "https://www.itoen.jp/products/45534/",
+    "quality": "official",
+    "note": "伊藤園公式の栄養成分（100ml当たり）から600ml分に換算。価格はメーカー希望小売価格（税抜）に消費税8%を加えた額。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber"
+    ]
+  },
+  {
+    "id": "d37e7baf3e",
+    "store": "伊藤園",
+    "name": "お～いお茶 濃い茶 600ml",
+    "kcal": 0,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 0.0,
+    "salt": 0.1,
+    "fiber": 0.0,
+    "price": 238,
+    "source": "https://www.itoen.jp/products/41753/",
+    "quality": "official",
+    "note": "伊藤園公式の栄養成分（1200ml当たり）から600ml分に換算。価格はメーカー希望小売価格（税抜）に消費税8%を加えた額。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber"
+    ]
+  },
+  {
+    "id": "db03329afe",
+    "store": "伊藤園",
+    "name": "お～いお茶 ほうじ茶 600ml",
+    "kcal": 0,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 0.0,
+    "salt": 0.1,
+    "fiber": 0.0,
+    "price": 238,
+    "source": "https://www.itoen.jp/products/41604/",
+    "quality": "official",
+    "note": "伊藤園公式の栄養成分（100ml当たり）から600ml分に換算。価格はメーカー希望小売価格（税抜）に消費税8%を加えた額。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber"
+    ]
+  },
+  {
+    "id": "d119791aad",
+    "store": "伊藤園",
+    "name": "健康ミネラルむぎ茶 650ml",
+    "kcal": 0,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 0.0,
+    "salt": 0.2,
+    "fiber": 0.0,
+    "price": 194,
+    "source": "https://www.itoen.jp/products/41616/",
+    "quality": "official",
+    "note": "伊藤園公式の栄養成分（650ml当たり）から650ml分に換算。価格はメーカー希望小売価格（税抜）に消費税8%を加えた額。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber"
+    ]
+  },
+  {
+    "id": "d9548b29c6",
+    "store": "伊藤園",
+    "name": "Relaxルイボスティー 600ml",
+    "kcal": 0,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 0.0,
+    "salt": 0.1,
+    "fiber": 0.0,
+    "price": 216,
+    "source": "https://www.itoen.jp/products/41916/",
+    "quality": "official",
+    "note": "伊藤園公式の栄養成分（600ml当たり）から600ml分に換算。価格はメーカー希望小売価格（税抜）に消費税8%を加えた額。購入場所：スーパー・コンビニ",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ"
+    ],
+    "est": [
+      "fiber"
+    ]
+  },
+  {
+    "id": "dae98419fc",
+    "store": "伊藤園",
+    "name": "かりっと大豆イソフラボン黒豆茶 600ml",
+    "kcal": 0,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 0.0,
+    "salt": 0.2,
+    "fiber": 0.0,
+    "price": 216,
+    "source": "https://www.itoen.jp/products/60646/",
+    "quality": "official",
+    "note": "伊藤園公式の栄養成分（600ml当たり）から600ml分に換算。価格はメーカー希望小売価格（税抜）に消費税8%を加えた額。購入場所：スーパー・コンビニ",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ"
+    ],
+    "est": [
+      "fiber"
+    ]
+  },
+  {
+    "id": "d3988a6607",
+    "store": "伊藤園",
+    "name": "TULLY'S COFFEE BLACK 缶 165g",
+    "kcal": 0,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 0.8,
+    "salt": 0.08,
+    "fiber": 0.0,
+    "price": 173,
+    "source": "https://www.itoen.jp/products/61323/",
+    "quality": "official",
+    "note": "伊藤園公式の栄養成分（100g当たり）から165g分に換算。価格はメーカー希望小売価格（税抜）に消費税8%を加えた額。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber"
+    ]
+  },
+  {
+    "id": "d1dd3dc5c5",
+    "store": "伊藤園",
+    "name": "TULLY'S COFFEE 劇的微糖 缶 165g",
+    "kcal": 15,
+    "protein": 0.8,
+    "fat": 0.5,
+    "carbs": 1.8,
+    "salt": 0.1,
+    "fiber": null,
+    "price": 173,
+    "source": "https://www.itoen.jp/products/61319/",
+    "quality": "official",
+    "note": "伊藤園公式の栄養成分（100g当たり）から165g分に換算。価格はメーカー希望小売価格（税抜）に消費税8%を加えた額。購入場所：スーパー・コンビニ・自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ",
+      "自販機"
+    ],
+    "est": [
+      "fiber"
+    ]
+  },
+  {
+    "id": "d383fab79c",
+    "store": "伊藤園",
+    "name": "TULLY'S COFFEE Seattle Style カフェオレ 500ml",
+    "kcal": 200,
+    "protein": 5.0,
+    "fat": 8.5,
+    "carbs": 24.5,
+    "salt": 0.8,
+    "fiber": null,
+    "price": 292,
+    "source": "https://www.itoen.jp/products/61606/",
+    "quality": "official",
+    "note": "伊藤園公式の栄養成分（100ml当たり）から500ml分に換算。価格はメーカー希望小売価格（税抜）に消費税8%を加えた額。購入場所：スーパー・コンビニ",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ"
+    ],
+    "est": [
+      "fiber"
+    ]
+  },
+  {
+    "id": "d495a1308d",
+    "store": "伊藤園",
+    "name": "栄養強化型 1日分の野菜 200ml",
+    "kcal": 91,
+    "protein": 1.9,
+    "fat": 0.0,
+    "carbs": 24.5,
+    "salt": 0.5,
+    "fiber": 6.9,
+    "price": 110,
+    "source": "https://www.itoen.jp/products/41561/",
+    "quality": "official",
+    "note": "伊藤園公式の栄養成分（200ml当たり）から200ml分に換算。価格は店頭価格の目安。購入場所：スーパー・コンビニ",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "スーパー",
+      "コンビニ"
+    ],
+    "est": [
+      "price"
+    ]
+  },
+  {
+    "id": "df2c89601c",
+    "store": "伊藤園",
+    "name": "特濃コーンポタージュ 缶 185g",
+    "kcal": 83,
+    "protein": 1.3,
+    "fat": 0.9,
+    "carbs": 17.4,
+    "salt": 1.3,
+    "fiber": null,
+    "price": 173,
+    "source": "https://www.itoen.jp/products/41393/",
+    "quality": "official",
+    "note": "伊藤園公式の栄養成分（100g当たり）から185g分に換算。価格はメーカー希望小売価格（税抜）に消費税8%を加えた額。購入場所：自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "自販機"
+    ],
+    "est": [
+      "fiber"
+    ]
+  },
+  {
+    "id": "d59d1b272f",
+    "store": "伊藤園",
+    "name": "大納言しるこ 缶 185g",
+    "kcal": 163,
+    "protein": 1.7,
+    "fat": 0.0,
+    "carbs": 38.9,
+    "salt": 0.3,
+    "fiber": null,
+    "price": 173,
+    "source": "https://www.itoen.jp/products/41391/",
+    "quality": "official",
+    "note": "伊藤園公式の栄養成分（100g当たり）から185g分に換算。価格はメーカー希望小売価格（税抜）に消費税8%を加えた額。購入場所：自販機",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "places": [
+      "自販機"
+    ],
+    "est": [
+      "fiber"
+    ]
+  },
+  {
+    "id": "d4627dda69",
+    "store": "セブン‐イレブン",
+    "name": "セブンカフェ ホットコーヒーR",
+    "kcal": 6,
+    "protein": 0.4,
+    "fat": 0.0,
+    "carbs": 1.3,
+    "salt": 0.01,
+    "fiber": 0.2,
+    "price": 140,
+    "source": "https://www.sej.co.jp/products/a/sevencafe/",
+    "quality": "official",
+    "note": "セブン‐イレブン公式の栄養成分・税込価格（店舗・地域で異なる場合あり）。",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "exact"
+  },
+  {
+    "id": "d7ef7895de",
+    "store": "セブン‐イレブン",
+    "name": "セブンカフェ ホットコーヒーL",
+    "kcal": 10,
+    "protein": 0.6,
+    "fat": 0.1,
+    "carbs": 1.9,
+    "salt": 0.01,
+    "fiber": 0.4,
+    "price": 220,
+    "source": "https://www.sej.co.jp/products/a/sevencafe/",
+    "quality": "official",
+    "note": "セブン‐イレブン公式の栄養成分・税込価格（店舗・地域で異なる場合あり）。",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "exact"
+  },
+  {
+    "id": "dfc6a556ff",
+    "store": "セブン‐イレブン",
+    "name": "セブンカフェ アイスコーヒーR",
+    "kcal": 7,
+    "protein": 0.4,
+    "fat": 0.1,
+    "carbs": 1.3,
+    "salt": 0.01,
+    "fiber": 0.2,
+    "price": 140,
+    "source": "https://www.sej.co.jp/products/a/sevencafe/",
+    "quality": "official",
+    "note": "セブン‐イレブン公式の栄養成分・税込価格（店舗・地域で異なる場合あり）。",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "exact"
+  },
+  {
+    "id": "dc540c67d0",
+    "store": "セブン‐イレブン",
+    "name": "セブンカフェ アイスコーヒーL",
+    "kcal": 11,
+    "protein": 0.6,
+    "fat": 0.1,
+    "carbs": 2.2,
+    "salt": 0.01,
+    "fiber": 0.4,
+    "price": 251,
+    "source": "https://www.sej.co.jp/products/a/sevencafe/",
+    "quality": "official",
+    "note": "セブン‐イレブン公式の栄養成分・税込価格（店舗・地域で異なる場合あり）。",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "exact"
+  },
+  {
+    "id": "d94992c450",
+    "store": "セブン‐イレブン",
+    "name": "7カフェ ホットカフェラテR",
+    "kcal": 87,
+    "protein": 4.6,
+    "fat": 4.5,
+    "carbs": 7.3,
+    "salt": 0.14,
+    "fiber": 0.2,
+    "price": 220,
+    "source": "https://www.sej.co.jp/products/a/sevencafe/",
+    "quality": "official",
+    "note": "セブン‐イレブン公式の栄養成分・税込価格（店舗・地域で異なる場合あり）。",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "exact"
+  },
+  {
+    "id": "dfa7e4614e",
+    "store": "セブン‐イレブン",
+    "name": "7カフェ ホットカフェラテL",
+    "kcal": 133,
+    "protein": 6.9,
+    "fat": 6.8,
+    "carbs": 11.1,
+    "salt": 0.21,
+    "fiber": 0.3,
+    "price": 281,
+    "source": "https://www.sej.co.jp/products/a/sevencafe/",
+    "quality": "official",
+    "note": "セブン‐イレブン公式の栄養成分・税込価格（店舗・地域で異なる場合あり）。",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "exact"
+  },
+  {
+    "id": "dc0e82f832",
+    "store": "セブン‐イレブン",
+    "name": "7カフェ アイスカフェラテR",
+    "kcal": 76,
+    "protein": 4.0,
+    "fat": 3.9,
+    "carbs": 6.5,
+    "salt": 0.12,
+    "fiber": 0.1,
+    "price": 270,
+    "source": "https://www.sej.co.jp/products/a/sevencafe/",
+    "quality": "official",
+    "note": "セブン‐イレブン公式の栄養成分・税込価格（店舗・地域で異なる場合あり）。",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "exact"
+  },
+  {
+    "id": "d450232027",
+    "store": "セブン‐イレブン",
+    "name": "7カフェ アイスカフェラテL",
+    "kcal": 117,
+    "protein": 6.1,
+    "fat": 5.9,
+    "carbs": 10.0,
+    "salt": 0.19,
+    "fiber": 0.3,
+    "price": 340,
+    "source": "https://www.sej.co.jp/products/a/sevencafe/",
+    "quality": "official",
+    "note": "セブン‐イレブン公式の栄養成分・税込価格（店舗・地域で異なる場合あり）。",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "exact"
+  },
+  {
+    "id": "d3fc41fbea",
+    "store": "ファミリーマート",
+    "name": "ファミマカフェ ブレンドS",
+    "kcal": 3,
+    "protein": 0.2,
+    "fat": 0,
+    "carbs": 0.6,
+    "salt": 0.02,
+    "fiber": null,
+    "price": 158,
+    "source": "https://www.family.co.jp/goods/safety/cafe.html",
+    "quality": "official",
+    "note": "ファミリーマート公式の栄養成分・税込価格（店舗・地域で異なる場合あり）。",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "exact"
+  },
+  {
+    "id": "d1dbe5c558",
+    "store": "ファミリーマート",
+    "name": "ファミマカフェ ブレンドM",
+    "kcal": 7,
+    "protein": 0.2,
+    "fat": 0,
+    "carbs": 1.4,
+    "salt": 0.04,
+    "fiber": null,
+    "price": 230,
+    "source": "https://www.family.co.jp/goods/safety/cafe.html",
+    "quality": "official",
+    "note": "ファミリーマート公式の栄養成分・税込価格（店舗・地域で異なる場合あり）。",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "exact"
+  },
+  {
+    "id": "d53e1ea446",
+    "store": "ファミリーマート",
+    "name": "ファミマカフェ アイスコーヒーS",
+    "kcal": 4,
+    "protein": 0,
+    "fat": 0,
+    "carbs": 0.9,
+    "salt": 0.01,
+    "fiber": null,
+    "price": 158,
+    "source": "https://www.family.co.jp/goods/safety/cafe.html",
+    "quality": "official",
+    "note": "ファミリーマート公式の栄養成分・税込価格（店舗・地域で異なる場合あり）。",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "exact"
+  },
+  {
+    "id": "dc96398daa",
+    "store": "ファミリーマート",
+    "name": "ファミマカフェ アイスコーヒーM",
+    "kcal": 10,
+    "protein": 0.3,
+    "fat": 0,
+    "carbs": 1.9,
+    "salt": 0.02,
+    "fiber": null,
+    "price": 275,
+    "source": "https://www.family.co.jp/goods/safety/cafe.html",
+    "quality": "official",
+    "note": "ファミリーマート公式の栄養成分・税込価格（店舗・地域で異なる場合あり）。",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "exact"
+  },
+  {
+    "id": "d8ed23f34b",
+    "store": "ファミリーマート",
+    "name": "ファミマカフェ カフェラテM",
+    "kcal": 104,
+    "protein": 4.6,
+    "fat": 5.4,
+    "carbs": 9.4,
+    "salt": 0.14,
+    "fiber": null,
+    "price": 255,
+    "source": "https://www.family.co.jp/goods/safety/cafe.html",
+    "quality": "official",
+    "note": "ファミリーマート公式の栄養成分・税込価格（店舗・地域で異なる場合あり）。",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "exact"
+  },
+  {
+    "id": "d0da244cf6",
+    "store": "ファミリーマート",
+    "name": "ファミマカフェ カフェラテL",
+    "kcal": 130,
+    "protein": 5.8,
+    "fat": 6.8,
+    "carbs": 11.5,
+    "salt": 0.17,
+    "fiber": null,
+    "price": 305,
+    "source": "https://www.family.co.jp/goods/safety/cafe.html",
+    "quality": "official",
+    "note": "ファミリーマート公式の栄養成分・税込価格（店舗・地域で異なる場合あり）。",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "exact"
+  },
+  {
+    "id": "d0423d3887",
+    "store": "ファミリーマート",
+    "name": "ファミマカフェ アイスカフェラテM",
+    "kcal": 80,
+    "protein": 3.4,
+    "fat": 4.0,
+    "carbs": 7.7,
+    "salt": 0.11,
+    "fiber": null,
+    "price": 290,
+    "source": "https://www.family.co.jp/goods/safety/cafe.html",
+    "quality": "official",
+    "note": "ファミリーマート公式の栄養成分・税込価格（店舗・地域で異なる場合あり）。",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "exact"
+  },
+  {
+    "id": "d0f11d825d",
+    "store": "ファミリーマート",
+    "name": "ファミマカフェ アイスカフェラテL",
+    "kcal": 107,
+    "protein": 4.4,
+    "fat": 5.3,
+    "carbs": 10.5,
+    "salt": 0.13,
+    "fiber": null,
+    "price": 385,
+    "source": "https://www.family.co.jp/goods/safety/cafe.html",
+    "quality": "official",
+    "note": "ファミリーマート公式の栄養成分・税込価格（店舗・地域で異なる場合あり）。",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "exact"
+  },
+  {
+    "id": "d5db0acaeb",
+    "store": "ファミリーマート",
+    "name": "ファミマカフェ カフェフラッペ",
+    "kcal": 172,
+    "protein": 2.4,
+    "fat": 7.8,
+    "carbs": 23.3,
+    "salt": 0.1,
+    "fiber": null,
+    "price": 330,
+    "source": "https://www.family.co.jp/goods/safety/cafe.html",
+    "quality": "official",
+    "note": "ファミリーマート公式の栄養成分・税込価格（店舗・地域で異なる場合あり）。",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "exact"
+  },
+  {
+    "id": "d16567c552",
+    "store": "ファミリーマート",
+    "name": "ファミマカフェ ストロベリーフラッペ",
+    "kcal": 235,
+    "protein": 2,
+    "fat": 6.1,
+    "carbs": 44.3,
+    "salt": 0.07,
+    "fiber": null,
+    "price": 380,
+    "source": "https://www.family.co.jp/goods/safety/cafe.html",
+    "quality": "official",
+    "note": "ファミリーマート公式の栄養成分・税込価格（店舗・地域で異なる場合あり）。",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "exact"
+  },
+  {
+    "id": "d3eba074c8",
+    "store": "ファミリーマート",
+    "name": "Afternoon Tea ロイヤルミルクティーフラッペ",
+    "kcal": 292,
+    "protein": 5.6,
+    "fat": 13.8,
+    "carbs": 36.7,
+    "salt": 0.28,
+    "fiber": null,
+    "price": 360,
+    "source": "https://www.family.co.jp/goods/safety/cafe.html",
+    "quality": "official",
+    "note": "ファミリーマート公式の栄養成分・税込価格（店舗・地域で異なる場合あり）。",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "exact"
   }
 ]

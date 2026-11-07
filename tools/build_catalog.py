@@ -1131,6 +1131,234 @@ add('一般スーパー', [
  ('ティーバッグ緑茶（1杯）','drink',5,'tea:200'),
 ])
 
+
+# ================================================================ メーカー公式の飲料（公式栄養値）
+# (name, amount, unit, basis, kcal, protein, fat, carbs, salt, price_tax_in, price_official, places, url)
+#   basis: 100 → 値は100ml/100g当たり、それ以外 → 値はその量（1本など）当たり
+#   price_official=True → メーカー希望小売価格（税別）×1.08、False → 店頭価格の目安
+ALL3 = ('スーパー','コンビニ','自販機'); SC = ('スーパー','コンビニ'); VM = ('自販機',)
+SUN = 'https://products.suntory.co.jp/softdrink/ingredient.html'
+SUN_D = 'https://products.suntory.co.jp/d/{}/'
+CC = 'https://www.coca-cola.com/jp/ja/brands/{}/products'
+KIR = 'https://products.kirin.co.jp/softdrink/nutrition/softdrink/'
+ASA = 'https://www.asahiinryo.co.jp/products/list/nutrition/{}.html'
+ITO = 'https://www.itoen.jp/products/{}/'
+MAKER_DRINKS = {
+ 'サントリー': [
+  ('C.C.レモン 500ml',500,'ml',500,180,0,0,45.0,0.20,216,True,ALL3,SUN_D.format('4901777232310')),
+  ('ペプシ〈生〉 BIG COLA 600ml',600,'ml',100,46,0,0,11.6,0.05,238,True,ALL3,SUN_D.format('4901777361232')),
+  ('ペプシ〈生〉 BIG ZERO 600ml',600,'ml',100,0,0,0,0,0.01,238,True,ALL3,SUN_D.format('4901777361256')),
+  ('GREEN DA・KA・RA 600ml',600,'ml',100,18,0,0,4.4,0.10,205,True,ALL3,SUN_D.format('4901777336704')),
+  ('サントリー天然水 550ml',550,'ml',100,0,0,0,0,0.002,205,True,ALL3,SUN_D.format('4901777216884')),
+  ('なっちゃん オレンジ 425ml',425,'ml',100,45,0,0,11.3,0.06,259,True,ALL3,SUN_D.format('4901777301078')),
+  ('クラフトボス 世界のTEA すっきり無糖 600ml',600,'ml',100,0,0,0,0,0.02,227,True,SC,SUN_D.format('4901777432017')),
+  ('胡麻麦茶（特定保健用食品）350ml',350,'ml',350,0,0,0,0,0.05,184,True,SC,SUN_D.format('4901777235533')),
+  ('ジンジャーエール 200ml缶',200,'ml',100,33,0,0,8.3,0.04,148,True,SC,SUN_D.format('4901777000056')),
+  ('伊右衛門 600ml',600,'ml',100,0,0,0,0,0.02,200,False,ALL3,SUN),
+  ('伊右衛門 焙じ茶 600ml',600,'ml',100,0,0,0,0,0.02,200,False,ALL3,SUN),
+  ('伊右衛門 特茶s（特定保健用食品）500ml',500,'ml',500,0,0,0,0,0.05,210,False,SC,SUN),
+  ('サントリー烏龍茶 525ml',525,'ml',100,0,0,0,0,0.03,180,False,ALL3,SUN),
+  ('サントリー黒烏龍茶OTPP（特定保健用食品）350ml',350,'ml',350,0,0,0,0,0.07,200,False,SC,SUN),
+  ('ボス レインボーマウンテンブレンド 185g缶',185,'g',100,35,0.5,0.6,7.0,0.12,130,False,ALL3,SUN),
+  ('ボス 贅沢微糖 185g缶',185,'g',100,20,0.5,0.4,3.6,0.12,130,False,ALL3,SUN),
+  ('ボス 無糖ブラック 185g缶',185,'g',100,0,0,0,0.5,0.05,130,False,ALL3,SUN),
+  ('ボス カフェオレ 185g缶',185,'g',100,44,1.0,1.0,8.3,0.10,130,False,ALL3,SUN),
+  ('プレミアムボス ブラック 285g',285,'g',100,0,0,0,0.5,0.05,170,False,ALL3,SUN),
+  ('クラフトボス ブラック 500ml',500,'ml',100,0,0,0,0.5,0.04,200,False,ALL3,SUN),
+  ('クラフトボス ラテ 500ml',500,'ml',100,31,0.5,0.8,5.5,0.13,200,False,ALL3,SUN),
+  ('クラフトボス 微糖 500ml',500,'ml',100,19,0.75,0.75,3.1,0.15,200,False,ALL3,SUN),
+  ('クラフトボス ミルクラテ 500ml',500,'ml',100,41,0.7,1.7,5.7,0.10,200,False,SC,SUN),
+  ('クラフトボス 甘くないイタリアーノ 500ml',500,'ml',100,25,0.8,1.2,2.7,0.17,200,False,SC,SUN),
+  ('スターバックス カフェラテ 200ml',200,'ml',200,132,5.6,4.0,18.4,0.16,232,False,('コンビニ',),SUN),
+  ('スターバックス COFFEE OF THE DAY ブラック 500ml',500,'ml',100,0,0,0,0.4,0.03,232,False,SC,SUN),
+ ],
+ 'コカ･コーラ': [
+  ('コカ・コーラ 500ml',500,'ml',100,45,0,0,11.3,0,175,False,ALL3,CC.format('coca-cola')),
+  ('コカ・コーラ ゼロ 500ml',500,'ml',100,0,0,0,0,0.01,175,False,ALL3,CC.format('coca-cola')),
+  ('アクエリアス 500ml',500,'ml',100,18,0,0,4.6,0.1,175,False,ALL3,CC.format('aquarius')),
+  ('アクエリアス ゼロ 500ml',500,'ml',100,0,0,0,0.7,0.1,175,False,ALL3,CC.format('aquarius')),
+  ('アクエリアス 経口補水液 ORS 500ml',500,'ml',100,11,0,0,2.7,0.249,216,False,SC,CC.format('aquarius')),
+  ('綾鷹 525ml',525,'ml',100,0,0,0,0,0.02,175,False,ALL3,CC.format('ayataka')),
+  ('綾鷹 濃い緑茶 525ml',525,'ml',1050,0,0,0,0,0.2,185,False,SC,CC.format('ayataka')),
+  ('綾鷹カフェ 濃い抹茶ラテ 440ml',440,'ml',100,44,0.5,0.7,8.8,0.08,195,False,SC,CC.format('ayataka')),
+  ('爽健美茶 600ml',600,'ml',100,0,0,0,0,0.02,175,False,ALL3,CC.format('sokenbicha')),
+  ('やかんの麦茶 from 爽健美茶 650ml',650,'ml',100,0,0,0,0.5,0.02,165,False,ALL3,CC.format('yakan')),
+  ('い･ろ･は･す 天然水 540ml',540,'ml',100,0,0,0,0,0.002,140,False,ALL3,CC.format('i-lohas')),
+  ('い･ろ･は･す もも 540ml',540,'ml',100,18,0,0,4.6,0.04,165,False,ALL3,CC.format('i-lohas')),
+  ('い･ろ･は･す 塩とれもん 540ml',540,'ml',100,18,0,0,4.6,0.1,165,False,ALL3,CC.format('i-lohas')),
+  ('ジョージア エメラルドマウンテンブレンド 185g缶',185,'g',100,34,0.6,0.5,6.8,0.1,130,False,ALL3,CC.format('georgia')),
+  ('ジョージア ゴールデンドリップ 微糖 185g缶',185,'g',100,21,0.6,0.6,3.3,0.1,130,False,ALL3,CC.format('georgia')),
+  ('ジョージア プラチナムブラック 185g缶',185,'g',100,0,0,0,0.7,0.06,130,False,ALL3,CC.format('georgia')),
+  ('ジョージア 香る微糖 370ml',370,'ml',100,19,0.6,0.5,3.0,0.1,170,False,ALL3,CC.format('georgia')),
+  ('ジョージア ブラック 500ml',500,'ml',100,0,0,0,0.7,0.04,175,False,ALL3,CC.format('georgia')),
+  ('ジョージア カフェラテ 500ml',500,'ml',100,29,0.5,0.6,5.5,0.1,175,False,ALL3,CC.format('georgia')),
+  ('ジョージア カフェラテ プロテイン 500ml',500,'ml',100,35,3.1,0.6,4.3,0.1,195,False,SC,CC.format('georgia')),
+  ('ジョージア マックスコーヒー 250g缶',250,'g',100,48,0.6,0.7,9.8,0.08,140,False,ALL3,CC.format('georgia')),
+  ('ジョージア 贅沢ミルクココア 280ml',280,'ml',100,54,0.9,1.1,10,0.06,160,False,ALL3,CC.format('georgia')),
+  ('ファンタ グレープ 500ml',500,'ml',100,40,0,0,10,0.01,175,False,ALL3,CC.format('fanta')),
+  ('ファンタ オレンジ 500ml',500,'ml',100,40,0,0,10,0.01,175,False,ALL3,CC.format('fanta')),
+  ('ファンタ メロンソーダ 500ml',500,'ml',100,48,0,0,12,0,175,False,ALL3,CC.format('fanta')),
+  ('紅茶花伝 ロイヤルミルクティー 440ml',440,'ml',100,37,0.7,0.8,6.8,0.09,175,False,ALL3,CC.format('kochakaden')),
+  ('紅茶花伝 無糖 アールグレイアイスティー 440ml',440,'ml',100,0,0,0,0,0.03,175,False,ALL3,CC.format('kochakaden')),
+  ('紅茶花伝 ガーデンレモンティー 440ml',440,'ml',100,31,0,0,7.8,0,175,False,ALL3,CC.format('kochakaden')),
+  ('ミニッツメイド オレンジブレンド マルチビタミン 350ml',350,'ml',100,52,0,0,13,0,165,False,ALL3,CC.format('minute-maid')),
+  ('ミニッツメイド 朝バナナ 180g',180,'g',180,194,1.1,0,47.5,0.07,216,False,SC,CC.format('minute-maid')),
+  ('ミニッツメイド スムージー プロテイン マンゴー 180g',180,'g',180,122,8,0,22.5,0.09,238,False,SC,CC.format('minute-maid')),
+  ('Qoo オレンジ 280ml',280,'ml',100,44,0,0,11,0,140,False,ALL3,CC.format('qoo')),
+  ('Qoo りんご 280ml',280,'ml',100,48,0,0,12,0.04,140,False,ALL3,CC.format('qoo')),
+  ('リアルゴールド 490ml',490,'ml',100,56,0,0,14,0.01,175,False,ALL3,CC.format('real')),
+  ('コスタコーヒー プレミアムブラック 265ml',265,'ml',100,0,0,0,0.7,0.06,195,False,SC,CC.format('costacoffee')),
+  ('コスタコーヒー プレミアムラテ 265ml',265,'ml',100,38,0.8,0.7,7.2,0.15,195,False,SC,CC.format('costacoffee')),
+  ('コスタコーヒー ノンスイートラテ 265ml',265,'ml',100,18,0.8,0.8,1.9,0.15,195,False,SC,CC.format('costacoffee')),
+ ],
+ 'キリン': [
+  ('午後の紅茶 ストレートティー 500ml',500,'ml',100,15,0,0,3.8,0.02,175,False,ALL3,KIR),
+  ('午後の紅茶 ミルクティー 500ml',500,'ml',100,35,0.5,0.5,7.1,0.07,175,False,ALL3,KIR),
+  ('午後の紅茶 レモンティー 500ml',500,'ml',100,27,0,0,6.8,0.02,175,False,ALL3,KIR),
+  ('午後の紅茶 おいしい無糖 500ml',500,'ml',100,0,0,0,0,0.01,175,False,ALL3,KIR),
+  ('午後の紅茶 おいしい無糖 ミルクティー 500ml',500,'ml',100,10,0.6,0.6,0.6,0.08,175,False,ALL3,KIR),
+  ('午後の紅茶 TEA LATTE with ESPRESSO 500ml',500,'ml',100,31,0.5,0.5,6.0,0.08,195,False,SC,KIR),
+  ('午後の紅茶 芳醇ロイヤルミルクティー 280g缶',280,'g',100,40,0.6,0.6,8,0.07,150,False,ALL3,KIR),
+  ('午後の紅茶 アイスミルクティー デ モーニング 500ml',500,'ml',100,31,0.5,0.5,6.1,0.09,175,False,('ローソン',),KIR),
+  ('生茶 525ml',525,'ml',100,0,0,0,0,0.03,175,False,ALL3,KIR),
+  ('生茶 ほうじ煎茶 525ml',525,'ml',100,0,0,0,0,0.02,175,False,ALL3,KIR),
+  ('さわやか香ばし麦茶 600ml',600,'ml',100,0,0,0,0,0.025,165,False,SC,KIR),
+  ('香ばし麦茶（自動販売機専用）555ml',555,'ml',100,0,0,0,0,0.025,150,False,VM,KIR),
+  ('ヘルシア 緑茶 350ml',350,'ml',350,14,0,0,3.9,0.1,200,False,SC,KIR),
+  ('キリン×ファンケル カロリミット ブレンド茶 600ml',600,'ml',600,14,0,0,8.4,0.18,195,False,SC,KIR),
+  ('ファイア ワンデイ ブラック 600ml',600,'ml',100,0,0,0,0.6,0.01,175,False,ALL3,KIR),
+  ('ファイア ワンデイ ラテ微糖 600ml',600,'ml',100,19,0.7,0.5,2.9,0.11,175,False,ALL3,KIR),
+  ('ファイア 挽きたて微糖 185g缶',185,'g',100,15,0.5,0.5,2.1,0.07,130,False,ALL3,KIR),
+  ('ファイア ブラック 185g缶',185,'g',100,0,0,0,0.5,0.04,130,False,ALL3,KIR),
+  ('ファイア 直火ブレンド 185g缶',185,'g',100,34,0.8,0.5,6.5,0.13,130,False,ALL3,KIR),
+  ('ファイア 贅沢デミタス（自動販売機専用）165g缶',165,'g',100,32,0.8,0.5,6.0,0.14,130,False,VM,KIR),
+  ('小岩井 Theカフェオレ 500ml',500,'ml',100,39,0.7,0.8,7.3,0.12,175,False,SC,KIR),
+  ('キリン LOVES SPORTS 555ml',555,'ml',100,14,0,0,3.4,0.13,165,False,ALL3,KIR),
+  ('キリンレモン 500ml',500,'ml',100,33,0,0,8.3,0.06,175,False,ALL3,KIR),
+  ('メッツ コーラ 480ml（特定保健用食品）',480,'ml',480,0,0,0,6.7,0,195,False,SC,KIR),
+  ('世界のKitchenから ソルティライチ 500ml',500,'ml',100,34,0,0,8.4,0.11,175,False,ALL3,KIR),
+  ('小岩井 純水りんご 430ml',430,'ml',100,44,0,0,11,0.04,175,False,ALL3,KIR),
+  ('トロピカーナ 100％ オレンジ 330ml',330,'ml',330,172,3,0,40,0.25,195,False,SC,KIR),
+  ('トロピカーナ 100％ オレンジ 250ml紙',250,'ml',250,129,2.3,0,30,0.01,150,False,SC,KIR),
+  ('キリン トマトジュース 濃縮トマト還元 190g缶',190,'g',190,37,1.3,0,8,0.60,120,False,ALL3,KIR),
+  ('キリン 無添加野菜 48種の濃い野菜100％（200ml）',200,'ml',200,48,1.7,0,11,0.12,90,False,SC,KIR),
+  ('キリン 自然が磨いた天然水 2L（500ml分）',500,'ml',100,0,0,0,0,0.002,40,False,('スーパー',),KIR),
+ ],
+ 'アサヒ飲料': [
+  ('三ツ矢サイダー 500ml',500,'ml',100,42,0,0,11,0.03,175,False,ALL3,ASA.format('0002')),
+  ('三ツ矢サイダーZERO 500ml',500,'ml',100,0,0,0,0.5,0.03,175,False,ALL3,ASA.format('0002')),
+  ('三ツ矢 特濃オレンジスカッシュ 500ml',500,'ml',100,50,0,0,12,0.20,175,False,ALL3,ASA.format('0002')),
+  ('ウィルキンソン タンサン 500ml',500,'ml',100,0,0,0,0,0,150,False,ALL3,ASA.format('0002')),
+  ('ウィルキンソン タンサン レモン 500ml',500,'ml',100,0,0,0,0,0,150,False,ALL3,ASA.format('0002')),
+  ('ウィルキンソン ジンジャエール 500ml',500,'ml',100,37,0,0,9.3,0,175,False,ALL3,ASA.format('0002')),
+  ('ワンダ モーニングショット 185g缶',185,'g',100,34,0.6,0.4,7.1,0.10,130,False,ALL3,ASA.format('0001')),
+  ('ワンダ 金の微糖 185g缶',185,'g',100,19,0.6,0.5,3.1,0.10,130,False,ALL3,ASA.format('0001')),
+  ('ワンダ ブラック ザ アロマ 185g缶',185,'g',100,0,0,0,0.5,0.04,130,False,ALL3,ASA.format('0001')),
+  ('ワンダ 特製カフェオレ 185g缶',185,'g',100,39,0.8,0.7,7.4,0.1,130,False,ALL3,ASA.format('0001')),
+  ('ワンダ モーニングアメリカーノ ブラック 500ml',500,'ml',100,0,0,0,0.3,0.03,175,False,ALL3,ASA.format('0001')),
+  ('ドトール カフェ・オ・レ 480ml',480,'ml',100,37,0.6,0.5,7.4,0.10,175,False,SC,ASA.format('0001')),
+  ('アサヒ 十六茶 630ml',630,'ml',100,0,0,0,0,0.02,165,False,ALL3,ASA.format('0003')),
+  ('アサヒ 十六茶麦茶 660ml',660,'ml',100,0,0,0,0.3,0.03,165,False,ALL3,ASA.format('0003')),
+  ('アサヒ 颯 620ml',620,'ml',100,0,0,0,0,0.04,165,False,ALL3,ASA.format('0003')),
+  ('和の紅茶 ミルクティー 500ml',500,'ml',100,30,0.7,0.2,6.3,0.06,175,False,SC,ASA.format('0003')),
+  ('アサヒ ロイヤルミルクティー 280g缶',280,'g',100,40,0.8,0.5,8.0,0.08,150,False,ALL3,ASA.format('0003')),
+  ('アサヒ 一級茶葉烏龍茶 500ml',500,'ml',100,0,0,0,0,0.03,165,False,ALL3,ASA.format('0003')),
+  ('アサヒ おいしい水 天然水 600ml',600,'ml',100,0,0,0,0,0,120,False,ALL3,ASA.format('0004')),
+  ('アサヒ おいしい水 天然水 レモン水 無糖 600ml',600,'ml',100,0,0,0,0,0.01,140,False,SC,ASA.format('0004')),
+  ('カルピスウォーター 500ml',500,'ml',100,46,0.3,0,11,0.04,175,False,ALL3,ASA.format('0012')),
+  ('カルピスソーダ 500ml',500,'ml',100,52,0.2,0,13,0.04,175,False,ALL3,ASA.format('0012')),
+  ('カルピス（原液20ml・希釈100ml）',100,'ml',100,46,0.4,0,11,0.02,30,False,('スーパー',),ASA.format('0012')),
+  ('ぐんぐんグルト 3種の乳酸菌 500ml',500,'ml',100,23,0.3,0,5.2,0.10,175,False,SC,ASA.format('0012')),
+  ('ドデカミン 500ml',500,'ml',100,19,0,0,4.7,0.1,175,False,ALL3,ASA.format('0005')),
+  ('アサヒ スーパーH2O 600ml',600,'ml',100,12,0,0,2.9,0.1,165,False,ALL3,ASA.format('0005')),
+  ('バヤリース オレンジ 470ml',470,'ml',100,43,0,0,11,0.06,165,False,ALL3,ASA.format('0006')),
+  ('Welch’s グレープ100 470ml',470,'ml',100,56,0.4,0,14,0.03,195,False,SC,ASA.format('0006')),
+  ('ほっとレモン 280ml',280,'ml',100,41,0,0,10,0.11,150,False,ALL3,ASA.format('0006')),
+  ('バンホーテン ココア 280g',280,'g',100,50,0.7,0.8,10,0.08,160,False,ALL3,ASA.format('0007')),
+  ('アサヒ おしるこ 185g缶',185,'g',100,90,1.9,0,20,0.21,140,False,VM,ASA.format('0007')),
+  ('アサヒ コクうま コーンポタージュ 185g缶',185,'g',100,47,0.7,1.0,8.8,0.8,140,False,VM,ASA.format('0007')),
+ ],
+ '伊藤園': [
+  ('お～いお茶 緑茶 600ml',600,'ml',100,0,0,0,0,0.03,238,True,ALL3,ITO.format('45534')),
+  ('お～いお茶 濃い茶 600ml',600,'ml',1200,0,0,0,0,0.2,238,True,ALL3,ITO.format('41753')),
+  ('お～いお茶 ほうじ茶 600ml',600,'ml',100,0,0,0,0,0.02,238,True,ALL3,ITO.format('41604')),
+  ('健康ミネラルむぎ茶 650ml',650,'ml',650,0,0,0,0,0.2,194,True,ALL3,ITO.format('41616')),
+  ('Relaxルイボスティー 600ml',600,'ml',600,0,0,0,0,0.1,216,True,SC,ITO.format('41916')),
+  ('かりっと大豆イソフラボン黒豆茶 600ml',600,'ml',600,0,0,0,0,0.2,216,True,SC,ITO.format('60646')),
+  ('TULLY\'S COFFEE BLACK 缶 165g',165,'g',100,0,0,0,0.5,0.05,173,True,ALL3,ITO.format('61323')),
+  ('TULLY\'S COFFEE 劇的微糖 缶 165g',165,'g',100,9,0.5,0.3,1.1,0.09,173,True,ALL3,ITO.format('61319')),
+  ('TULLY\'S COFFEE Seattle Style カフェオレ 500ml',500,'ml',100,40,1,1.7,4.9,0.16,292,True,SC,ITO.format('61606')),
+  ('栄養強化型 1日分の野菜 200ml',200,'ml',200,91,1.9,0,24.5,0.45,110,False,SC,ITO.format('41561')),
+  ('特濃コーンポタージュ 缶 185g',185,'g',100,45,0.7,0.5,9.4,0.71,173,True,VM,ITO.format('41393')),
+  ('大納言しるこ 缶 185g',185,'g',100,88,0.9,0,21,0.17,173,True,VM,ITO.format('41391')),
+ ],
+}
+FIBER_OFFICIAL = {'栄養強化型 1日分の野菜 200ml':6.9}
+SEVEN_CAFE = 'https://www.sej.co.jp/products/a/sevencafe/'
+FAMI_CAFE = 'https://www.family.co.jp/goods/safety/cafe.html'
+# コンビニのカウンター飲料（公式栄養値・公式価格）
+KONBINI_OFFICIAL = [
+ ('セブン‐イレブン','セブンカフェ ホットコーヒーR',6,0.4,0.0,1.3,0.01,0.2,140,SEVEN_CAFE),
+ ('セブン‐イレブン','セブンカフェ ホットコーヒーL',10,0.6,0.1,1.9,0.01,0.4,220,SEVEN_CAFE),
+ ('セブン‐イレブン','セブンカフェ アイスコーヒーR',7,0.4,0.1,1.3,0.01,0.2,140,SEVEN_CAFE),
+ ('セブン‐イレブン','セブンカフェ アイスコーヒーL',11,0.6,0.1,2.2,0.01,0.4,251,SEVEN_CAFE),
+ ('セブン‐イレブン','7カフェ ホットカフェラテR',87,4.6,4.5,7.3,0.14,0.2,220,SEVEN_CAFE),
+ ('セブン‐イレブン','7カフェ ホットカフェラテL',133,6.9,6.8,11.1,0.21,0.3,281,SEVEN_CAFE),
+ ('セブン‐イレブン','7カフェ アイスカフェラテR',76,4.0,3.9,6.5,0.12,0.1,270,SEVEN_CAFE),
+ ('セブン‐イレブン','7カフェ アイスカフェラテL',117,6.1,5.9,10.0,0.19,0.3,340,SEVEN_CAFE),
+ ('ファミリーマート','ファミマカフェ ブレンドS',3,0.2,0,0.6,0.02,None,158,FAMI_CAFE),
+ ('ファミリーマート','ファミマカフェ ブレンドM',7,0.2,0,1.4,0.04,None,230,FAMI_CAFE),
+ ('ファミリーマート','ファミマカフェ アイスコーヒーS',4,0,0,0.9,0.01,None,158,FAMI_CAFE),
+ ('ファミリーマート','ファミマカフェ アイスコーヒーM',10,0.3,0,1.9,0.02,None,275,FAMI_CAFE),
+ ('ファミリーマート','ファミマカフェ カフェラテM',104,4.6,5.4,9.4,0.14,None,255,FAMI_CAFE),
+ ('ファミリーマート','ファミマカフェ カフェラテL',130,5.8,6.8,11.5,0.17,None,305,FAMI_CAFE),
+ ('ファミリーマート','ファミマカフェ アイスカフェラテM',80,3.4,4.0,7.7,0.11,None,290,FAMI_CAFE),
+ ('ファミリーマート','ファミマカフェ アイスカフェラテL',107,4.4,5.3,10.5,0.13,None,385,FAMI_CAFE),
+ ('ファミリーマート','ファミマカフェ カフェフラッペ',172,2.4,7.8,23.3,0.1,None,330,FAMI_CAFE),
+ ('ファミリーマート','ファミマカフェ ストロベリーフラッペ',235,2,6.1,44.3,0.07,None,380,FAMI_CAFE),
+ ('ファミリーマート','Afternoon Tea ロイヤルミルクティーフラッペ',292,5.6,13.8,36.7,0.28,None,360,FAMI_CAFE),
+]
+# ファミマのプライベートブランド飲料（公式価格。栄養は公式ページに掲載がないため想定）
+FAMI_DRINK = 'https://www.family.co.jp/goods/drink.html'
+add_src('ファミリーマート', FAMI_DRINK, [
+ ('にごりの旨み 緑茶 600ml','drink',129,'tea:600'),
+ ('香ばしいコク 麦茶 600ml','drink',129,'tea:600'),
+ ('茶流彩彩 ジャスミン茶 600ml','drink',129,'tea:600'),
+ ('茶流彩彩 コーン茶 600ml','drink',129,'tea:600'),
+ ('香り華やか 台湾烏龍茶 600ml','drink',129,'tea:600'),
+ ('Afternoon Tea監修 アールグレイティー無糖 600ml','drink',129,'tea:600'),
+ ('Afternoon Tea監修 ルイボスティー 600ml','drink',129,'tea:600'),
+ ('Afternoon Tea監修 ロイヤルミルクティー 500ml','drink',150,'milk_tea:500'),
+ ('新潟県津南の天然水 600ml','drink',118,'water:600'),
+ ('強炭酸水 1000ml（500ml分）','drink',69,'water:500'),
+ ('Family\'s BOSS ブラック 450ml','drink',150,'coffee:450'),
+ ('Family\'s BOSS ラテ 450ml','drink',160,'latte:450'),
+ ('Family\'s BOSS 微糖 185ml','drink',110,'coffee_sweet:185'),
+ ('Family\'s BOSS オリジナル 185ml','drink',110,'cafe_au_lait:185'),
+ ('ファミマの牛乳 500ml（200ml分）','drink',76,'milk:206'),
+ ('カフェラテ 砂糖不使用 240ml','drink',210,'milk_lowfat:150,coffee:90'),
+ ('カフェラテ レギュラー 240ml','drink',210,'latte:240'),
+ ('ブラックコーヒー 無糖 240ml','drink',174,'coffee:240'),
+ ('のむヨーグルトプレーン','drink',160,'drink_yogurt:200'),
+ ('のむヨーグルトいちご','drink',183,'drink_yogurt:200'),
+ ('4種の果実のフルーツミックス 500ml','drink',120,'fruit_drink:500'),
+ ('オレンジサイダー 500ml','drink',140,'cider:500'),
+ ('国産抹茶100%使用 抹茶ラテ','drink',208,'latte:240'),
+ ('ホットレモン 490ml','drink',150,'fruit_drink:490'),
+])
+SUPPRESS_GENERIC = {
+ # brand drinks above replace these generic 想定 drinks
+ 'konbini': {'緑茶 600ml','ブラックコーヒー（ホット R）','カフェラテ（ホット R）','スポーツドリンク 500ml','コーラ 500ml','ミネラルウォーター 600ml','麦茶 600ml','ほうじ茶 600ml','ウーロン茶 600ml','無糖紅茶 500ml','ミルクティー 500ml','ペットボトルブラックコーヒー 500ml','サイダー 500ml','炭酸水 500ml','オレンジ果汁100% 200ml','トマトジュース 200ml','エナジードリンク 355ml','チルドカップカフェラテ 240ml','アイスコーヒー（R）','アイスカフェラテ（R）'},
+}
+LAWSON_CAFE = [  # ローソンの公式サイトは取得できなかったため想定値
+ ('ローソン','MACHI café コーヒー（S）','drink',130,'coffee:150'),
+ ('ローソン','MACHI café アイスコーヒー（M）','drink',230,'coffee:250'),
+ ('ローソン','MACHI café カフェラテ（M）','drink',230,'latte:260'),
+ ('ローソン','MACHI café アイスカフェラテ（M）','drink',260,'latte:240'),
+]
+for r in LAWSON_CAFE:
+    ITEMS.append(r)
+
 # ---------------------------------------------------------------- existing official items: estimated fiber / price
 FIBER_EST = {  # by id: estimated fiber (g) from contents
  'p001':1.4,'p002':1.4,'p003':1.4,'p004':1.9,'p005':1.6,'p006':1.4,'p007':1.5,'p008':2.3,'p009':1.6,'p010':1.7,
@@ -1172,6 +1400,8 @@ def main():
     for row in ITEMS:
         store, name, kind, price, spec = row[:5]
         time = row[5] if len(row) > 5 else 'any'
+        if store == '自販機' or (store in ('セブン‐イレブン','ファミリーマート','ローソン') and name in SUPPRESS_GENERIC['konbini']):
+            continue
         if name in REMOVE_ASSUMED_DUP or (store, name) in official_names or (store, name) in REMOVE_OLD or (store, name) in seen:
             continue
         seen.add((store, name))
@@ -1186,11 +1416,34 @@ def main():
         out.append({
             'id': 'e' + hashlib.sha1(f'{store}|{name}'.encode()).hexdigest()[:9], 'store': store, 'name': name, **nut, 'price': price,
             'source': src or MEXT, 'quality': 'estimate',
-            'note': ('ヤオコー公式サイト掲載商品。栄養は' if src else '') + '内容物（' + '・'.join(dict.fromkeys(JA[k] for k, g in parse(spec) if g > 0)) + '）から算出した想定値。価格も目安です。' if store != '自炊'
+            'note': ('ファミリーマート公式の税込価格。栄養は公式サイトに掲載がないため' if src == FAMI_DRINK else 'ヤオコー公式サイト掲載商品。栄養は' if src else '') + '内容物（' + '・'.join(dict.fromkeys(JA[k] for k, g in parse(spec) if g > 0)) + ('）から算出した想定値。' if src == FAMI_DRINK else '）から算出した想定値。価格も目安です。') if store != '自炊'
                     else '食材の成分値から算出した想定値。価格は1食あたりの食材費の想定。',
-            'time': time, 'kind': kind, 'price_type': 'approx', 'est': ['nutrition', 'price'],
+            'time': time, 'kind': kind, 'price_type': 'exact' if src == FAMI_DRINK else 'approx', 'est': ['nutrition'] if src == FAMI_DRINK else ['nutrition', 'price'],
             'contents': [[k, g] for k, g in parse(spec)],
         })
+    import hashlib as _h
+    def oid(store, name): return 'd' + _h.sha1(f'{store}|{name}'.encode()).hexdigest()[:9]
+    rng = lambda x: x
+    for maker, rows in MAKER_DRINKS.items():
+        for (name, amount, unit, basis, kcal, p, fa, c, salt, price, price_off, places, url) in rows:
+            k = amount / basis if basis == 100 else amount / basis
+            k = amount / 100 if basis == 100 else amount / basis
+            item = {'id': oid(maker, name), 'store': maker, 'name': name,
+                    'kcal': round(kcal * k), 'protein': round(p * k, 1), 'fat': round(fa * k, 1), 'carbs': round(c * k, 1),
+                    'salt': round(salt * k, 2) if salt * k < 0.1 else round(salt * k, 1),
+                    'fiber': FIBER_OFFICIAL.get(name), 'price': price, 'source': url, 'quality': 'official',
+                    'note': f"{maker}公式の栄養成分（{'100' + unit if basis == 100 else str(basis) + unit}当たり）から{amount}{unit}分に換算。" + ('価格はメーカー希望小売価格（税抜）に消費税8%を加えた額。' if price_off else '価格は店頭価格の目安。') + '購入場所：' + '・'.join(places),
+                    'time': 'any', 'kind': 'drink', 'price_type': 'approx', 'places': list(places)}
+            est = []
+            if FIBER_OFFICIAL.get(name) is None: est.append('fiber')
+            if not price_off: est.append('price')
+            item['est'] = est
+            if item['fiber'] is None: item['fiber'] = 0.0 if c * k < 1 else None
+            out.append(item)
+    for (store, name, kcal, p, fa, c, salt, fiber, price, url) in KONBINI_OFFICIAL:
+        out.append({'id': oid(store, name), 'store': store, 'name': name, 'kcal': round(kcal), 'protein': p, 'fat': fa, 'carbs': c, 'salt': salt,
+                    'fiber': fiber, 'price': price, 'source': url, 'quality': 'official', 'note': f'{store}公式の栄養成分・税込価格（店舗・地域で異なる場合あり）。',
+                    'time': 'any', 'kind': 'drink', 'price_type': 'exact'})
     # keep official kinds sensible
     for f in out:
         if f['quality'] == 'official':

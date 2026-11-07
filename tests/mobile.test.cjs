@@ -77,7 +77,7 @@ test('mobile: categories, estimated marks, photo intake UI and no horizontal ove
       await page.locator('[data-cat="スーパー"]').click();
       await page.locator('.sub-row [data-store="ヤオコー"]').click();
       const names = await page.locator('.food-row .food-sub span:first-child').allTextContents();
-      assert.ok(names.length >= 30 && names.every(n=>n==='ヤオコー'), 'yaoko items: '+names.length);
+      assert.ok(names.length >= 30 && names.slice(0,30).every(n=>n==='ヤオコー'), 'yaoko items first: '+names.slice(0,30).join());
       assert.ok(await page.locator('.food-row .est-mark').count() > 0, 'estimated values are marked 想定');
       await page.locator('[data-cat="自炊"]').click();
       const home = await page.locator('.food-row .food-sub span:first-child').allTextContents();
@@ -85,8 +85,9 @@ test('mobile: categories, estimated marks, photo intake UI and no horizontal ove
       // drinks section: by purchase place incl. vending machines; online search fills the form
       await page.locator('[data-cat="飲み物"]').click();
       await page.locator('.sub-row [data-store="自販機"]').click();
-      const vend = await page.locator('.food-row .food-sub span:first-child').allTextContents();
-      assert.ok(vend.length >= 20 && vend.every(n=>n==='自販機'));
+      const vend = await page.locator('.food-row .food-sub').allTextContents();
+      assert.ok(vend.length >= 20 && vend.every(n=>n.includes('自販機')), 'vending drinks: '+vend.length);
+      assert.ok(await page.locator('.food-row', {hasText:'C.C.レモン'}).locator('.tag:not(.estimated)').count() === 1, 'maker drinks carry official values');
       await page.locator('[data-action="addDrink"]').click();
       await page.locator('#onlineQuery').fill('午後の紅茶');
       await page.locator('[data-action="searchOnline"]').click();
@@ -94,7 +95,7 @@ test('mobile: categories, estimated marks, photo intake UI and no horizontal ove
       assert.equal(await page.locator('#foodForm [name="kcal"]').inputValue(), '185');
       assert.equal(await page.locator('#foodForm [name="store"]').inputValue(), '自販機');
       await page.locator('#foodForm button[type="submit"]').click();
-      await page.locator('#queryInput').fill('午後の紅茶');
+      await page.locator('#queryInput').fill('キリン 午後の紅茶');
       assert.equal(await page.locator('.food-row').count(), 1);
       await page.locator('#queryInput').fill('');
       // recommendations within a category
