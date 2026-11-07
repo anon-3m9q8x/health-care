@@ -73,6 +73,12 @@ def build():
         name = re.sub(r'\s+', ' ', unicodedata.normalize('NFKC', r['name'])).strip()
         if norm(name) in have: skipped += 1; continue
         k, unitlabel = per_pack(r)
+        price, ptype = r.get('price'), 'exact' if r.get('price') else 'approx'
+        um = re.match(r'1(枚|個|本|切|袋|食)当', r.get('unit') or '')
+        nm = re.search(r'(\d+)\s*(枚|個|本|切|袋|食)', unicodedata.normalize('NFKC', (r.get('volume') or '') + ' ' + name))
+        if um and nm and nm.group(2) == um.group(1) and int(nm.group(1)) > 1 and not unitlabel:
+            unitlabel = '1' + um.group(1)
+            if price: price, ptype = round(price / int(nm.group(1))), 'approx'
         disp = name + (f'（{unitlabel}）' if unitlabel else '')
         key = norm(disp)
         if key in seen: continue
@@ -83,11 +89,11 @@ def build():
         f = {'id': 'l' + r['pid'].split('_')[0], 'store': 'ローソン', 'name': disp, 'kcal': round(r['kcal'] * k),
              'protein': round(r['protein'] * k, 1), 'fat': round(r['fat'] * k, 1), 'carbs': round(r['carbs'] * k, 1),
              'salt': round(salt * k, 1), 'fiber': None if r.get('fiber') is None else round(r['fiber'] * k, 1),
-             'price': r.get('price'), 'source': f"https://www.lawson.co.jp/recommend/original/detail/{r['pid']}.html",
+             'price': price, 'source': f"https://www.lawson.co.jp/recommend/original/detail/{r['pid']}.html",
              'quality': 'official',
              'note': 'ローソン公式の栄養成分表示' + (f'（{r["unit"]}）を内容量{r["volume"]}で換算' if k != 1 else f'（{r["unit"]}）' if r.get('unit') else '')
                      + '・ローソン標準価格（税込、2026-11-08取得）。地域・改定により異なる場合があります。',
-             'time': 'any', 'kind': kind_of(r), 'price_type': 'exact' if r.get('price') else 'approx', 'lawson_cat': r['cat']}
+             'time': 'any', 'kind': kind_of(r), 'price_type': ptype, 'lawson_cat': r['cat']}
         if est: f['est'] = est
         out.append(f)
     header = ('/* NutriPath ローソン商品データ。tools/lawson.py で生成。出典: ローソン公式「オリジナル商品」各商品ページ'

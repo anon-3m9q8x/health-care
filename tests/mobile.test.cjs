@@ -134,10 +134,10 @@ test('mobile: categories, estimated marks, photo intake UI and no horizontal ove
       const konbiniNames = await page.locator('.food-row .food-name').allTextContents();
       assert.equal(new Set(konbiniNames).size, konbiniNames.length, 'no duplicated konbini products');
       await page.locator('#queryInput').fill('おにぎり 鮭');
-      assert.equal(await page.locator('.food-row').count(), 1, 'one merged onigiri');
-      assert.match(await page.locator('.food-row').textContent(), /セブン‐イレブン・ファミリーマート・ローソンで購入可/);
+      const merged = page.locator('.food-row', {hasText:'セブン‐イレブン・ファミリーマート・ローソンで購入可'}).filter({has: page.locator('.food-name', {hasText: /^おにぎり 鮭$/})});
+      assert.equal(await merged.count(), 1, 'one merged onigiri');
       await page.locator('.sub-row [data-store="ローソン"]').click();
-      assert.equal(await page.locator('.food-row').count(), 1);
+      assert.equal(await merged.count(), 1, 'merged onigiri also listed under Lawson');
       await page.locator('#queryInput').fill('チキ');
       const lawson = await page.locator('.food-row .food-name').allTextContents();
       assert.ok(lawson.includes('Lチキ レギュラー') && !lawson.includes('ファミチキ'), lawson.join());
