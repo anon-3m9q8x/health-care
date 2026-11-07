@@ -1,0 +1,11 @@
+.account-bar{margin:0 0 18px;padding:14px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;border:1px solid var(--line);border-radius:14px;background:var(--panel);color:var(--ink)}
+.account-bar p{margin:3px 0 0;font-size:12px;color:var(--muted)}
+.account-actions{display:flex;gap:8px;flex-wrap:wrap}.account-email{overflow-wrap:anywhere;font-size:13px}
+.account-bar button:disabled{opacity:.5;cursor:not-allowed}
+.account-overlay{position:fixed;inset:0;z-index:100;background:#071e1780;display:grid;place-items:center;padding:18px;overflow:auto}
+.account-overlay[hidden]{display:none}.account-dialog{background:var(--panel,#fff);color:var(--ink,#17382d);width:min(100%,480px);max-height:calc(100dvh - 36px);overflow:auto;border-radius:20px;padding:24px;box-shadow:0 20px 70px #0003}
+.account-dialog h2{margin:0 0 12px}.account-dialog p{font-size:13px;line-height:1.7}.account-dialog form{display:grid;gap:13px}.account-dialog label{display:grid;gap:6px;font-size:13px;font-weight:600}
+.account-dialog input{box-sizing:border-box;width:100%;border:1px solid var(--line,#cbd8d3);background:var(--bg,#fff);color:inherit;padding:12px;border-radius:9px;font:inherit}
+.account-dialog .account-actions{margin-top:14px}.account-message{white-space:pre-wrap;color:var(--green,#138b74);min-height:1.5em}.account-message.error{color:#b44c35}.account-dialog button:disabled{opacity:.55;cursor:wait}
+.account-conflict{border-color:#d8a24b}.account-conflict p{color:var(--ink)}
+@media(max-width:520px){.account-bar{padding:12px}.account-dialog{padding:20px}.account-actions .btn{min-height:42px}}
