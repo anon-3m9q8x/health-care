@@ -65,3 +65,4 @@ html,body{max-width:100%;overflow-x:hidden}@supports(overflow:clip){html,body{ov
 @media(pointer:coarse) and (max-height:520px){.app-shell{display:block}.main{width:100%}.mobile-nav{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));position:fixed;left:0;right:0;bottom:0;z-index:8;background:var(--panel);border-top:1px solid var(--line)}.mobile-nav button{display:grid;justify-items:center;align-content:center;border:0;background:transparent;color:var(--muted)}.mobile-nav button.active{color:var(--green);background:var(--green-l)}}
 .mobile-nav button:hover{background:transparent;color:var(--muted)}.mobile-nav button.active:hover{background:var(--green-l);color:var(--green)}.mobile-nav .nav-menu:hover{color:var(--ink)}
 .food-sub .places{color:#3c6a93;background:#eef4fb;border-radius:999px;padding:1px 7px;font-size:10px}
+#queryInput{-webkit-appearance:none;appearance:none}

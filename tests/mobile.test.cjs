@@ -74,6 +74,14 @@ test('mobile: categories, estimated marks, photo intake UI and no horizontal ove
       await page.locator('.mobile-nav [data-page="catalog"]').click();
       const cats = await page.locator('.cat-row .chip').allTextContents();
       for (const c of ['自炊','スーパー','コンビニ','ファストフード','牛丼・定食']) assert.ok(cats.some(t=>t.includes(c)), 'category '+c);
+      assert.equal(await page.locator('.cat-row [data-cat="自販機"]').count(), 0, 'vending machines only under drinks');
+      // Return key closes the keyboard and keeps the results
+      await page.locator('#queryInput').click();
+      await page.locator('#queryInput').fill('綾鷹');
+      await page.locator('#queryInput').press('Enter');
+      assert.notEqual(await page.evaluate(()=>document.activeElement?.id), 'queryInput', 'keyboard closed');
+      assert.ok(await page.locator('.food-row').count() >= 1);
+      await page.locator('#queryInput').fill('');
       await page.locator('[data-cat="スーパー"]').click();
       await page.locator('.sub-row [data-store="ヤオコー"]').click();
       const names = await page.locator('.food-row .food-sub span:first-child').allTextContents();
