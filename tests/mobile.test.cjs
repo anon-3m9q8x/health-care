@@ -295,3 +295,45 @@ test('today: meal order, time-based meal, swipe to delete, yesterday quick add',
   } finally {await browser.close();await new Promise(r=>server.close(r));}
 });
 
+
+test('theme: design switches by Japan time at 6:00, 12:00 and 18:00', {timeout:90000}, async () => {
+  const server = createServer(async (req,res) => {
+    try {
+      const pathname = decodeURIComponent(new URL(req.url,'http://localhost').pathname);
+      const file = resolve(root, '.'+(pathname==='/'?'/index.html':pathname));
+      if (!file.startsWith(root+sep)) {res.writeHead(403).end();return;}
+      const mime = {'.html':'text/html','.js':'text/javascript','.css':'text/css','.json':'application/json','.webmanifest':'application/manifest+json','.png':'image/png'};
+      res.writeHead(200,{'Content-Type':mime[extname(file)]||'text/plain'}); res.end(await readFile(file));
+    } catch {res.writeHead(404).end();}
+  });
+  await new Promise(r=>server.listen(0,'127.0.0.1',r));
+  const url = `http://127.0.0.1:${server.address().port}/`;
+  const browser = await chromium.launch({executablePath:process.env.CHROMIUM_PATH || '/usr/bin/chromium',headless:true,args:['--no-sandbox']});
+  try {
+    const cases = [['05:59','night','こんばんは'],['06:00','morning','おはようございます'],['11:59','morning','おはようございます'],['12:00','day','こんにちは'],['17:59','day','こんにちは'],['18:00','night','こんばんは']];
+    for (const [hm,period,greet] of cases) {
+      const context = await browser.newContext({viewport:{width:402,height:874}, serviceWorkers:'block', isMobile:true, hasTouch:true, timezoneId:'America/New_York'});
+      await context.route(/^https:\/\/(cdn\.jsdelivr\.net|fonts\.googleapis\.com|fonts\.gstatic\.com)\//, route=>route.abort());
+      const page = await context.newPage();
+      await page.clock.install({time:new Date(`2026-11-09T${hm}:00+09:00`)});
+      await page.goto(url);
+      await page.waitForSelector('.period-greeting');
+      assert.equal(await page.evaluate(()=>document.documentElement.dataset.period), period, hm);
+      assert.equal((await page.textContent('.period-greeting')).trim(), greet, hm);
+      assert.equal(await page.evaluate(()=>getComputedStyle(document.querySelector('#scene .scene-'+document.documentElement.dataset.period)).display), 'block');
+      const sw = await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1); assert.ok(sw, 'no horizontal overflow '+hm);
+      await context.close();
+    }
+    // live switch while the app stays open: 11:59 → 12:00 changes morning → day
+    const context = await browser.newContext({viewport:{width:402,height:874}, serviceWorkers:'block'});
+    await context.route(/^https:\/\/(cdn\.jsdelivr\.net|fonts\.googleapis\.com|fonts\.gstatic\.com)\//, route=>route.abort());
+    const page = await context.newPage();
+    await page.clock.install({time:new Date('2026-11-09T11:59:20+09:00')});
+    await page.goto(url);
+    assert.equal(await page.evaluate(()=>document.documentElement.dataset.period), 'morning');
+    await page.clock.runFor(61000);
+    assert.equal(await page.evaluate(()=>document.documentElement.dataset.period), 'day');
+    assert.equal(await page.getAttribute('meta[name="theme-color"]','content'), '#1d6aa8');
+    await context.close();
+  } finally { await browser.close(); server.close(); }
+});

@@ -1,0 +1,157 @@
+/* NutriPath — time-of-day themes (統合案: 朝・昼 = 空のいろ / 夜 = 和の色)
+   朝 6:00–11:59, 昼 12:00–17:59, 夜 18:00–5:59 (Japan time). The period is set on <html data-period>. */
+
+:root,
+:root[data-period="day"] {
+  --sky: #bfe0f7; --sky-low: #eef6fc; --sun: #ffcf4a; --cloud: #ffffff;
+  --hill3: #cfe6c0; --hill2: #a9d18e; --hill1: #7fb86a; --tree: #4f8f3e; --bird: #4f677c; --window: #ffcf4a;
+  --bg: #eef6fc; --panel: rgba(255, 255, 255, .86); --panel-solid: #ffffff;
+  --ink: #13263a; --muted: #4f677c; --line: #dbe8f2; --input-line: #c9dbe8;
+  --green: #1d6aa8; --green-l: #dfeefa; --accent: #2f8fd8; --btn-ink: #ffffff;
+  --dark: #123a5c; --target: #d9772b; --track: #e1edf6;
+  --chip-bg: #dfeefa; --chip-ink: #175a8f; --chip-line: #c3dcf0;
+  --nav-active-bg: #dfeefa; --nav-active-ink: #175a8f;
+  --notice-bg: rgba(223, 238, 250, .9); --notice-ink: #1f4d72; --notice-line: #c3dcf0;
+  --head-font: 'DM Sans', 'Noto Sans JP', system-ui, sans-serif;
+  --radius: 18px;
+}
+:root[data-period="morning"] {
+  --sky: #fbd9bd; --sky-low: #fdf1e6; --sun: #f08a3c; --cloud: #fff3e6;
+  --hill3: #f6d2b4; --hill2: #f2c39c; --hill1: #e6a77a; --tree: #c9824f; --bird: #8a5a3a; --window: #f08a3c;
+  --bg: #fdf4ec; --panel: rgba(255, 255, 255, .86); --panel-solid: #ffffff;
+  --ink: #2a2420; --muted: #6e625a; --line: #f0e2d6; --input-line: #e6d1c0;
+  --green: #b4561f; --green-l: #fde5d3; --accent: #e9824a; --btn-ink: #ffffff;
+  --dark: #4a2c18; --target: #2f6fc0; --track: #f6e6d8;
+  --chip-bg: #fde5d3; --chip-ink: #8f4313; --chip-line: #f4cbab;
+  --nav-active-bg: #fde5d3; --nav-active-ink: #8f4313;
+  --notice-bg: rgba(253, 229, 211, .9); --notice-ink: #6b3412; --notice-line: #f4cbab;
+}
+:root[data-period="night"] {
+  --sky: #101a2b; --sky-low: #172235; --sun: #e3bd78; --cloud: #ece6d6;
+  --hill3: #1b2a44; --hill2: #22324d; --hill1: #0c1422; --tree: #0c1422; --bird: #adb4c2; --window: #e3bd78;
+  --bg: #172235; --panel: rgba(31, 44, 66, .88); --panel-solid: #1f2c42;
+  --ink: #ece6d6; --muted: #adb4c2; --line: #2d3c57; --input-line: #3a4b6a;
+  --green: #d6a756; --green-l: #34405a; --accent: #d6a756; --btn-ink: #172235;
+  --dark: #0d1626; --target: #9ec3e8; --track: #2d3c57;
+  --chip-bg: #34405a; --chip-ink: #ecc98a; --chip-line: #44557a;
+  --nav-active-bg: #2d3c57; --nav-active-ink: #ecc98a;
+  --notice-bg: rgba(36, 51, 80, .92); --notice-ink: #d8dfeb; --notice-line: #2d3c57;
+  --head-font: 'Shippori Mincho', 'Noto Serif JP', serif;
+  --radius: 12px;
+  --shadow: 0 10px 30px rgba(0, 0, 0, .25);
+  color-scheme: dark;
+}
+
+/* ---- scenery behind the whole app ---- */
+html { background: var(--sky-low); }
+body { background: transparent; transition: color .4s; }
+
+#scene { position: fixed; inset: 0; z-index: -1; pointer-events: none; overflow: hidden;
+  background: linear-gradient(180deg, var(--sky) 0%, var(--sky-low) 78%); transition: background .6s; }
+#scene > * { position: absolute; }
+.scene-layer { display: none; }
+:root[data-period="morning"] .scene-morning,
+:root[data-period="day"] .scene-day,
+:root[data-period="night"] .scene-night,
+:root:not([data-period]) .scene-day { display: block; }
+.scene-sun { top: 56px; right: max(24px, 7vw); width: 92px; height: 92px; border-radius: 50%; background: var(--sun);
+  box-shadow: 0 0 0 26px color-mix(in srgb, var(--sun) 18%, transparent), 0 0 0 54px color-mix(in srgb, var(--sun) 8%, transparent); }
+.scene-day.scene-sun { top: 40px; width: 70px; height: 70px; }
+.scene-night.scene-sun { width: 66px; height: 66px; background: transparent;
+  box-shadow: inset -20px 10px 0 0 var(--sun), 0 0 46px 6px color-mix(in srgb, var(--sun) 16%, transparent); transform: rotate(-12deg); }
+.scene-stars { inset: 0; width: 100%; height: 72%; }
+.scene-clouds { inset: 0; width: 100%; height: 70%; }
+.scene-hills { left: 0; right: 0; bottom: 0; width: 100%; height: 30vh; min-height: 190px; }
+.scene-hills .h3 { fill: var(--hill3); } .scene-hills .h2 { fill: var(--hill2); } .scene-hills .h1 { fill: var(--hill1); }
+.scene-trees { left: 0; right: 0; bottom: 0; width: 100%; height: 30vh; min-height: 190px; }
+.scene-clouds .c, .scene-stars .s { fill: var(--cloud); }
+.scene-birds path { stroke: var(--bird); }
+.scene-trees .t { fill: var(--tree); } .scene-trees .w { fill: var(--window); }
+
+/* ---- glass surfaces so the scenery shows through ---- */
+.panel, .topbar, .mobile-nav, .meal-card, .sidebar { -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); }
+.topbar { background: color-mix(in srgb, var(--panel-solid) 78%, transparent); }
+.mobile-nav { background: color-mix(in srgb, var(--panel-solid) 84%, transparent); }
+.modal, .account-dialog, .log-swipe .log-item, .undo-bar + *, .online-item { background: var(--panel-solid); }
+.modal .panel { background: var(--panel-solid); }
+.sidebar { background: color-mix(in srgb, var(--dark) 92%, transparent); }
+
+/* ---- components that used fixed light colours ---- */
+h1, h2, .hello h1 { font-family: var(--head-font); }
+.btn-primary { color: var(--btn-ink); }
+.btn-primary:hover { filter: brightness(1.06); }
+.chip.active { border-color: var(--chip-line); }
+.field input, .field select, .field textarea, .date-controls input,
+.online-row input, .ocr-text textarea, .qty-row input, .catalog-toolbar input, .catalog-toolbar select { border-color: var(--input-line); background: var(--panel-solid); color: var(--ink); }
+nav button.active { background: var(--nav-active-bg); color: var(--nav-active-ink); }
+.mobile-nav button.active, .mobile-nav button.active:hover { background: var(--nav-active-bg); color: var(--nav-active-ink); }
+.brand-mark { background: var(--green-l); color: var(--green); }
+.notice { background: var(--notice-bg); color: var(--notice-ink); border-color: var(--notice-line); }
+.bar { background: var(--track); }
+.bar .eaten, .metric.is-under .target-bar .eaten, .target-bar .eaten { background: var(--accent); }
+.target-bar { background: var(--track); box-shadow: none; }
+.target-line, .lg.line { background: var(--target); box-shadow: 0 0 0 2px var(--panel-solid); }
+.target-label { color: var(--target); }
+.lg.eaten { background: var(--accent); }
+.goal-chip.ok { background: var(--chip-bg); color: var(--chip-ink); border-color: var(--chip-line); }
+.week-col .wbar { background: var(--track); }
+.seg { background: color-mix(in srgb, var(--panel-solid) 60%, transparent); }
+.seg-btn.active { background: var(--panel-solid); color: var(--green); }
+.goal-source.auto { background: var(--chip-bg); color: var(--chip-ink); }
+.clear-x { background: var(--track); color: var(--muted); }
+.qty-btn, .prev-day, .ext-card { background: color-mix(in srgb, var(--panel-solid) 70%, transparent); color: var(--ink); }
+.entry-preview { background: var(--chip-bg); color: var(--ink); }
+.jst-clock, .log-amount { color: var(--green); }
+.period-greeting { color: var(--green); }
+
+/* night: soften the bright status chips */
+:root[data-period="night"] .notice.orange { background: rgba(70, 55, 30, .9); color: #f3d9a6; border-color: #5a4628; }
+:root[data-period="night"] .notice.red, :root[data-period="night"] .btn-danger { background: rgba(75, 38, 38, .9); color: #f4c0b6; border-color: #6a3a36; }
+:root[data-period="night"] .tag.estimated, :root[data-period="night"] .est-mark { background: #3a3220; color: #ecc98a; border-color: #4f442a; }
+:root[data-period="night"] .tiny-tag.eaten, :root[data-period="night"] .tag.best { background: #24402f; color: #a5e0c0; }
+:root[data-period="night"] .tiny-tag.planned { background: #3a3220; color: #ecc98a; }
+:root[data-period="night"] .food-sub .places, :root[data-period="night"] .goal-chip.need { background: #24375a; color: #b8d4f2; border-color: #33507d; }
+:root[data-period="night"] .photo-box { background: #1b2a40; border-color: #3a4b6a; }
+:root[data-period="night"] .modal-backdrop { background: rgba(4, 8, 16, .72); }
+
+@media (prefers-reduced-motion: reduce) { #scene, body { transition: none; } }
+
+/* ---- remaining fixed colours from styles.css ---- */
+.hello p.period-greeting { color: var(--green); font-weight: 800; font-size: 14px; margin: -2px 0 4px; font-family: var(--head-font); }
+.bar .planned { background: color-mix(in srgb, var(--accent) 38%, var(--panel-solid)); }
+.lg.planned { background: color-mix(in srgb, var(--accent) 38%, var(--panel-solid)); }
+.week-col .filled { background: color-mix(in srgb, var(--accent) 70%, var(--panel-solid)); }
+.btn-dark { background: var(--dark); border-color: var(--dark); color: #fff; }
+.btn-soft { background: var(--chip-bg); border-color: var(--chip-line); color: var(--chip-ink); }
+.chip.active { color: var(--chip-ink); background: var(--chip-bg); }
+.tag { background: var(--chip-bg); color: var(--chip-ink); }
+.meal-ico, .stat .icon { background: var(--chip-bg); color: var(--chip-ink); }
+.reco-card { border-color: var(--line); }
+.reco-card:first-child { background: linear-gradient(135deg, var(--chip-bg), var(--panel-solid) 70%); border-color: var(--chip-line); }
+.reco-items { color: var(--muted); }
+.reco-stats span, .pill-stats span { background: var(--track); }
+.date-pill, footer { color: var(--muted); }
+.food-row { background: var(--panel); }
+.toast { background: var(--dark); }
+:root[data-period="night"] .toast { background: #2d3c57; color: var(--ink); }
+:root[data-period="night"] .btn-dark { background: #2d3c57; border-color: #3a4b6a; color: var(--ink); }
+:root[data-period="night"] .tiny-tag, :root[data-period="night"] .tag.unknown { background: #2d3c57; color: var(--muted); }
+:root[data-period="night"] .mini-table th { color: var(--muted); }
+:root[data-period="night"] img { opacity: .94; }
+
+/* ---- banners, cards and chips that had a mint tint ---- */
+.profile-prompt { border-color: var(--chip-line); background: linear-gradient(112deg, var(--chip-bg) 0%, var(--panel-solid) 88%); }
+.profile-prompt .prompt-glyph { background: var(--chip-bg); color: var(--chip-ink); }
+.profile-prompt p { color: var(--muted); }
+.profile-primary, .profile-primary:nth-child(2) { background: linear-gradient(135deg, var(--chip-bg), var(--panel-solid)); }
+.drink-search { background: linear-gradient(112deg, var(--chip-bg), var(--panel-solid) 85%); }
+.photo-box { background: var(--chip-bg); }
+.clear-x:hover { background: var(--chip-line); }
+.goal-card { background: rgba(255, 255, 255, .08); border-color: rgba(255, 255, 255, .14); }
+.goal-card p, .side-foot, .brand small, .side-section { color: rgba(255, 255, 255, .62); }
+.goal-pict, .brand-dot, .side-foot span { color: color-mix(in srgb, var(--accent) 55%, #fff); }
+nav button { color: rgba(255, 255, 255, .72); }
+nav button:hover { background: rgba(255, 255, 255, .1); }
+:root[data-period="night"] .goal-chip.over, :root[data-period="night"] .bar.warning .planned { background: #4b2626; color: #f4c0b6; }
+.catalog-toolbar .clear-wrap > input, .catalog-toolbar > input, .catalog-toolbar > select { border: 1px solid var(--input-line); border-radius: 9px; padding: 10px 11px; background: var(--panel-solid); color: var(--ink); width: 100%; min-width: 0; font-size: 16px; }
+.target-bar { box-shadow: inset 0 0 0 1px var(--line); }
