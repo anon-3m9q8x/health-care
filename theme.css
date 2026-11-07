@@ -155,3 +155,15 @@ nav button:hover { background: rgba(255, 255, 255, .1); }
 :root[data-period="night"] .goal-chip.over, :root[data-period="night"] .bar.warning .planned { background: #4b2626; color: #f4c0b6; }
 .catalog-toolbar .clear-wrap > input, .catalog-toolbar > input, .catalog-toolbar > select { border: 1px solid var(--input-line); border-radius: 9px; padding: 10px 11px; background: var(--panel-solid); color: var(--ink); width: 100%; min-width: 0; font-size: 16px; }
 .target-bar { box-shadow: inset 0 0 0 1px var(--line); }
+
+/* ---- form alignment (iPhone Safari) ---- */
+.form-row > .field, .settings-grid > .field, .modal .fields > .field { align-content: end; }
+.field label { overflow-wrap: anywhere; }
+input[type="date"], input[type="time"], input[type="month"] {
+  -webkit-appearance: none; appearance: none; display: block; width: 100%; max-width: 100%; min-width: 0;
+  box-sizing: border-box; text-align: left; min-height: 44px; line-height: 1.3; }
+input[type="date"]::-webkit-date-and-time-value, input[type="time"]::-webkit-date-and-time-value { text-align: left; margin: 0; }
+input[type="date"]::-webkit-calendar-picker-indicator { margin-left: auto; }
+.field input:not([type="checkbox"]):not([type="radio"]):not([type="file"]):not([type="range"]), .field select { height: 48px; min-height: 48px; }
+.form-row > *, .settings-grid > * { min-width: 0; }
+.btn:focus-visible, input:focus-visible, select:focus-visible { outline-color: color-mix(in srgb, var(--accent) 45%, transparent); }
