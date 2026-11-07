@@ -8,5 +8,5 @@
 .account-dialog input{box-sizing:border-box;width:100%;border:1px solid var(--line,#cbd8d3);background:var(--bg,#fff);color:inherit;padding:12px;border-radius:9px;font:inherit}
 .account-dialog .account-actions{margin-top:14px}.account-message{white-space:pre-wrap;color:var(--green,#138b74);min-height:1.5em}.account-message.error{color:#b44c35}.account-dialog button:disabled{opacity:.55;cursor:wait}
 .account-conflict{border-color:#d8a24b}.account-conflict p{color:var(--ink)}
-@media(max-width:790px){.account-bar{margin:0 8px 10px;padding:7px 10px;border-radius:12px}.account-bar p{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.account-bar .btn{padding:6px 9px;font-size:11px;min-height:34px}}
+@media(max-width:790px),(pointer:coarse) and (max-height:520px){.account-bar{margin:0 8px 10px;padding:7px 10px;border-radius:12px}.account-bar p{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.account-bar .btn{padding:6px 9px;font-size:11px;min-height:34px}}
 @media(max-width:520px){.account-dialog{padding:20px}.account-dialog .account-actions .btn{min-height:42px}}

@@ -37,6 +37,7 @@ test('mobile: categories, estimated marks, photo intake UI and no horizontal ove
     for (const viewport of [{width:360,height:780},{width:390,height:844},{width:412,height:915}]) {
       const context = await browser.newContext({viewport, serviceWorkers:'block', isMobile:true, hasTouch:true});
       await context.route('https://cdn.jsdelivr.net/**', route=>route.abort());
+      await context.route('https://world.openfoodfacts.org/**', route=>route.fulfill({contentType:'application/json',body:JSON.stringify({products:[{code:'4909411000000',product_name:'午後の紅茶 ミルクティー',brands:'キリン',quantity:'500 ml',nutriments:{'energy-kcal_100g':37,proteins_100g:0.7,fat_100g:0.6,carbohydrates_100g:7.3,salt_100g:0.1}}]})}));
       await context.route('**/config.js', route=>route.fulfill({contentType:'text/javascript',body:'window.NUTRIPATH_CONFIG={};'}));
       const page = await context.newPage(); page.on('pageerror',e=>errors.push(e.message));
       await page.goto(url); await page.locator('#app h1').waitFor();
@@ -47,18 +48,28 @@ test('mobile: categories, estimated marks, photo intake UI and no horizontal ove
         const overflow = await page.evaluate(()=>document.documentElement.scrollWidth - innerWidth);
         assert.ok(overflow <= 0, `${tab} overflows horizontally by ${overflow}px at ${viewport.width}px`);
       }
+      assert.equal(await page.locator('[data-action="exportCSV"]').count(), 0, 'weekly report has no export');
       // weekly report panels use the full width on phones
       await page.locator('.mobile-nav [data-page="insights"]').click();
       const panelWidth = await page.locator('.insight-grid > .panel').first().evaluate(n=>n.getBoundingClientRect().width);
       assert.ok(panelWidth > viewport.width - 60, 'insight panel fits phone width: '+panelWidth);
       // bottom navigation is tall enough and contains the hamburger menu
       const navHeight = await page.locator('.mobile-nav').evaluate(n=>n.getBoundingClientRect().height);
-      assert.ok(navHeight >= 80, 'bottom nav height '+navHeight);
+      assert.ok(navHeight >= 100, 'bottom nav height '+navHeight);
+      assert.equal(await page.locator('#mobileMenu').isVisible(), false);
+      assert.equal(await page.locator('#sidebar').isVisible(), false, 'no workspace on the left');
       await page.locator('.mobile-nav [data-action="openMenu"]').click();
-      await page.locator('#sidebar.open').waitFor();
+      await page.locator('#sidebar.open').waitFor();await page.waitForTimeout(300);
+      const sheet = await page.locator('#sidebar').evaluate(n=>{const r=n.getBoundingClientRect();return {left:r.left,width:r.width,bottom:r.bottom}});
+      assert.ok(sheet.left===0 && sheet.width===viewport.width, 'menu opens as a bottom sheet '+JSON.stringify(sheet));
       await page.locator('#sidebar [data-page="settings"]').click();
       assert.equal(await page.locator('#sidebar.open').count(), 0);
       assert.match(await page.locator('#app h1').textContent(), /目標/);
+      // daily target lines on the nutrition balance
+      await page.locator('.mobile-nav [data-page="today"]').click();
+      assert.equal(await page.locator('.target-line').count(), 7);
+      assert.ok(await page.locator('.goal-chip.ok').count() >= 4);
+      assert.equal(await page.locator('.meal-card', {hasText:'飲み物'}).count(), 1);
       // purchase-place categories: 自炊 and スーパー are separate; ヤオコー exists under スーパー
       await page.locator('.mobile-nav [data-page="catalog"]').click();
       const cats = await page.locator('.cat-row .chip').allTextContents();
@@ -71,6 +82,21 @@ test('mobile: categories, estimated marks, photo intake UI and no horizontal ove
       await page.locator('[data-cat="自炊"]').click();
       const home = await page.locator('.food-row .food-sub span:first-child').allTextContents();
       assert.ok(home.length > 0 && home.every(n=>n==='自炊'));
+      // drinks section: by purchase place incl. vending machines; online search fills the form
+      await page.locator('[data-cat="飲み物"]').click();
+      await page.locator('.sub-row [data-store="自販機"]').click();
+      const vend = await page.locator('.food-row .food-sub span:first-child').allTextContents();
+      assert.ok(vend.length >= 20 && vend.every(n=>n==='自販機'));
+      await page.locator('[data-action="addDrink"]').click();
+      await page.locator('#onlineQuery').fill('午後の紅茶');
+      await page.locator('[data-action="searchOnline"]').click();
+      await page.locator('.online-item').first().click();
+      assert.equal(await page.locator('#foodForm [name="kcal"]').inputValue(), '185');
+      assert.equal(await page.locator('#foodForm [name="store"]').inputValue(), '自販機');
+      await page.locator('#foodForm button[type="submit"]').click();
+      await page.locator('#queryInput').fill('午後の紅茶');
+      assert.equal(await page.locator('.food-row').count(), 1);
+      await page.locator('#queryInput').fill('');
       // recommendations within a category
       await page.locator('[data-cat="コンビニ"]').click();
       await page.locator('.mobile-nav [data-page="recommend"]').click();
