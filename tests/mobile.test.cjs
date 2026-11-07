@@ -66,7 +66,7 @@ test('mobile: categories, estimated marks, photo intake UI and no horizontal ove
       assert.ok(sheet.left===0 && sheet.width===viewport.width, 'menu opens as a bottom sheet '+JSON.stringify(sheet));
       await page.locator('#sidebar [data-page="settings"]').click();
       assert.equal(await page.locator('#sidebar.open').count(), 0);
-      assert.match(await page.locator('#app h1').textContent(), /目標/);
+      assert.match(await page.locator('#app h1').textContent(), /設定/);
       // daily target lines on the nutrition balance
       await page.locator('.mobile-nav [data-page="today"]').click();
       assert.equal(await page.locator('.target-line').count(), 7);
@@ -271,6 +271,25 @@ test('today: meal order, time-based meal, swipe to delete, yesterday quick add',
     await page.locator('.mobile-nav [data-action="openMenu"]').click();
     await page.locator('#sidebar [data-page="settings"]').click();
     assert.equal(await page.locator('.ext-card').count(), 4);
+    // account sync lives only in settings; goals / basic info / health are one swipeable panel
+    assert.equal(await page.locator('#accountSlot #accountBar').count(), 1);
+    await page.locator('[data-goal-tab="profile"]').click();
+    await page.locator('#profileForm [name="age"]').fill('24');
+    await page.locator('#profileForm [name="sex"]').selectOption('male');
+    await page.locator('#profileForm [name="height"]').fill('172');
+    await page.locator('#profileForm [name="weight"]').fill('68');
+    await page.locator('#profileForm button[type="submit"]').click();
+    await page.locator('[data-goal-tab="health"]').click();
+    await page.locator('#profileForm2 [name="systolic"]').fill('138');
+    await page.locator('#profileForm2 button[type="submit"]').click();
+    await page.locator('.goal-source.auto').waitFor();
+    assert.equal(await page.locator('#g_salt').inputValue(), '6', 'blood pressure lowers the salt goal');
+    assert.match(await page.locator('.goal-basis').textContent(), /血圧/);
+    for (const tab of ['today','recommend','catalog','insights','profile']) {
+      await page.locator(`.mobile-nav [data-page="${tab}"]`).click();
+      assert.equal(await page.locator('#accountBar').isVisible(), false, 'no account bar on '+tab);
+    }
+    assert.equal(await page.locator('#profileForm').count(), 0, 'forms moved out of 体調管理');
     await context.close();
     assert.deepEqual(errors, []);
   } finally {await browser.close();await new Promise(r=>server.close(r));}

@@ -69,13 +69,25 @@ test('browser: account isolation, migration, two-device sync, conflicts and offl
     await page.goto(url); await page.locator('#app h1').waitFor();
     return {page,context,state};
   }
+  async function nav(page,target) {
+    if (await page.locator('.mobile-nav').isVisible()) {
+      if (target==='settings') { await page.locator('.mobile-nav [data-action="openMenu"]').click(); await page.locator('#sidebar [data-page="settings"]').click(); }
+      else await page.locator(`.mobile-nav [data-page="${target}"]`).click();
+    } else await page.locator(`#nav [data-page="${target}"]`).click();
+    await page.locator('#app h1').waitFor();
+    return page;
+  }
+  async function acct(page) { if (!(await page.locator('#accountSlot #accountBar').count())) await nav(page,'settings'); return page; }
+  async function today(page) { if (!(await page.locator('.meal-grid').count())) await nav(page,'today'); return page; }
   async function login(page,email='alice@example.test') {
+    await acct(page);
     await page.locator('[data-account="login"]').click();
     await page.locator('#accountForm input[name="email"]').fill(email);
     await page.locator('#accountForm input[name="password"]').fill('test-password-123');
     await page.locator('#accountForm button[type="submit"]').click();
     await eventually(async()=> (await page.locator('.account-email').textContent())===email);
     await page.locator('#app h1').waitFor();
+    await today(page);
   }
   async function addMeal(page) {
     await page.locator('.mobile-nav [data-page="catalog"]').click();
@@ -85,7 +97,7 @@ test('browser: account isolation, migration, two-device sync, conflicts and offl
   }
   try {
     const a=await device(), b=await device();
-    await a.page.locator('[data-account="login"]').click();
+    await (await acct(a.page)).locator('[data-account="login"]').click();
     await a.page.locator('[data-account="signup"]').click();
     await a.page.locator('input[name="email"]').fill('alice@example.test');
     await a.page.locator('input[name="password"]').fill('test-password-123');
@@ -101,43 +113,44 @@ test('browser: account isolation, migration, two-device sync, conflicts and offl
     // Guest data is preserved locally and never implicitly assigned to a user.
     await addMeal(a.page);
     await login(a.page);
-    assert.equal(await a.page.locator('.log-item').count(),0);
+    assert.equal(await (await today(a.page)).locator('.log-item').count(),0);
     assert.equal(rows.size,0);
     a.page.once('dialog',d=>d.accept());
-    await a.page.locator('[data-account="import"]').click();
+    await (await acct(a.page)).locator('[data-account=\"import"]').click();
     await eventually(()=>rows.get(accounts['alice@example.test'])?.data.logs.length===1);
     await login(b.page);
-    assert.equal(await b.page.locator('.log-item').count(),1);
+    assert.equal(await (await today(b.page)).locator('.log-item').count(),1);
     await addMeal(a.page);
     await eventually(()=>rows.get(accounts['alice@example.test'])?.data.logs.length===2);
-    await b.page.locator('[data-account="refresh"]').click();
-    await eventually(async()=>await b.page.locator('.log-item').count()===2);
+    await (await acct(b.page)).locator('[data-account=\"refresh"]').click();
+    await eventually(async()=>await (await today(b.page)).locator('.log-item').count()===2);
     // A pending offline edit survives reload. Another device then advances revision.
     b.state.online=false;
     await addMeal(b.page);
     await sleep(800);
     await b.page.reload(); await b.page.locator('#app h1').waitFor();
-    assert.equal(await b.page.locator('.log-item').count(),3);
-    await a.page.locator('.mobile-nav [data-page="profile"]').click();
+    assert.equal(await (await today(b.page)).locator('.log-item').count(),3);
+    await nav(a.page,'settings');
+    await a.page.locator('[data-goal-tab="profile"]').click();
     await a.page.locator('#profileForm input[name="weight"]').fill('70');
     await a.page.locator('#profileForm button[type="submit"]').click();
     await eventually(()=>rows.get(accounts['alice@example.test'])?.data.profile?.weight===70);
     await a.page.locator('.mobile-nav [data-page="today"]').click();
     b.state.online=true;
-    await b.page.locator('[data-account="refresh"]').click();
-    await b.page.locator('[data-account="cloud"]').waitFor();
+    await (await acct(b.page)).locator('[data-account=\"refresh"]').click();
+    await (await acct(b.page)).locator('[data-account=\"cloud"]').waitFor();
     assert.equal(rows.get(accounts['alice@example.test']).data.logs.length,2);
     b.page.once('dialog',d=>d.accept());
-    await b.page.locator('[data-account="replace"]').click();
+    await (await acct(b.page)).locator('[data-account=\"replace"]').click();
     await eventually(()=>rows.get(accounts['alice@example.test']).data.logs.length===3);
-    await a.page.locator('[data-account="refresh"]').click();
-    await eventually(async()=>await a.page.locator('.log-item').count()===3);
+    await (await acct(a.page)).locator('[data-account=\"refresh"]').click();
+    await eventually(async()=>await (await today(a.page)).locator('.log-item').count()===3);
     // Logout removes the account cache. A different user never sees its records.
-    await b.page.locator('[data-account="logout"]').click();
+    await (await acct(b.page)).locator('[data-account=\"logout"]').click();
     await eventually(async()=> (await b.page.locator('.account-email').textContent())==='この端末だけで利用中');
     assert.equal(await b.page.evaluate(id=>localStorage.getItem('nutripath.account.'+id),accounts['alice@example.test']),null);
     await login(b.page,'bob@example.test');
-    assert.equal(await b.page.locator('.log-item').count(),0);
+    assert.equal(await (await today(b.page)).locator('.log-item').count(),0);
     await addMeal(b.page);
     await eventually(()=>rows.get(accounts['bob@example.test'])?.data.logs.length===1);
     assert.equal(rows.get(accounts['alice@example.test']).data.logs.length,3);
@@ -146,13 +159,13 @@ test('browser: account isolation, migration, two-device sync, conflicts and offl
     await addMeal(b.page);await sleep(800);
     let confirmations=0;
     b.page.on('dialog',async d=>{confirmations++;await d.accept();});
-    await b.page.locator('[data-account="logout"]').click();
+    await (await acct(b.page)).locator('[data-account=\"logout"]').click();
     await eventually(async()=> (await b.page.locator('.account-email').textContent())==='この端末だけで利用中');
     assert.equal(confirmations,1);
     assert.equal(rows.get(accounts['bob@example.test']).data.logs.length,1);
     // A failed first read must keep the app blocked rather than write blank data.
     const c=await device(); c.state.failRead=true;
-    await c.page.locator('[data-account="login"]').click();
+    await (await acct(c.page)).locator('[data-account="login"]').click();
     await c.page.locator('input[name="email"]').fill('alice@example.test');
     await c.page.locator('input[name="password"]').fill('test-password-123');
     await c.page.locator('#accountForm button').click();
@@ -162,7 +175,7 @@ test('browser: account isolation, migration, two-device sync, conflicts and offl
     assert.equal(rows.get(accounts['alice@example.test']).data.logs.length,3);
     const local=await device({width:1440,height:1000},false);
     assert.equal(await local.page.locator('#themeToggle').count(),0);
-    assert.equal(await local.page.locator('[data-account="login"]').isDisabled(),true);
+    assert.equal(await (await acct(local.page)).locator('[data-account="login"]').isDisabled(),true);
     // Test the real service worker, including a subdirectory deployment and offline reload.
     const pwaContext=await browser.newContext({viewport:{width:390,height:844}});
     const pwa=await pwaContext.newPage();pwa.on('pageerror',e=>errors.push(e.message));
