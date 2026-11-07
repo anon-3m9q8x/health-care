@@ -111,6 +111,11 @@ test('mobile: categories, estimated marks, photo intake UI and no horizontal ove
       await page.locator('#queryInput').fill('コロッケ');
       await page.locator('.catalog-toolbar .clear-x').click();
       assert.equal(await page.locator('#queryInput').inputValue(), '');
+      assert.notEqual(await page.evaluate(()=>document.activeElement?.id), 'queryInput', 'keyboard stays closed after clearing');
+      await page.locator('[data-cat="all"]').click();
+      await page.locator('#queryInput').fill('鴨');
+      assert.ok(await page.locator('.food-row', {hasText:'鴨南蛮そば'}).count() === 1);
+      await page.locator('.catalog-toolbar .clear-x').click();
       // supermarket deli: per-piece amounts, default status is "already eaten"
       await page.locator('[data-cat="all"]').click();
       await page.locator('#queryInput').fill('カニクリームコロッケ');
