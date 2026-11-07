@@ -204,3 +204,70 @@ test('desktop: Japanese IME input in the search box is not interrupted', {timeou
   } finally {await browser.close();await new Promise(r=>server.close(r));}
 });
 
+test('today: meal order, time-based meal, swipe to delete, yesterday quick add', {timeout:90000}, async () => {
+  const server = createServer(async (req,res) => {
+    try {
+      const pathname = decodeURIComponent(new URL(req.url,'http://localhost').pathname);
+      const file = resolve(root, '.'+(pathname==='/'?'/index.html':pathname));
+      if (!file.startsWith(root+sep)) {res.writeHead(403).end();return;}
+      const mime = {'.html':'text/html','.js':'text/javascript','.css':'text/css','.json':'application/json'};
+      res.writeHead(200,{'Content-Type':mime[extname(file)]||'text/plain'}); res.end(await readFile(file));
+    } catch {res.writeHead(404).end();}
+  });
+  await new Promise(r=>server.listen(0,'127.0.0.1',r));
+  const browser = await chromium.launch({executablePath:process.env.CHROMIUM_PATH || '/usr/bin/chromium',headless:true,args:['--no-sandbox']});
+  const errors=[];
+  try {
+    // 2026-11-07 12:30 JST -> lunch
+    const context = await browser.newContext({viewport:{width:402,height:874}, isMobile:true, hasTouch:true, serviceWorkers:'block', timezoneId:'America/New_York'});
+    await context.addInitScript(()=>{const fixed=new Date('2026-11-07T03:30:00Z').getTime();const D=Date;class FD extends D{constructor(...a){super(...(a.length?a:[fixed]))}static now(){return fixed}}window.Date=FD});
+    await context.route('**/config.js', route=>route.fulfill({contentType:'text/javascript',body:'window.NUTRIPATH_CONFIG={};'}));
+    const page = await context.newPage(); page.on('pageerror',e=>errors.push(e.message));
+    await page.goto(`http://127.0.0.1:${server.address().port}/`);
+    await page.locator('#app h1').waitFor();
+    assert.match(await page.locator('#currentDateText').textContent(), /12:30/);
+    const order = await page.locator('.meal-card .meal-name').allTextContents();
+    assert.deepEqual(order, ['朝食','昼食','夕食','飲み物','間食']);
+    assert.equal(await page.locator('.log-acts [data-action="toggleEat"], .log-acts [data-action="remove"]').count(), 0);
+    // add from catalog: default meal follows JST time (lunch), amounts are whole numbers
+    await page.locator('.mobile-nav [data-page="catalog"]').click();
+    await page.locator('#queryInput').fill('幕の内弁当');
+    await page.locator('.food-row').first().locator('[data-action="addEntry"]').click();
+    assert.equal(await page.locator('#entryForm [name="meal"]').inputValue(), 'lunch');
+    assert.equal(await page.locator('#entryForm [name="amount"]').getAttribute('step'), '1');
+    await page.locator('#entryForm button[type="submit"]').click();
+    await page.locator('.mobile-nav [data-page="today"]').click();
+    assert.equal(await page.locator('.log-item').count(), 1);
+    // swipe left deletes, undo restores
+    await page.locator('.log-item').first().scrollIntoViewIfNeeded();
+    const box = await page.locator('.log-item').first().boundingBox();
+    await page.mouse.move(box.x+box.width*0.5, box.y+box.height/2); await page.mouse.down();
+    for (let i=1;i<=10;i++) await page.mouse.move(box.x+box.width*0.5-i*20, box.y+box.height/2);
+    await page.mouse.up();
+    await page.waitForTimeout(400);
+    assert.equal(await page.locator('.log-item').count(), 0, 'deleted by swipe');
+    await page.locator('#undoBar button').click();
+    assert.equal(await page.locator('.log-item').count(), 1, 'undo');
+    // next day: yesterday's meal can be added in one tap
+    await page.locator('[data-action="next"]').first().click();
+    assert.equal(await page.locator('.log-item').count(), 0);
+    assert.match(await page.locator('.prev-day').textContent(), /幕の内弁当/);
+    await page.locator('[data-action="copyYesterday"]').click();
+    assert.equal(await page.locator('.log-item').count(), 1);
+    assert.match(await page.locator('.log-item').textContent(), /予定/);
+    // swipe right marks it as eaten
+    await page.locator('.log-item').first().scrollIntoViewIfNeeded();
+    const b2 = await page.locator('.log-item').first().boundingBox();
+    await page.mouse.move(b2.x+30, b2.y+b2.height/2); await page.mouse.down();
+    for (let i=1;i<=10;i++) await page.mouse.move(b2.x+30+i*20, b2.y+b2.height/2);
+    await page.mouse.up();
+    assert.match(await page.locator('.log-item').textContent(), /食べた/);
+    // external apps panel
+    await page.locator('.mobile-nav [data-action="openMenu"]').click();
+    await page.locator('#sidebar [data-page="settings"]').click();
+    assert.equal(await page.locator('.ext-card').count(), 4);
+    await context.close();
+    assert.deepEqual(errors, []);
+  } finally {await browser.close();await new Promise(r=>server.close(r));}
+});
+
