@@ -1070,6 +1070,8 @@ add_src('ヤオコー', Y+'category01/fruit-veg/', [
  ('山菜ミックス（50g）','vegetable',80,'sansai:50'),
 ])
 # 公式商品で置き換えた、以前の一般的な想定惣菜
+# ローソン公式の商品ページ（data_lawson.js）に同等の公式値がある想定値の商品
+REMOVE_LAWSON_EST = {('ローソン', n) for n in ['からあげクン レギュラー','Lチキ レギュラー','ブランパン（2個入）','MACHI café コーヒー（S）','MACHI café アイスコーヒー（M）','MACHI café カフェラテ（M）','MACHI café アイスカフェラテ（M）']}
 REMOVE_OLD = {('ヤオコー', n) for n in ['おはぎ つぶあん（1個）','おはぎ きなこ（1個）','焼き鳥 たれ（2本）','若鶏の唐揚げ（100g）','ロースとんかつ（1枚）','メンチカツ（1個）','ポテトサラダ（100g）','筑前煮（150g）']}
 
 # ---------------------------------------------------------------- 自販機（全国の主な飲料。内容物からの想定値）
@@ -1676,7 +1678,7 @@ def main():
         time = row[5] if len(row) > 5 else 'any'
         if store == '自販機' or (store in ('セブン‐イレブン','ファミリーマート','ローソン') and name in SUPPRESS_GENERIC['konbini']):
             continue
-        if name in REMOVE_ASSUMED_DUP or (store, name) in official_names or (store, name) in REMOVE_OLD or (store, name) in seen:
+        if name in REMOVE_ASSUMED_DUP or (store, name) in official_names or (store, name) in REMOVE_OLD or (store, name) in REMOVE_LAWSON_EST or (store, name) in seen:
             continue
         seen.add((store, name))
         if False:
