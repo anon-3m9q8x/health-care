@@ -25132,6 +25132,58 @@
     "price_type": "exact"
   },
   {
+    "id": "dc55c1337b",
+    "store": "コンビニ各社",
+    "name": "オイコス プロテインドリンク PRO リッチバニラ 240ml",
+    "kcal": 138,
+    "protein": 25.0,
+    "fat": 0,
+    "carbs": 9.6,
+    "salt": 0.31,
+    "fiber": 0.0,
+    "price": 324,
+    "source": "https://www.danone.co.jp/oikos/proteindrink/",
+    "quality": "official",
+    "note": "ダノン公式の栄養成分表示（1本240ml当たり）。脂肪0・砂糖不使用、高吸収タンパク質25g。全国のコンビニで販売（店舗により取り扱いなし）。価格は目安。",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "est": [
+      "price"
+    ],
+    "places": [
+      "セブン‐イレブン",
+      "ファミリーマート",
+      "ローソン"
+    ]
+  },
+  {
+    "id": "d1be3e9fd7",
+    "store": "コンビニ各社",
+    "name": "オイコス プロテインドリンク PRO リッチチョコ 240ml",
+    "kcal": 138,
+    "protein": 25.0,
+    "fat": 0,
+    "carbs": 9.6,
+    "salt": 0.31,
+    "fiber": 0.0,
+    "price": 324,
+    "source": "https://www.danone.co.jp/oikos/proteindrink/",
+    "quality": "official",
+    "note": "ダノン公式の栄養成分表示（1本240ml当たり）。脂肪0・砂糖不使用、高吸収タンパク質25g。全国のコンビニで販売（店舗により取り扱いなし）。価格は目安。",
+    "time": "any",
+    "kind": "drink",
+    "price_type": "approx",
+    "est": [
+      "price"
+    ],
+    "places": [
+      "セブン‐イレブン",
+      "ファミリーマート",
+      "ローソン"
+    ]
+  },
+  {
     "id": "da44eb7f7a",
     "store": "コンビニ各社",
     "name": "おにぎり 鮭",

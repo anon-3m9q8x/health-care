@@ -1723,6 +1723,15 @@ def main():
         out.append({'id': oid(store, name), 'store': store, 'name': name, 'kcal': round(kcal), 'protein': p, 'fat': fa, 'carbs': c, 'salt': salt,
                     'fiber': fiber, 'price': price, 'source': url, 'quality': 'official', 'note': f'{store}公式の栄養成分・税込価格（店舗・地域で異なる場合あり）。',
                     'time': 'any', 'kind': 'drink', 'price_type': 'exact'})
+    # ダノン オイコス プロテインドリンク PRO（公式ラインナップの栄養成分表示、1本240ml当たり）。2026-03-02 全国のコンビニで発売
+    OIKOS = 'https://www.danone.co.jp/oikos/proteindrink/'
+    for name, kcal, p, fa, c, salt in [('オイコス プロテインドリンク PRO リッチバニラ 240ml', 138, 25.0, 0, 9.6, 0.31),
+                                       ('オイコス プロテインドリンク PRO リッチチョコ 240ml', 138, 25.0, 0, 9.6, 0.31)]:
+        out.append({'id': oid('コンビニ各社', name), 'store': 'コンビニ各社', 'name': name, 'kcal': kcal, 'protein': p, 'fat': fa, 'carbs': c,
+                    'salt': salt, 'fiber': 0.0, 'price': 324, 'source': OIKOS, 'quality': 'official',
+                    'note': 'ダノン公式の栄養成分表示（1本240ml当たり）。脂肪0・砂糖不使用、高吸収タンパク質25g。全国のコンビニで販売（店舗により取り扱いなし）。価格は目安。',
+                    'time': 'any', 'kind': 'drink', 'price_type': 'approx', 'est': ['price'],
+                    'places': ['セブン‐イレブン', 'ファミリーマート', 'ローソン']})
     # 同一のコンビニ汎用商品（セブン・ファミマ・ローソン共通）を1件にまとめる
     groups = {}
     for f in out:
