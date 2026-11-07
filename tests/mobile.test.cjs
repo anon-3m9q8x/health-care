@@ -75,7 +75,7 @@ test('mobile: categories, estimated marks, photo intake UI and no horizontal ove
       // purchase-place categories: 自炊 and スーパー are separate; ヤオコー exists under スーパー
       await page.locator('.mobile-nav [data-page="catalog"]').click();
       const cats = await page.locator('.cat-row .chip').allTextContents();
-      for (const c of ['自炊','スーパー','コンビニ','ファストフード','牛丼・定食']) assert.ok(cats.some(t=>t.includes(c)), 'category '+c);
+      for (const c of ['自炊','スーパー','コンビニ','ファストフード','牛丼・丼もの','定食']) assert.ok(cats.some(t=>t.includes(c)), 'category '+c);
       assert.equal(await page.locator('.cat-row [data-cat="自販機"]').count(), 0, 'vending machines only under drinks');
       // Return key closes the keyboard and keeps the results
       await page.locator('#queryInput').click();
@@ -106,7 +106,9 @@ test('mobile: categories, estimated marks, photo intake UI and no horizontal ove
       assert.equal(await page.locator('#foodForm [name="store"]').inputValue(), '自販機');
       await page.locator('#foodForm button[type="submit"]').click();
       await page.locator('#queryInput').fill('キリン 午後の紅茶');
-      assert.equal(await page.locator('.food-row').count(), 1);
+      const kirin = await page.locator('.food-row').allTextContents();
+      assert.ok(kirin.length >= 1 && kirin.every(t=>t.includes('午後の紅茶')), 'word-by-word search');
+      assert.equal(await page.locator('.food-row', {hasText:'自己登録'}).count(), 1, 'the saved drink is found');
       // the × button clears the search box
       await page.locator('#queryInput').fill('コロッケ');
       await page.locator('.catalog-toolbar .clear-x').click();
@@ -200,7 +202,7 @@ test('desktop: Japanese IME input in the search box is not interrupted', {timeou
     assert.equal(await page.locator('#queryInput').inputValue(), 'からあげ');
     assert.ok(await page.locator('#queryInput').evaluate(n=>document.activeElement===n), 'focus kept');
     const names = await page.locator('.food-row .food-name').allTextContents();
-    assert.ok(names.length > 0 && names.every(n=>n.includes('からあげ')), 'filtered: '+names.length);
+    assert.ok(names.length > 0 && names.every(n=>/からあげ|カラアゲ/.test(n)), 'filtered (kana-insensitive): '+names.length);
     // continue typing another word with IME after a space
     for (const t of ['b','べ','べn','べん','べんt','べんと','べんとう','弁当']) await cdp.send('Input.imeSetComposition',{text:t,selectionStart:t.length,selectionEnd:t.length});
     await cdp.send('Input.insertText',{text:'弁当'});
@@ -336,4 +338,60 @@ test('theme: design switches by Japan time at 6:00, 12:00 and 18:00', {timeout:9
     assert.equal(await page.getAttribute('meta[name="theme-color"]','content'), '#1d6aa8');
     await context.close();
   } finally { await browser.close(); server.close(); }
+});
+
+test('mobile catalog: teishoku chains grouped by lineage, re-tap to close stores, one register button', {timeout:90000}, async () => {
+  const server = createServer(async (req,res) => {
+    try {
+      const pathname = decodeURIComponent(new URL(req.url,'http://localhost').pathname);
+      const file = resolve(root, '.'+(pathname==='/'?'/index.html':pathname));
+      if (!file.startsWith(root+sep)) {res.writeHead(403).end();return;}
+      const mime = {'.html':'text/html','.js':'text/javascript','.css':'text/css'};
+      res.writeHead(200,{'Content-Type':mime[extname(file)]||'text/plain'}); res.end(await readFile(file));
+    } catch {res.writeHead(404).end();}
+  });
+  await new Promise(r=>server.listen(0,'127.0.0.1',r));
+  const browser = await chromium.launch({executablePath:process.env.CHROMIUM_PATH || '/usr/bin/chromium',headless:true,args:['--no-sandbox']});
+  try {
+    const context = await browser.newContext({viewport:{width:390,height:844},isMobile:true,hasTouch:true,serviceWorkers:'block'});
+    await context.route('**/config.js', route=>route.fulfill({contentType:'text/javascript',body:'window.NUTRIPATH_CONFIG={};'}));
+    const page = await context.newPage(); const errors=[]; page.on('pageerror',e=>errors.push(e.message));
+    await page.goto(`http://127.0.0.1:${server.address().port}/`);
+    await page.locator('.mobile-nav [data-page="catalog"]').click();
+    // photo and manual registration are one button
+    assert.equal(await page.locator('#app [data-action="addFoodPhoto"]').count(), 0);
+    assert.equal(await page.locator('#app .hello [data-action="addFood"]').count(), 1);
+    // 牛丼 and 定食 are separate lineages; all 18 teishoku chains are listed under headings
+    await page.locator('[data-cat="牛丼・丼もの"]').click();
+    const gyu = await page.locator('.sub-row [data-store]').evaluateAll(n=>n.map(x=>x.dataset.store));
+    assert.deepEqual(gyu, ['all','松屋','すき家']);
+    await page.locator('[data-cat="定食"]').click();
+    const chains = await page.locator('.sub-row [data-store]:not([data-store="all"])').evaluateAll(n=>n.map(x=>x.dataset.store));
+    assert.equal(chains.length, 18, chains.join());
+    assert.deepEqual(await page.locator('.group-label').allTextContents(), ['定食チェーン','海鮮','牛たん','お茶漬け','弁当']);
+    // tapping the selected place again hides / shows its stores
+    await page.locator('[data-cat="定食"]').click();
+    assert.equal(await page.locator('.sub-row').count(), 0, 'store list closed');
+    await page.locator('[data-cat="定食"]').click();
+    assert.equal(await page.locator('.sub-row').count(), 1, 'store list reopened');
+    // choosing one of many stores closes the list and shows it on the button
+    await page.locator('.sub-row [data-store="やよい軒"]').click();
+    assert.equal(await page.locator('.sub-row').count(), 0);
+    assert.match(await page.locator('.cat-chip.active').textContent(), /やよい軒/);
+    const stores = await page.locator('.food-row .food-sub span:first-child').allTextContents();
+    assert.ok(stores.length > 0 && stores.every(s=>s==='やよい軒'));
+    // kana-insensitive search with store reading; empty store results widen to all places
+    await page.locator('#queryInput').fill('ねぎし');
+    assert.ok(await page.locator('.widened-note').count() === 1);
+    assert.ok((await page.locator('.food-row .food-sub span:first-child').allTextContents()).every(s=>s==='牛たんねぎし'));
+    await page.locator('#queryInput').fill('');
+    // rows open on tap to show details
+    const row = page.locator('.food-row').first();
+    await row.locator('.food-main').click();
+    assert.equal(await row.getAttribute('class').then(c=>c.includes('open')), true);
+    assert.ok(await row.locator('.food-note').isVisible());
+    assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth - innerWidth) <= 0);
+    assert.deepEqual(errors, []);
+    await context.close();
+  } finally {await browser.close();await new Promise(r=>server.close(r));}
 });
