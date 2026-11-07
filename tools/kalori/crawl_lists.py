@@ -1,6 +1,7 @@
 import re,sys,time,json,html,os,urllib.request
-SH=["shinpachi-shokudo","yayoi-ken","ootoya","obondegohan","shirokujichu","komeraku","negishi","machikadoya","sendai-henmi","tsukiji-genchan","rikyu-gyutan","miyamoto-munashi","manten-shokudo","hirai","torafuku","hyakusai","sendai-gyutan-aoba","dashichazuke-en"]
 OUT=sys.argv[1]; os.makedirs(OUT,exist_ok=True)
+CAT=sys.argv[2] if len(sys.argv)>2 else "teishoku"
+SH=list(json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)),"shops.json")))[CAT])
 UA="NutriPath-personal-import/1.0 (personal nutrition app; 1 req/s)"
 import subprocess
 def get(u):

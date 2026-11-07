@@ -1,6 +1,8 @@
 import re,json,html,glob,os,sys
-SHOPS={"shinpachi-shokudo":"しんぱち食堂","yayoi-ken":"やよい軒","ootoya":"大戸屋","obondegohan":"おぼんdeごはん","shirokujichu":"四六時中","komeraku":"こめらく","negishi":"牛たんねぎし","machikadoya":"街かど屋","sendai-henmi":"牛たん焼き 仙台辺見","tsukiji-genchan":"築地食堂 源ちゃん","rikyu-gyutan":"牛たん炭焼 利久","miyamoto-munashi":"宮本むなし","manten-shokudo":"満天食堂","hirai":"おべんとうのヒライ","torafuku":"寅福","hyakusai":"定食屋百菜 旬","sendai-gyutan-aoba":"仙台 牛たん 青葉","dashichazuke-en":"だし茶漬け えん"}
 src=sys.argv[1]; out=[]; totals={}
+CATS=sys.argv[3].split(",") if len(sys.argv)>3 else ["teishoku"]
+_all=json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)),"shops.json")))
+SHOPS={k:v for c in CATS for k,v in _all[c].items()}
 def num(x):
     x=x.replace(',','')
     return float(x) if x else None

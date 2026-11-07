@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 """定食チェーン（kalori.jp「定食」カテゴリの全店舗）の商品データを NutriPath 用に変換する。
 
-  python3 tools/kalori_teishoku.py --merge LIST.json DETAILS_DIR   # 取得結果を tools/kalori_teishoku.json にまとめる
-  python3 tools/kalori_teishoku.py                                  # tools/kalori_teishoku.json → data_teishoku.js
+  python3 tools/kalori_teishoku.py [--cat fastfood] --merge LIST.json DETAILS_DIR   # 取得結果を tools/kalori_<cat>.json にまとめる
+  python3 tools/kalori_teishoku.py [--cat fastfood]                                  # tools/kalori_<cat>.json → data_<cat>.js
+
+--cat は teishoku（定食・既定）または fastfood（ファストフード：マクドナルド以外の10店舗。マクドナルドは公式表から作成済み）。
 
 出典: https://kalori.jp/ja/shops/#shop-cat-teishoku （各商品ページ）。kalori は公式発表値と AI 推定値を区別して
 掲載しており、その区別をそのまま quality（official / estimate）に引き継ぐ。食塩相当量が掲載されていない商品は、
@@ -12,8 +14,11 @@ import json, re, sys, os, statistics, unicodedata
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-RAW = ROOT / 'tools' / 'kalori_teishoku.json'
-OUT = ROOT / 'data_teishoku.js'
+CAT = 'teishoku'
+if '--cat' in sys.argv:
+    i = sys.argv.index('--cat'); CAT = sys.argv[i + 1]; del sys.argv[i:i + 2]
+RAW = ROOT / 'tools' / f'kalori_{CAT}.json'
+OUT = ROOT / f'data_{CAT}.js'
 
 SHOPS = {  # kalori の掲載順ではなく、系統（定食チェーン → 海鮮 → 牛たん → お茶漬け → 弁当）の順
     'yayoi-ken': 'やよい軒', 'ootoya': '大戸屋', 'shinpachi-shokudo': 'しんぱち食堂', 'miyamoto-munashi': '宮本むなし',
@@ -22,6 +27,13 @@ SHOPS = {  # kalori の掲載順ではなく、系統（定食チェーン → �
     'sendai-henmi': '牛たん焼き 仙台辺見', 'rikyu-gyutan': '牛たん炭焼 利久', 'sendai-gyutan-aoba': '仙台 牛たん 青葉',
     'komeraku': 'こめらく', 'dashichazuke-en': 'だし茶漬け えん', 'hirai': 'おべんとうのヒライ',
 }
+FF_SHOPS = {  # ハンバーガー → チキン → サンドイッチ → タコライス
+    'mosburger': 'モスバーガー', 'freshness': 'フレッシュネスバーガー', 'burgerking': 'バーガーキング',
+    'wendys-first-kitchen': 'ウェンディーズ・ファーストキッチン', 'zetteria': 'ゼッテリア', 'kuaaina': 'クア・アイナ', 'aw-okinawa': 'A&W',
+    'kfc': 'ケンタッキーフライドチキン', 'subway': 'サブウェイ', 'tacorice-house': 'THE TACORICE HOUSE',
+}
+LABEL = {'teishoku': ('定食チェーン', '定食カテゴリ全18店舗', 'teishoku'), 'fastfood': ('ファストフード', 'ファストフードカテゴリのマクドナルド以外10店舗', 'fastfood')}[CAT]
+if CAT == 'fastfood': SHOPS = FF_SHOPS
 
 DRINK = re.compile(r'ドリンク|ジュース|ビール|酒|ハイボール|サワー|コーヒー|珈琲|紅茶|ウーロン茶|烏龍茶|ソーダ|ラムネ|カルピス|コーラ|ジンジャーエール')
 SWEET = re.compile(r'デザート|アイス|パフェ|プリン|ケーキ|わらび餅|ぜんざい|あんみつ|ソフトクリーム|ジェラート|団子|だんご|大福|杏仁')
@@ -32,6 +44,13 @@ SIDE = re.compile(r'小鉢|サラダ|漬物|お新香|香の物|納豆|玉子|�
 
 
 def kind_of(name, kcal):
+    if CAT == 'fastfood':
+        if DRINK.search(name) or re.search(r'シェイク|スムージー|ラテ|ティー|ルートビア|レモネード|ミルク', name): return 'drink'
+        if SWEET.search(name) or re.search(r'パイ|サンデー|フロート|クッキー|ビスケット|チュロス|ドーナツ', name): return 'sweet'
+        if re.search(r'セット|ボックス|BOX|パック|バーレル|ランチ|コンボ|タコライス|プレート|ボウル|ライス', name): return 'meal'
+        if re.search(r'バーガー|サンド|ドッグ|ラップ|ブリトー|タコス|ロール|マフィン|ホットサンド|ツイスター|ピタ', name): return 'main'
+        if re.search(r'ポテト|ナゲット|コールスロー|サラダ|スープ|オニオン|フライ|ビスケット|コーン|トッピング|追加|ソース', name) or kcal < 150: return 'side'
+        return 'protein'
     if DRINK.search(name): return 'drink'
     if SWEET.search(name): return 'sweet'
     if (MEAL.search(name) or re.search(r'[（(][^）)]*(ご飯|ごはん|麦めし|ライス)[^）)]*[）)]', name)) and not re.search(r'単品|追加', name): return 'meal'
@@ -73,7 +92,9 @@ def merge(list_path, details_dir):
             continue
         rows.append(row)
     totals = data.get('totals', {})
-    RAW.write_text(json.dumps({'fetched': '2026-11-08', 'source': 'https://kalori.jp/ja/shops/#shop-cat-teishoku',
+    rows = [r for r in rows if r['slug'] in SHOPS]
+    totals = {k: v for k, v in data.get('totals', {}).items() if k in SHOPS}
+    RAW.write_text(json.dumps({'fetched': '2026-11-08', 'source': f'https://kalori.jp/ja/shops/#shop-cat-{LABEL[2]}',
                                'site_totals': totals, 'items': rows}, ensure_ascii=False, indent=0) + '\n', encoding='utf-8')
     print(f'{len(rows)} items written, {missing} without nutrition yet', file=sys.stderr)
 
@@ -120,7 +141,7 @@ def build():
              'note': note, 'time': 'any', 'kind': kind_of(name, kcal), 'price_type': 'exact'}
         if est: f['est'] = est
         out.append(f)
-    header = ('/* NutriPath 定食チェーン商品データ。tools/kalori_teishoku.py で生成。出典: kalori.jp（定食カテゴリ全18店舗）。\n'
+    header = (f'/* NutriPath {LABEL[0]}商品データ。tools/kalori_teishoku.py --cat {CAT} で生成。出典: kalori.jp（{LABEL[1]}）。\n'
               '   quality "official" は公式発表値、"estimate" は kalori の AI 推定値。est に含む項目は想定値。 */\n')
     OUT.write_text(header + 'window.SEED_FOODS=(window.SEED_FOODS||[]).concat(' + json.dumps(out, ensure_ascii=False, separators=(',', ':')) + ');\n', encoding='utf-8')
     from collections import Counter

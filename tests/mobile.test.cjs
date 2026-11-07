@@ -365,6 +365,9 @@ test('mobile catalog: teishoku chains grouped by lineage, re-tap to close stores
     await page.locator('[data-cat="牛丼・丼もの"]').click();
     const gyu = await page.locator('.sub-row [data-store]').evaluateAll(n=>n.map(x=>x.dataset.store));
     assert.deepEqual(gyu, ['all','松屋','すき家']);
+    await page.locator('[data-cat="ファストフード"]').click();
+    const ff = await page.locator('.sub-row [data-store]').evaluateAll(n=>n.map(x=>x.dataset.store));
+    for (const s of ['マクドナルド','モスバーガー','ケンタッキーフライドチキン','サブウェイ','バーガーキング']) assert.ok(ff.includes(s), 'fast food '+s);
     await page.locator('[data-cat="定食"]').click();
     const chains = await page.locator('.sub-row [data-store]:not([data-store="all"])').evaluateAll(n=>n.map(x=>x.dataset.store));
     assert.equal(chains.length, 18, chains.join());
