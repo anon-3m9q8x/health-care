@@ -1,0 +1,106 @@
+const {test} = require('node:test');
+const assert = require('node:assert/strict');
+const {createServer} = require('node:http');
+const {readFile} = require('node:fs/promises');
+const {resolve, extname, sep} = require('node:path');
+const {chromium} = require('playwright');
+const ocr = require('../food_ocr.js');
+
+const root = resolve(__dirname, '..');
+
+test('food label parsing and content-based estimates', () => {
+  const r = ocr.parseLabel('栄養成分表示（1個当たり）\nエネルギー：１８６kcal\nたんぱく質 4.5g\n脂質 1.5 g\n炭水化物 38.9g\n食塩相当量 1.2g\n内容量 105g\n税込 172円');
+  assert.equal(r.values.kcal, 186); assert.equal(r.values.protein, 4.5); assert.equal(r.values.salt, 1.2); assert.equal(r.values.price, 172);
+  const per100 = ocr.parseLabel('100g当たり\n熱量 250kcal\nたんぱく質 10g\n脂質 12g\n糖質 20g\n食物繊維 2g\nナトリウム 400mg\n内容量 80g');
+  assert.equal(per100.values.kcal, 200); assert.equal(per100.values.carbs, 17.6); assert.equal(per100.values.salt, 0.8);
+  const e = ocr.estimate({name:'鮭おにぎり', ingredients:'ご飯（国産米）、鮭、のり、食塩、調味料（アミノ酸等）', weight:105});
+  assert.ok(e.kcal > 130 && e.kcal < 230, 'onigiri estimate is plausible: '+e.kcal);
+  assert.match(e.basis, /原材料/);
+  assert.equal(ocr.estimate({name:''}), null);
+});
+
+test('mobile: categories, estimated marks, photo intake UI and no horizontal overflow', {timeout:90000}, async () => {
+  const server = createServer(async (req,res) => {
+    try {
+      const pathname = decodeURIComponent(new URL(req.url,'http://localhost').pathname);
+      const file = resolve(root, '.'+(pathname==='/'?'/index.html':pathname));
+      if (!file.startsWith(root+sep)) {res.writeHead(403).end();return;}
+      const mime = {'.html':'text/html','.js':'text/javascript','.css':'text/css','.json':'application/json','.webmanifest':'application/manifest+json','.png':'image/png'};
+      res.writeHead(200,{'Content-Type':mime[extname(file)]||'text/plain'}); res.end(await readFile(file));
+    } catch {res.writeHead(404).end();}
+  });
+  await new Promise(r=>server.listen(0,'127.0.0.1',r));
+  const url = `http://127.0.0.1:${server.address().port}/`;
+  const browser = await chromium.launch({executablePath:process.env.CHROMIUM_PATH || '/usr/bin/chromium',headless:true,args:['--no-sandbox']});
+  const errors = [];
+  try {
+    for (const viewport of [{width:360,height:780},{width:390,height:844},{width:412,height:915}]) {
+      const context = await browser.newContext({viewport, serviceWorkers:'block', isMobile:true, hasTouch:true});
+      await context.route('https://cdn.jsdelivr.net/**', route=>route.abort());
+      await context.route('**/config.js', route=>route.fulfill({contentType:'text/javascript',body:'window.NUTRIPATH_CONFIG={};'}));
+      const page = await context.newPage(); page.on('pageerror',e=>errors.push(e.message));
+      await page.goto(url); await page.locator('#app h1').waitFor();
+      assert.equal(await page.locator('#themeToggle').count(), 0, 'dark mode toggle removed');
+      for (const tab of ['today','recommend','catalog','insights','profile']) {
+        await page.locator(`.mobile-nav [data-page="${tab}"]`).click();
+        await page.locator('#app h1').waitFor();
+        const overflow = await page.evaluate(()=>document.documentElement.scrollWidth - innerWidth);
+        assert.ok(overflow <= 0, `${tab} overflows horizontally by ${overflow}px at ${viewport.width}px`);
+      }
+      // weekly report panels use the full width on phones
+      await page.locator('.mobile-nav [data-page="insights"]').click();
+      const panelWidth = await page.locator('.insight-grid > .panel').first().evaluate(n=>n.getBoundingClientRect().width);
+      assert.ok(panelWidth > viewport.width - 60, 'insight panel fits phone width: '+panelWidth);
+      // bottom navigation is tall enough and contains the hamburger menu
+      const navHeight = await page.locator('.mobile-nav').evaluate(n=>n.getBoundingClientRect().height);
+      assert.ok(navHeight >= 80, 'bottom nav height '+navHeight);
+      await page.locator('.mobile-nav [data-action="openMenu"]').click();
+      await page.locator('#sidebar.open').waitFor();
+      await page.locator('#sidebar [data-page="settings"]').click();
+      assert.equal(await page.locator('#sidebar.open').count(), 0);
+      assert.match(await page.locator('#app h1').textContent(), /目標/);
+      // purchase-place categories: 自炊 and スーパー are separate; ヤオコー exists under スーパー
+      await page.locator('.mobile-nav [data-page="catalog"]').click();
+      const cats = await page.locator('.cat-row .chip').allTextContents();
+      for (const c of ['自炊','スーパー','コンビニ','ファストフード','牛丼・定食']) assert.ok(cats.some(t=>t.includes(c)), 'category '+c);
+      await page.locator('[data-cat="スーパー"]').click();
+      await page.locator('.sub-row [data-store="ヤオコー"]').click();
+      const names = await page.locator('.food-row .food-sub span:first-child').allTextContents();
+      assert.ok(names.length >= 30 && names.every(n=>n==='ヤオコー'), 'yaoko items: '+names.length);
+      assert.ok(await page.locator('.food-row .est-mark').count() > 0, 'estimated values are marked 想定');
+      await page.locator('[data-cat="自炊"]').click();
+      const home = await page.locator('.food-row .food-sub span:first-child').allTextContents();
+      assert.ok(home.length > 0 && home.every(n=>n==='自炊'));
+      // recommendations within a category
+      await page.locator('[data-cat="コンビニ"]').click();
+      await page.locator('.mobile-nav [data-page="recommend"]').click();
+      assert.ok(await page.locator('.reco-card').count() >= 3);
+      // photo intake: text pasted into the OCR box fills the form; estimate fills 想定 values
+      await page.locator('.mobile-nav [data-page="catalog"]').click();
+      await page.locator('[data-action="addFood"]').click();
+      await page.locator('#foodImageFile').setInputFiles(resolve(root,'icon-192.png'));
+      await page.locator('#foodPreview:not(.hide)').waitFor();
+      await page.locator('#foodOcrStatus.ocr-error').waitFor();
+      await page.locator('.ocr-text summary').click();
+      await page.locator('#foodRawText').fill('名称 鮭おにぎり\nエネルギー 186kcal\nたんぱく質 4.5g\n脂質 1.5g\n炭水化物 38.9g\n食塩相当量 1.2g\n172円');
+      await page.locator('[data-action="parseFoodText"]').click();
+      assert.equal(await page.locator('#foodForm [name="kcal"]').inputValue(), '186');
+      assert.equal(await page.locator('#foodForm [name="price"]').inputValue(), '172');
+      await page.locator('#foodForm [name="kcal"]').fill('');
+      await page.locator('#foodForm [name="name"]').fill('からあげ弁当');
+      await page.locator('[data-action="estimateFood"]').click();
+      assert.ok(Number(await page.locator('#foodForm [name="kcal"]').inputValue()) > 300);
+      assert.equal(await page.locator('#foodForm [name="estimated"]').isChecked(), true);
+      const modalOverflow = await page.evaluate(()=>document.documentElement.scrollWidth - innerWidth);
+      assert.ok(modalOverflow <= 0, 'modal overflow '+modalOverflow);
+      await page.locator('#foodForm button[type="submit"]').click();
+      await page.locator('[data-cat="all"]').click();
+      await page.locator('#queryInput').fill('からあげ弁当');
+      const saved = page.locator('.food-row', {hasText:'自己登録・想定'});
+      assert.ok(await saved.count() >= 1);
+      if (viewport.width===390) await page.screenshot({path:process.env.SHOT_DIR?process.env.SHOT_DIR+'/catalog-390.png':'/tmp/nutripath-catalog-390.png', fullPage:false});
+      await context.close();
+    }
+    assert.deepEqual(errors, []);
+  } finally {await browser.close();await new Promise(r=>server.close(r));}
+});

@@ -41,7 +41,7 @@ test('browser: account isolation, migration, two-device sync, conflicts and offl
   async function device(viewport={width:390,height:844}, configured=true) {
     const context = await browser.newContext({viewport,serviceWorkers:'block'});
     const state={online:true,failRead:false};
-    if(configured)await context.route('**/config.js', route=>route.fulfill({contentType:'text/javascript',body:`window.NUTRIPATH_CONFIG={supabaseUrl:'${origin}',supabasePublishableKey:'sb_publishable_test'};`}));
+    await context.route('**/config.js', route=>route.fulfill({contentType:'text/javascript',body:configured?`window.NUTRIPATH_CONFIG={supabaseUrl:'${origin}',supabasePublishableKey:'sb_publishable_test'};`:'window.NUTRIPATH_CONFIG={};'}));
     await context.route(origin+'/**', async route=>{
       if(!state.online){await route.abort('internetdisconnected');return;}
       const req=route.request(), u=new URL(req.url()), body=req.postDataJSON();
@@ -118,8 +118,11 @@ test('browser: account isolation, migration, two-device sync, conflicts and offl
     await sleep(800);
     await b.page.reload(); await b.page.locator('#app h1').waitFor();
     assert.equal(await b.page.locator('.log-item').count(),3);
-    await a.page.locator('#themeToggle').click();
-    await eventually(()=>rows.get(accounts['alice@example.test'])?.data.theme==='dark');
+    await a.page.locator('.mobile-nav [data-page="profile"]').click();
+    await a.page.locator('#profileForm input[name="weight"]').fill('70');
+    await a.page.locator('#profileForm button[type="submit"]').click();
+    await eventually(()=>rows.get(accounts['alice@example.test'])?.data.profile?.weight===70);
+    await a.page.locator('.mobile-nav [data-page="today"]').click();
     b.state.online=true;
     await b.page.locator('[data-account="refresh"]').click();
     await b.page.locator('[data-account="cloud"]').waitFor();
@@ -158,8 +161,7 @@ test('browser: account isolation, migration, two-device sync, conflicts and offl
     assert.equal(await c.page.locator('.app-shell').evaluate(n=>n.inert),true);
     assert.equal(rows.get(accounts['alice@example.test']).data.logs.length,3);
     const local=await device({width:1440,height:1000},false);
-    await local.page.locator('#themeToggle').click(); await local.page.reload();
-    await local.page.locator('body.dark').waitFor();
+    assert.equal(await local.page.locator('#themeToggle').count(),0);
     assert.equal(await local.page.locator('[data-account="login"]').isDisabled(),true);
     // Test the real service worker, including a subdirectory deployment and offline reload.
     const pwaContext=await browser.newContext({viewport:{width:390,height:844}});
