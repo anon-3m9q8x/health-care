@@ -86,6 +86,11 @@ ING = {
 }
 
 
+ING.update({'furikake':(440,22,17,48,10,6),'soy_sauce':(77,7.7,0,7.9,14.5,0),'butter':(700,0.6,81,0.2,1.9,0),
+ 'salmon_flake':(190,23,10,1,4.8,0),'shirasu':(187,40.5,3.5,0.5,6.6,0),'ajinori':(301,40,3.5,42,4.3,25),
+ 'nori_tsukudani':(150,14,1.3,21,5.8,4.1),'shio_kombu':(193,16.9,0.4,37,18,13),'chazuke_moto':(250,8,2,50,32,2),
+ 'katsuobushi':(332,75.7,2.9,0.8,1.2,0)})
+
 JA = {'rice':'ご飯','onigiri_rice':'ご飯(塩)','salad_chicken':'鶏むね肉(味付)','sushi_rice':'酢飯','sekihan':'赤飯','mochigome':'もち米','bread':'食パン','bun':'バンズ','muffin':'マフィン','croissant':'パイ生地','sweet_bun':'菓子パン生地',
 'udon':'うどん','soba':'そば','ramen':'中華麺','yakisoba_noodle':'蒸し麺','pasta':'パスタ','oats':'オートミール','tortilla':'トルティーヤ','harusame':'春雨',
 'chicken_breast':'鶏むね肉','chicken_thigh':'鶏もも肉','karaage':'唐揚げ','chicken_fried':'フライドチキン','nugget':'ナゲット','yakitori_salt':'焼き鳥(塩)','yakitori_tare':'焼き鳥(たれ)',
@@ -133,8 +138,27 @@ def add(store, rows):
 
 # ---------------------------------------------------------------- 自炊
 add('自炊', [
- ('ご飯150g（炊飯後）','rice',55,'rice:150'),
- ('ご飯200g（炊飯後）','rice',73,'rice:200'),
+ ('白米 100g（小盛り）','rice',37,'rice:100'),
+ ('白米 150g（茶碗1杯）','rice',55,'rice:150'),
+ ('白米 200g（大盛り）','rice',73,'rice:200'),
+ ('白米 250g（特盛り・丼1杯）','rice',92,'rice:250'),
+ # 白米150g ＋ ご飯のお供
+ ('白米150g＋ふりかけ（1袋2.5g）','rice',70,'rice:150,furikake:2.5'),
+ ('白米150g＋納豆（たれ付き）','meal',92,'rice:150,natto:45,sauce_sweet:5'),
+ ('卵かけご飯（白米150g＋卵1個＋醤油）','meal',85,'rice:150,egg:50,soy_sauce:5'),
+ ('納豆卵かけご飯（白米150g＋納豆＋卵）','meal',122,'rice:150,natto:45,sauce_sweet:5,egg:50'),
+ ('白米150g＋梅干し1個','rice',75,'rice:150,umeboshi:10'),
+ ('白米150g＋鮭フレーク（大さじ1）','rice',85,'rice:150,salmon_flake:12'),
+ ('白米150g＋明太子（1/2腹）','rice',140,'rice:150,mentaiko:25'),
+ ('白米150g＋しらす（大さじ2）','rice',85,'rice:150,shirasu:10'),
+ ('白米150g＋味付けのり（5枚）','rice',70,'rice:150,ajinori:2.5'),
+ ('白米150g＋のりの佃煮（小さじ2）','rice',70,'rice:150,nori_tsukudani:10'),
+ ('白米150g＋塩昆布（ひとつまみ）','rice',70,'rice:150,shio_kombu:4'),
+ ('白米150g＋キムチ（30g）','rice',80,'rice:150,kimchi:30'),
+ ('白米150g＋漬物（30g）','rice',75,'rice:150,pickles:30'),
+ ('白米150g＋バター醤油','rice',85,'rice:150,butter:8,soy_sauce:4'),
+ ('お茶漬け（白米150g＋お茶漬けの素）','rice',90,'rice:150,chazuke_moto:6'),
+ ('おかかご飯（白米150g＋かつお節＋醤油）','rice',75,'rice:150,katsuobushi:2,soy_sauce:3'),
  ('玄米ご飯150g','rice',60,'rice:150'),
  ('食パン6枚切り1枚','main',25,'bread:60'),
  ('トースト（バター少量）','main',35,'bread:60,cream:4'),
@@ -495,6 +519,7 @@ ING.update({
  'pasta_cooked_sauce':(160,4.5,5,24,1.0,1.2),'kinpira_like':(90,1.5,4,11,1.3,3.5),'corn_croquette':(230,4,13,24,0.7,1.2),
  'ham_katsu':(280,11,17,20,1.3,0.8),'oyster_like':(0,0,0,0,0,0),'curry_udon':(110,3,3,17,1.0,0.8),
 })
+JA.update({'furikake':'ふりかけ','soy_sauce':'醤油','butter':'バター','salmon_flake':'鮭フレーク','shirasu':'しらす','ajinori':'味付けのり','nori_tsukudani':'のりの佃煮','shio_kombu':'塩昆布','chazuke_moto':'お茶漬けの素','katsuobushi':'かつお節'})
 JA.update({k: v for k, v in {
  'water':'水','apple_juice':'りんご果汁','grape_juice':'ぶどう果汁','tomato_juice':'トマト','almond_milk':'アーモンドミルク','almond_milk_sweet':'アーモンドミルク',
  'soy_milk_adj':'調製豆乳','cafe_au_lait':'カフェオレ','strawberry_milk':'いちごオレ','drink_yogurt':'飲むヨーグルト','drink_yogurt_light':'飲むヨーグルト',
