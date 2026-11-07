@@ -22,8 +22,13 @@
 "kcal": 189.0,
 "protein": 2.6,
 "fat": 8.7,
-"carbs": 25.0,
-"ai": false
+"carbs": 25.3,
+"ai": false,
+"fiber": 1.7,
+"salt": 0.7,
+"sodium": 275.0,
+"src": "official",
+"detail": true
 },
 {
 "slug": "mosburger",
@@ -31,10 +36,15 @@
 "name": "テリヤキチキンバーガー",
 "price": 510,
 "kcal": 303.0,
-"protein": 20.0,
-"fat": 10.0,
-"carbs": 32.0,
-"ai": false
+"protein": 20.1,
+"fat": 10.3,
+"carbs": 32.4,
+"ai": false,
+"fiber": 1.6,
+"salt": 2.2,
+"sodium": 865.0,
+"src": "official",
+"detail": true
 },
 {
 "slug": "mosburger",
@@ -42,10 +52,15 @@
 "name": "モスチキン",
 "price": 340,
 "kcal": 269.0,
-"protein": 15.0,
-"fat": 17.0,
-"carbs": 15.0,
-"ai": false
+"protein": 15.3,
+"fat": 16.6,
+"carbs": 14.7,
+"ai": false,
+"fiber": 0.5,
+"salt": 1.5,
+"sodium": 590.0,
+"src": "official",
+"detail": true
 },
 {
 "slug": "mosburger",
@@ -55,8 +70,13 @@
 "kcal": 170.0,
 "protein": 2.2,
 "fat": 7.0,
-"carbs": 25.0,
-"ai": false
+"carbs": 24.8,
+"ai": false,
+"fiber": 1.8,
+"salt": 0.5,
+"sodium": 197.0,
+"src": "official",
+"detail": true
 },
 {
 "slug": "mosburger",
@@ -64,10 +84,15 @@
 "name": "月見フォカッチャ ～黄金(おうごん)チーズソース～",
 "price": 630,
 "kcal": 520.0,
-"protein": 17.0,
-"fat": 32.0,
-"carbs": 43.0,
-"ai": false
+"protein": 16.7,
+"fat": 31.7,
+"carbs": 42.5,
+"ai": false,
+"fiber": 1.7,
+"salt": 3.7,
+"sodium": 1454.0,
+"src": "official",
+"detail": true
 },
 {
 "slug": "mosburger",
@@ -75,10 +100,15 @@
 "name": "モス野菜バーガー",
 "price": 500,
 "kcal": 363.0,
-"protein": 14.0,
-"fat": 19.0,
-"carbs": 35.0,
-"ai": false
+"protein": 14.1,
+"fat": 18.6,
+"carbs": 35.4,
+"ai": false,
+"fiber": 3.2,
+"salt": 1.8,
+"sodium": 707.0,
+"src": "official",
+"detail": true
 },
 {
 "slug": "mosburger",
@@ -86,10 +116,15 @@
 "name": "モスの菜摘（なつみ）テリヤキチキン",
 "price": 560,
 "kcal": 186.0,
-"protein": 15.0,
-"fat": 11.0,
+"protein": 15.1,
+"fat": 10.7,
 "carbs": 7.7,
-"ai": false
+"ai": false,
+"fiber": 0.7,
+"salt": 1.9,
+"sodium": 747.0,
+"src": "official",
+"detail": true
 },
 {
 "slug": "mosburger",
@@ -97,10 +132,15 @@
 "name": "モスチーズバーガー",
 "price": 550,
 "kcal": 425.0,
-"protein": 18.0,
-"fat": 21.0,
-"carbs": 40.0,
-"ai": false
+"protein": 18.2,
+"fat": 21.4,
+"carbs": 40.4,
+"ai": false,
+"fiber": 3.4,
+"salt": 2.8,
+"sodium": 1100.0,
+"src": "official",
+"detail": true
 },
 {
 "slug": "mosburger",
@@ -108,10 +148,15 @@
 "name": "とびきりチーズ 〜北海道チーズ〜",
 "price": 730,
 "kcal": 478.0,
-"protein": 22.0,
-"fat": 25.0,
-"carbs": 42.0,
-"ai": false
+"protein": 21.9,
+"fat": 24.7,
+"carbs": 42.2,
+"ai": false,
+"fiber": 3.0,
+"salt": 3.0,
+"sodium": 1179.0,
+"src": "official",
+"detail": true
 },
 {
 "slug": "mosburger",
@@ -119,10 +164,15 @@
 "name": "チキンナゲット（5コ入り）※ソース別売",
 "price": 370,
 "kcal": 195.0,
-"protein": 15.0,
-"fat": 10.0,
-"carbs": 11.0,
-"ai": false
+"protein": 14.8,
+"fat": 10.2,
+"carbs": 10.9,
+"ai": false,
+"fiber": 0.3,
+"salt": 0.8,
+"sodium": 314.0,
+"src": "official",
+"detail": true
 },
 {
 "slug": "mosburger",
@@ -130,10 +180,15 @@
 "name": "海老カツバーガー",
 "price": 510,
 "kcal": 397.0,
-"protein": 15.0,
-"fat": 19.0,
-"carbs": 42.0,
-"ai": false
+"protein": 14.5,
+"fat": 19.3,
+"carbs": 42.1,
+"ai": false,
+"fiber": 2.0,
+"salt": 2.1,
+"sodium": 825.0,
+"src": "official",
+"detail": true
 },
 {
 "slug": "mosburger",
@@ -144,7 +199,12 @@
 "protein": 1.3,
 "fat": 1.0,
 "carbs": 7.3,
-"ai": false
+"ai": false,
+"fiber": 1.4,
+"salt": 0.5,
+"sodium": 197.0,
+"src": "official",
+"detail": true
 },
 {
 "slug": "mosburger",
@@ -153,9 +213,14 @@
 "price": 550,
 "kcal": 223.0,
 "protein": 9.1,
-"fat": 17.0,
-"carbs": 10.0,
-"ai": false
+"fat": 16.5,
+"carbs": 10.4,
+"ai": false,
+"fiber": 2.5,
+"salt": 1.3,
+"sodium": 511.0,
+"src": "official",
+"detail": true
 },
 {
 "slug": "mosburger",
@@ -165,8 +230,13 @@
 "kcal": 217.0,
 "protein": 2.9,
 "fat": 5.5,
-"carbs": 39.0,
-"ai": false
+"carbs": 38.8,
+"ai": false,
+"fiber": 0.7,
+"salt": 0.4,
+"sodium": 157.0,
+"src": "official",
+"detail": true
 },
 {
 "slug": "mosburger",
@@ -176,8 +246,13 @@
 "kcal": 128.0,
 "protein": 3.1,
 "fat": 6.5,
-"carbs": 14.0,
-"ai": false
+"carbs": 14.4,
+"ai": false,
+"fiber": 1.8,
+"salt": 1.4,
+"sodium": 550.0,
+"src": "official",
+"detail": true
 },
 {
 "slug": "mosburger",
@@ -186,9 +261,14 @@
 "price": 510,
 "kcal": 372.0,
 "protein": 8.5,
-"fat": 11.0,
-"carbs": 61.0,
-"ai": false
+"fat": 10.5,
+"carbs": 61.3,
+"ai": false,
+"fiber": 1.9,
+"salt": 1.9,
+"sodium": 747.0,
+"src": "official",
+"detail": true
 },
 {
 "slug": "mosburger",
@@ -196,10 +276,15 @@
 "name": "ロースカツバーガー",
 "price": 520,
 "kcal": 410.0,
-"protein": 17.0,
-"fat": 16.0,
-"carbs": 50.0,
-"ai": false
+"protein": 16.6,
+"fat": 16.3,
+"carbs": 49.7,
+"ai": false,
+"fiber": 2.7,
+"salt": 2.3,
+"sodium": 904.0,
+"src": "official",
+"detail": true
 },
 {
 "slug": "mosburger",
@@ -210,7 +295,12 @@
 "protein": 2.8,
 "fat": 5.2,
 "carbs": 31.0,
-"ai": false
+"ai": false,
+"fiber": 0.3,
+"salt": 0.3,
+"sodium": 118.0,
+"src": "official",
+"detail": true
 },
 {
 "slug": "mosburger",
@@ -218,10 +308,15 @@
 "name": "ダブルモスバーガー",
 "price": 650,
 "kcal": 532.0,
-"protein": 24.0,
-"fat": 28.0,
-"carbs": 46.0,
-"ai": false
+"protein": 23.7,
+"fat": 28.4,
+"carbs": 45.7,
+"ai": false,
+"fiber": 4.5,
+"salt": 3.4,
+"sodium": 1336.0,
+"src": "official",
+"detail": true
 },
 {
 "slug": "mosburger",
@@ -230,9 +325,14 @@
 "price": 450,
 "kcal": 386.0,
 "protein": 15.0,
-"fat": 19.0,
+"fat": 18.5,
 "carbs": 40.0,
-"ai": false
+"ai": false,
+"fiber": 2.3,
+"salt": 1.5,
+"sodium": 590.0,
+"src": "official",
+"detail": true
 },
 {
 "slug": "mosburger",
@@ -240,10 +340,15 @@
 "name": "モスバーガー",
 "price": 500,
 "kcal": 372.0,
-"protein": 15.0,
+"protein": 15.2,
 "fat": 17.0,
 "carbs": 40.0,
-"ai": false
+"ai": false,
+"fiber": 3.4,
+"salt": 2.3,
+"sodium": 904.0,
+"src": "official",
+"detail": true
 },
 {
 "slug": "mosburger",
@@ -252,9 +357,14 @@
 "price": 340,
 "kcal": 219.0,
 "protein": 3.5,
-"fat": 13.0,
-"carbs": 23.0,
-"ai": false
+"fat": 12.7,
+"carbs": 22.8,
+"ai": false,
+"fiber": 1.3,
+"salt": 1.1,
+"sodium": 432.0,
+"src": "official",
+"detail": true
 },
 {
 "slug": "mosburger",
@@ -262,10 +372,15 @@
 "name": "スパイシーモスバーガー",
 "price": 550,
 "kcal": 375.0,
-"protein": 15.0,
-"fat": 17.0,
-"carbs": 40.0,
-"ai": false
+"protein": 15.3,
+"fat": 17.1,
+"carbs": 40.4,
+"ai": false,
+"fiber": 3.5,
+"salt": 2.5,
+"sodium": 983.0,
+"src": "official",
+"detail": true
 },
 {
 "slug": "mosburger",
@@ -273,10 +388,15 @@
 "name": "スパイシーチリドッグ",
 "price": 530,
 "kcal": 374.0,
-"protein": 13.0,
+"protein": 13.1,
 "fat": 24.0,
-"carbs": 27.0,
-"ai": false
+"carbs": 26.6,
+"ai": false,
+"fiber": 1.7,
+"salt": 2.7,
+"sodium": 1061.0,
+"src": "official",
+"detail": true
 },
 {
 "slug": "mosburger",
@@ -284,10 +404,15 @@
 "name": "モスチキンパック 5本入り",
 "price": 1600,
 "kcal": 1345.0,
-"protein": 77.0,
+"protein": 76.5,
 "fat": 83.0,
-"carbs": 74.0,
-"ai": false
+"carbs": 73.5,
+"ai": false,
+"fiber": 2.5,
+"salt": 7.5,
+"sodium": 2948.0,
+"src": "official",
+"detail": true
 },
 {
 "slug": "mosburger",
@@ -295,10 +420,15 @@
 "name": "バラエティパックB",
 "price": 1850,
 "kcal": 1427.0,
-"protein": 44.0,
-"fat": 67.0,
-"carbs": 163.0,
-"ai": false
+"protein": 43.5,
+"fat": 66.5,
+"carbs": 163.4,
+"ai": false,
+"fiber": 10.5,
+"salt": 5.3,
+"sodium": 2083.0,
+"src": "official",
+"detail": true
 },
 {
 "slug": "mosburger",
@@ -306,10 +436,15 @@
 "name": "ダブルとびきりチーズ 〜北海道チーズ〜",
 "price": 1020,
 "kcal": 706.0,
-"protein": 36.0,
-"fat": 40.0,
-"carbs": 50.0,
-"ai": false
+"protein": 35.6,
+"fat": 40.2,
+"carbs": 50.4,
+"ai": false,
+"fiber": 4.0,
+"salt": 4.3,
+"sodium": 1690.0,
+"src": "official",
+"detail": true
 },
 {
 "slug": "mosburger",
@@ -317,10 +452,15 @@
 "name": "【時間限定】トリプルモスチーズバーガー ＜15時から販売＞",
 "price": 850,
 "kcal": 733.0,
-"protein": 35.0,
-"fat": 44.0,
-"carbs": 50.0,
-"ai": false
+"protein": 34.8,
+"fat": 43.7,
+"carbs": 50.4,
+"ai": false,
+"fiber": 5.5,
+"salt": 4.8,
+"sodium": 1886.0,
+"src": "official",
+"detail": true
 },
 {
 "slug": "mosburger",
@@ -328,10 +468,15 @@
 "name": "【時間限定】トリプルモスバーガー ＜15時から販売＞",
 "price": 800,
 "kcal": 680.0,
-"protein": 32.0,
-"fat": 39.0,
+"protein": 31.8,
+"fat": 39.3,
 "carbs": 50.0,
-"ai": false
+"ai": false,
+"fiber": 5.5,
+"salt": 4.3,
+"sodium": 1690.0,
+"src": "official",
+"detail": true
 },
 {
 "slug": "mosburger",
@@ -339,10 +484,15 @@
 "name": "スパイシーダブルモスチーズバーガー",
 "price": 750,
 "kcal": 588.0,
-"protein": 27.0,
-"fat": 33.0,
-"carbs": 47.0,
-"ai": false
+"protein": 26.8,
+"fat": 32.9,
+"carbs": 46.5,
+"ai": false,
+"fiber": 4.6,
+"salt": 4.1,
+"sodium": 1611.0,
+"src": "official",
+"detail": true
 },
 {
 "slug": "mosburger",
@@ -350,10 +500,15 @@
 "name": "ダブルモスチーズバーガー",
 "price": 700,
 "kcal": 585.0,
-"protein": 27.0,
-"fat": 33.0,
-"carbs": 46.0,
-"ai": false
+"protein": 26.7,
+"fat": 32.8,
+"carbs": 46.1,
+"ai": false,
+"fiber": 4.5,
+"salt": 3.9,
+"sodium": 1533.0,
+"src": "official",
+"detail": true
 },
 {
 "slug": "mosburger",
@@ -361,10 +516,15 @@
 "name": "ダブルチーズバーガー",
 "price": 450,
 "kcal": 515.0,
-"protein": 25.0,
-"fat": 29.0,
-"carbs": 40.0,
-"ai": false
+"protein": 24.8,
+"fat": 28.5,
+"carbs": 39.9,
+"ai": false,
+"fiber": 3.6,
+"salt": 3.2,
+"sodium": 1258.0,
+"src": "official",
+"detail": true
 },
 {
 "slug": "mosburger",
@@ -375,7 +535,11 @@
 "protein": 0.0,
 "fat": 0.0,
 "carbs": 0.3,
-"ai": false
+"ai": false,
+"fiber": 0.0,
+"sodium": 0.0,
+"src": "official",
+"detail": true
 },
 {
 "slug": "mosburger",
@@ -386,7 +550,11 @@
 "protein": 0.2,
 "fat": 0.0,
 "carbs": 0.2,
-"ai": false
+"ai": false,
+"fiber": 0.0,
+"sodium": 0.0,
+"src": "official",
+"detail": true
 },
 {
 "slug": "mosburger",
@@ -397,7 +565,11 @@
 "protein": 0.2,
 "fat": 0.0,
 "carbs": 0.2,
-"ai": false
+"ai": false,
+"fiber": 0.0,
+"sodium": 0.0,
+"src": "official",
+"detail": true
 },
 {
 "slug": "mosburger",
@@ -408,7 +580,11 @@
 "protein": 0.2,
 "fat": 0.2,
 "carbs": 1.3,
-"ai": false
+"ai": false,
+"fiber": 0.0,
+"sodium": 0.0,
+"src": "estimated",
+"detail": true
 },
 {
 "slug": "mosburger",
@@ -419,7 +595,12 @@
 "protein": 0.6,
 "fat": 0.0,
 "carbs": 2.1,
-"ai": false
+"ai": false,
+"fiber": 0.3,
+"salt": 0.1,
+"sodium": 39.0,
+"src": "official",
+"detail": true
 },
 {
 "slug": "mosburger",
@@ -429,8 +610,12 @@
 "kcal": 55.0,
 "protein": 0.0,
 "fat": 0.0,
-"carbs": 14.0,
-"ai": false
+"carbs": 13.9,
+"ai": false,
+"fiber": 0.0,
+"sodium": 0.0,
+"src": "official",
+"detail": true
 },
 {
 "slug": "mosburger",
@@ -440,8 +625,12 @@
 "kcal": 60.0,
 "protein": 0.1,
 "fat": 0.0,
-"carbs": 15.0,
-"ai": false
+"carbs": 14.9,
+"ai": false,
+"fiber": 0.0,
+"sodium": 0.0,
+"src": "official",
+"detail": true
 },
 {
 "slug": "mosburger",
@@ -1407,10 +1596,15 @@
 "name": "塩レモンチキンバーガー",
 "price": 580,
 "kcal": 442.0,
-"protein": 15.0,
-"fat": 25.0,
+"protein": 15.3,
+"fat": 24.7,
 "carbs": 39.0,
-"ai": false
+"ai": false,
+"fiber": 1.4,
+"salt": 2.4,
+"sodium": 943.0,
+"src": "official",
+"detail": true
 },
 {
 "slug": "freshness",
@@ -1419,9 +1613,14 @@
 "price": 640,
 "kcal": 447.0,
 "protein": 13.0,
-"fat": 27.0,
+"fat": 26.7,
 "carbs": 38.0,
-"ai": false
+"ai": false,
+"fiber": 1.2,
+"salt": 1.6,
+"sodium": 629.0,
+"src": "official",
+"detail": true
 },
 {
 "slug": "freshness",
@@ -1432,7 +1631,12 @@
 "protein": 7.1,
 "fat": 7.8,
 "carbs": 19.0,
-"ai": false
+"ai": false,
+"fiber": 0.0,
+"salt": 0.2,
+"sodium": 79.0,
+"src": "official",
+"detail": true
 },
 {
 "slug": "freshness",
@@ -1442,8 +1646,13 @@
 "kcal": 451.0,
 "protein": 7.7,
 "fat": 8.5,
-"carbs": 73.0,
-"ai": false
+"carbs": 73.3,
+"ai": false,
+"fiber": 0.0,
+"salt": 1.9,
+"sodium": 747.0,
+"src": "official",
+"detail": true
 },
 {
 "slug": "freshness",
@@ -1451,10 +1660,15 @@
 "name": "サルサバーガー",
 "price": 520,
 "kcal": 305.0,
-"protein": 12.0,
-"fat": 12.0,
-"carbs": 38.0,
-"ai": false
+"protein": 11.9,
+"fat": 11.8,
+"carbs": 37.8,
+"ai": false,
+"fiber": 2.1,
+"salt": 2.4,
+"sodium": 943.0,
+"src": "official",
+"detail": true
 },
 {
 "slug": "freshness",
