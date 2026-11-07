@@ -1113,10 +1113,6 @@ for st in ['セブン‐イレブン','ファミリーマート','ローソン']
      ('ココア（チルド）240ml','drink',180,'cocoa_drink:240'),
     ])
 add('一般スーパー', [
- ('2Lミネラルウォーター（500ml分）','drink',25,'water:500'),
- ('2L緑茶（500ml分）','drink',40,'tea:500'),
- ('2L麦茶（500ml分）','drink',35,'tea:500'),
- ('1.5Lコーラ（500ml分）','drink',70,'cola:500'),
  ('1L牛乳（200ml分）','drink',50,'milk:206'),
  ('1L低脂肪乳（200ml分）','drink',40,'milk_lowfat:206'),
  ('1Lオレンジジュース（200ml分）','drink',45,'orange_juice:200'),
@@ -1126,9 +1122,7 @@ add('一般スーパー', [
  ('1Lアイスコーヒー 無糖（200ml分）','drink',35,'coffee:200'),
  ('1Lアーモンドミルク（200ml分）','drink',60,'almond_milk:200'),
  ('炭酸水 500ml','drink',60,'water:500'),
- ('スポーツドリンク 2L（500ml分）','drink',60,'sports_drink:500'),
  ('インスタントコーヒー（1杯）','drink',10,'coffee:150'),
- ('ティーバッグ緑茶（1杯）','drink',5,'tea:200'),
 ])
 
 
@@ -1293,6 +1287,69 @@ MAKER_DRINKS = {
   ('大納言しるこ 缶 185g',185,'g',100,88,0.9,0,21,0.17,173,True,VM,ITO.format('41391')),
  ],
 }
+
+TEA_EXTRA = {
+ 'サントリー': [
+  ('伊右衛門 玄米茶 600ml',600,'ml',100,0,0,0,0,0.03,200,False,ALL3,SUN),
+  ('伊右衛門 ジャスミン茶 600ml',600,'ml',100,0,0,0,0,0.02,200,False,ALL3,SUN),
+  ('伊右衛門 濃い味（機能性表示食品）600ml',600,'ml',1200,0,0,0,0,0.29,200,False,ALL3,SUN),
+  ('伊右衛門 香りゆたか 600ml',600,'ml',100,0,0,0,0,0.02,200,False,ALL3,SUN),
+  ('伊右衛門 炙り茶葉仕立て 600ml',600,'ml',100,0,0,0,0,0.02,200,False,ALL3,SUN),
+  ('伊右衛門 ゆず茶 525ml',525,'ml',100,30,0,0,7.4,0.09,200,False,SC,SUN),
+  ('伊右衛門 うめ茶 525ml',525,'ml',100,35,0,0,8.7,0.05,200,False,SC,SUN),
+  ('伊右衛門 特茶s ジャスミン（特定保健用食品）500ml',500,'ml',500,0,0,0,0,0.06,210,False,SC,SUN),
+  ('伊右衛門 特茶s ほうじ茶（特定保健用食品）500ml',500,'ml',500,0,0,0,0,0.07,210,False,SC,SUN),
+  ('特茶 カフェインZERO（特定保健用食品）500ml',500,'ml',500,0,0,0,2.7,0.06,210,False,SC,SUN),
+  ('伊右衛門 2L（500ml分）',500,'ml',100,0,0,0,0,0.02,55,False,('スーパー',),SUN),
+  ('サントリー烏龍茶 2L（500ml分）',500,'ml',100,0,0,0,0,0.03,55,False,('スーパー',),SUN),
+ ],
+ 'コカ･コーラ': [
+  ('綾鷹 ミネラル緑茶 525ml',525,'ml',100,0,0,0,0,0.03,175,False,ALL3,CC.format('ayataka')),
+  ('綾鷹 濃いほうじ茶 525ml',525,'ml',100,0,0,0,0,0.3,175,False,ALL3,CC.format('ayataka')),
+  ('綾鷹 黒豆ほうじ茶 525ml',525,'ml',100,0,0,0,0,0.02,175,False,ALL3,CC.format('ayataka')),
+  ('綾鷹 番茶 525ml',525,'ml',100,0,0,0,0,0.02,175,False,SC,CC.format('ayataka')),
+  ('綾鷹 特選茶（特定保健用食品）500ml',500,'ml',500,0,0,0,5.5,0.08,195,False,SC,CC.format('ayataka')),
+  ('綾鷹カフェ 抹茶グリーンティーショコララテ 440ml',440,'ml',100,37,0.4,0.6,7.5,0.08,195,False,SC,CC.format('ayataka')),
+  ('綾鷹 2L（500ml分）',500,'ml',100,0,0,0,0,0.02,55,False,('スーパー',),CC.format('ayataka')),
+  ('爽健美茶 2L（500ml分）',500,'ml',100,0,0,0,0,0.02,55,False,('スーパー',),CC.format('sokenbicha')),
+  ('やかんの麦茶 from 爽健美茶 2L（500ml分）',500,'ml',100,0,0,0,0.5,0.02,50,False,('スーパー',),CC.format('yakan')),
+ ],
+ 'キリン': [
+  ('生茶 熟成 525ml',525,'ml',100,0,0,0,0.5,0.04,175,False,SC,KIR),
+  ('生茶 カフェインフリー 500ml',500,'ml',100,0,0,0,0,0.05,175,False,ALL3,KIR),
+  ('生茶 からだ晴れ茶 525ml',525,'ml',525,0,0,0,0,0.16,195,False,SC,KIR),
+  ('生茶 ホット＆コールド 280ml',280,'ml',100,0,0,0,0,0.03,140,False,ALL3,KIR),
+  ('ヘルシア うまみ緑茶 500ml',500,'ml',500,12,0,0,3,0.13,200,False,SC,KIR),
+  ('午後の紅茶 おいしい無糖 香るレモン 500ml',500,'ml',100,0,0,0,0,0.02,175,False,ALL3,KIR),
+  ('午後の紅茶 TEA SELECTION アールグレイアイスティー 500ml',500,'ml',100,0,0,0,0,0.02,175,False,SC,KIR),
+  ('生茶 2L（500ml分）',500,'ml',100,0,0,0,0,0.03,55,False,('スーパー',),KIR),
+  ('午後の紅茶 おいしい無糖 2L（500ml分）',500,'ml',100,0,0,0,0,0.01,60,False,('スーパー',),KIR),
+ ],
+ 'アサヒ飲料': [
+  ('アサヒ 十六茶ルイボスブレンド 630ml',630,'ml',100,0,0,0,0,0.02,165,False,SC,ASA.format('0003')),
+  ('アサヒ ぎゅっと濃い十六茶 660ml',660,'ml',660,24,0,0,8.7,0.14,195,False,SC,ASA.format('0003')),
+  ('アサヒ 台湾烏龍茶～四季春茶～ 600ml',600,'g',100,0,0,0,0,0.04,165,False,SC,ASA.format('0003')),
+  ('アサヒ 旨みの日本茶 620ml',620,'ml',100,0,0,0,0,0.04,165,False,SC,ASA.format('0003')),
+  ('和の紅茶 無糖アイスティー 500ml',500,'ml',100,0,0,0,0,0.02,175,False,SC,ASA.format('0003')),
+  ('和の紅茶 ストレートティー 国産はちみつ仕立て 500ml',500,'ml',100,14,0,0,3.5,0.02,175,False,SC,ASA.format('0003')),
+  ('アサヒ 食事の脂にこの1本。500ml',500,'ml',100,0,0,0,0,0.02,195,False,SC,ASA.format('0003')),
+  ('アサヒ 食事の脂にこの1本。緑茶ブレンド 500ml',500,'ml',100,0,0,0,0,0.03,195,False,SC,ASA.format('0003')),
+  ('なだ万監修 ほうじ茶 500ml',500,'ml',100,0,0,0,0,0.03,165,False,SC,ASA.format('0003')),
+  ('アサヒ 十六茶 2L（500ml分）',500,'ml',100,0,0,0,0,0.02,55,False,('スーパー',),ASA.format('0003')),
+ ],
+ '伊藤園': [
+  ('お～いお茶 玄米茶 600ml',600,'ml',100,0,0,0,0,0.02,238,True,ALL3,ITO.format('41152')),
+  ('お～いお茶 カフェインゼロ 470ml',470,'ml',100,0,0,0,0,0.03,173,True,SC,ITO.format('41929')),
+  ('お～いお茶 LEMON GREEN 600ml',600,'ml',100,0,0,0,0,0.02,216,True,SC,ITO.format('51078')),
+  ('まるっととうもろこし茶 600ml',600,'ml',600,0,0,0,0,0.15,216,True,SC,ITO.format('61662')),
+  ('健康ミネラルむぎ茶 黒豆麦茶 650ml',650,'ml',650,0,0,0,0,0.2,184,True,ALL3,ITO.format('50715')),
+  ('お～いお茶 緑茶 2L（500ml分）',500,'ml',100,0,0,0,0,0.03,55,False,('スーパー',),ITO.format('45534')),
+  ('健康ミネラルむぎ茶 2L（500ml分）',500,'ml',650,0,0,0,0,0.2,45,False,('スーパー',),ITO.format('41616')),
+ ],
+}
+for _m, _rows in TEA_EXTRA.items():
+    MAKER_DRINKS[_m].extend(_rows)
+KONBINI3 = ('セブン‐イレブン','ファミリーマート','ローソン')
 FIBER_OFFICIAL = {'栄養強化型 1日分の野菜 200ml':6.9}
 SEVEN_CAFE = 'https://www.sej.co.jp/products/a/sevencafe/'
 FAMI_CAFE = 'https://www.family.co.jp/goods/safety/cafe.html'
@@ -1422,6 +1479,11 @@ def main():
             'contents': [[k, g] for k, g in parse(spec)],
         })
     import hashlib as _h
+
+    for _m, _rows in {'サントリー':[('サントリー天然水 2L（500ml分）',500,'ml',100,0,0,0,0,0.002,35,False,('スーパー',),SUN)],
+                      'コカ･コーラ':[('コカ・コーラ 1.5L（500ml分）',500,'ml',100,45,0,0,11.3,0,85,False,('スーパー',),CC.format('coca-cola')),
+                                    ('アクエリアス 2L（500ml分）',500,'ml',100,18,0,0,4.6,0.1,70,False,('スーパー',),CC.format('aquarius'))]}.items():
+        MAKER_DRINKS[_m].extend(_rows)
     def oid(store, name): return 'd' + _h.sha1(f'{store}|{name}'.encode()).hexdigest()[:9]
     rng = lambda x: x
     for maker, rows in MAKER_DRINKS.items():
@@ -1444,6 +1506,23 @@ def main():
         out.append({'id': oid(store, name), 'store': store, 'name': name, 'kcal': round(kcal), 'protein': p, 'fat': fa, 'carbs': c, 'salt': salt,
                     'fiber': fiber, 'price': price, 'source': url, 'quality': 'official', 'note': f'{store}公式の栄養成分・税込価格（店舗・地域で異なる場合あり）。',
                     'time': 'any', 'kind': 'drink', 'price_type': 'exact'})
+    # 同一のコンビニ汎用商品（セブン・ファミマ・ローソン共通）を1件にまとめる
+    groups = {}
+    for f in out:
+        if f['store'] in KONBINI3 and f['quality'] != 'official':
+            key = (f['name'], f['kcal'], f['protein'], f['fat'], f['carbs'], f['salt'])
+            groups.setdefault(key, []).append(f)
+    merged_ids = set()
+    for key, fs in groups.items():
+        if len(fs) < 2: continue
+        places = [s for s in KONBINI3 if any(x['store'] == s for x in fs)]
+        base = dict(fs[0])
+        base.update({'id': oid('コンビニ各社', base['name']), 'store': 'コンビニ各社', 'places': places,
+                     'price': round(sum(x['price'] for x in fs) / len(fs)) if all(x['price'] is not None for x in fs) else base['price'],
+                     'note': base['note'].replace('価格も目安です。', '') + '・'.join(places) + 'で取り扱いのある同種の商品をまとめています。価格は目安です。'})
+        merged_ids.update(id(x) for x in fs)
+        out.append(base)
+    out = [f for f in out if id(f) not in merged_ids]
     # keep official kinds sensible
     for f in out:
         if f['quality'] == 'official':

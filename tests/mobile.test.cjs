@@ -98,6 +98,19 @@ test('mobile: categories, estimated marks, photo intake UI and no horizontal ove
       await page.locator('#queryInput').fill('キリン 午後の紅茶');
       assert.equal(await page.locator('.food-row').count(), 1);
       await page.locator('#queryInput').fill('');
+      // konbini: identical products are listed once; store-specific items stay separate
+      await page.locator('[data-cat="コンビニ"]').click();
+      const konbiniNames = await page.locator('.food-row .food-name').allTextContents();
+      assert.equal(new Set(konbiniNames).size, konbiniNames.length, 'no duplicated konbini products');
+      await page.locator('#queryInput').fill('おにぎり 鮭');
+      assert.equal(await page.locator('.food-row').count(), 1, 'one merged onigiri');
+      assert.match(await page.locator('.food-row').textContent(), /セブン‐イレブン・ファミリーマート・ローソンで購入可/);
+      await page.locator('.sub-row [data-store="ローソン"]').click();
+      assert.equal(await page.locator('.food-row').count(), 1);
+      await page.locator('#queryInput').fill('チキ');
+      const lawson = await page.locator('.food-row .food-name').allTextContents();
+      assert.ok(lawson.includes('Lチキ レギュラー') && !lawson.includes('ファミチキ'), lawson.join());
+      await page.locator('#queryInput').fill('');
       // recommendations within a category
       await page.locator('[data-cat="コンビニ"]').click();
       await page.locator('.mobile-nav [data-page="recommend"]').click();
