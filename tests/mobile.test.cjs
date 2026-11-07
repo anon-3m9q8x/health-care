@@ -131,3 +131,39 @@ test('mobile: categories, estimated marks, photo intake UI and no horizontal ove
     assert.deepEqual(errors, []);
   } finally {await browser.close();await new Promise(r=>server.close(r));}
 });
+
+test('desktop: Japanese IME input in the search box is not interrupted', {timeout:60000}, async () => {
+  const server = createServer(async (req,res) => {
+    try {
+      const pathname = decodeURIComponent(new URL(req.url,'http://localhost').pathname);
+      const file = resolve(root, '.'+(pathname==='/'?'/index.html':pathname));
+      if (!file.startsWith(root+sep)) {res.writeHead(403).end();return;}
+      const mime = {'.html':'text/html','.js':'text/javascript','.css':'text/css','.json':'application/json'};
+      res.writeHead(200,{'Content-Type':mime[extname(file)]||'text/plain'}); res.end(await readFile(file));
+    } catch {res.writeHead(404).end();}
+  });
+  await new Promise(r=>server.listen(0,'127.0.0.1',r));
+  const browser = await chromium.launch({executablePath:process.env.CHROMIUM_PATH || '/usr/bin/chromium',headless:true,args:['--no-sandbox']});
+  try {
+    const context = await browser.newContext({viewport:{width:1280,height:900}, serviceWorkers:'block'});
+    await context.route('**/config.js', route=>route.fulfill({contentType:'text/javascript',body:'window.NUTRIPATH_CONFIG={};'}));
+    const page = await context.newPage();
+    await page.goto(`http://127.0.0.1:${server.address().port}/`);
+    await page.locator('#nav [data-page="catalog"]').click();
+    const box = page.locator('#queryInput'); await box.click();
+    const cdp = await context.newCDPSession(page);
+    // type "からあげ" via IME composition steps, then commit
+    for (const t of ['k','か','かr','から','からあ','からあg','からあげ']) await cdp.send('Input.imeSetComposition',{text:t,selectionStart:t.length,selectionEnd:t.length});
+    await cdp.send('Input.insertText',{text:'からあげ'});
+    assert.equal(await page.locator('#queryInput').inputValue(), 'からあげ');
+    assert.ok(await page.locator('#queryInput').evaluate(n=>document.activeElement===n), 'focus kept');
+    const names = await page.locator('.food-row .food-name').allTextContents();
+    assert.ok(names.length > 0 && names.every(n=>n.includes('からあげ')), 'filtered: '+names.length);
+    // continue typing another word with IME after a space
+    for (const t of ['b','べ','べn','べん','べんt','べんと','べんとう','弁当']) await cdp.send('Input.imeSetComposition',{text:t,selectionStart:t.length,selectionEnd:t.length});
+    await cdp.send('Input.insertText',{text:'弁当'});
+    assert.equal(await page.locator('#queryInput').inputValue(), 'からあげ弁当');
+    await context.close();
+  } finally {await browser.close();await new Promise(r=>server.close(r));}
+});
+
