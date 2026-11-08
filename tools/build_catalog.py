@@ -89,7 +89,8 @@ ING = {
 ING.update({'furikake':(440,22,17,48,10,6),'soy_sauce':(77,7.7,0,7.9,14.5,0),'butter':(700,0.6,81,0.2,1.9,0),
  'salmon_flake':(190,23,10,1,4.8,0),'shirasu':(187,40.5,3.5,0.5,6.6,0),'ajinori':(301,40,3.5,42,4.3,25),
  'nori_tsukudani':(150,14,1.3,21,5.8,4.1),'shio_kombu':(193,16.9,0.4,37,18,13),'chazuke_moto':(250,8,2,50,32,2),
- 'katsuobushi':(332,75.7,2.9,0.8,1.2,0)})
+ 'katsuobushi':(332,75.7,2.9,0.8,1.2,0),
+ 'oyster':(58,6.9,2.2,4.9,1.2,0),'flour':(349,8.3,1.5,75.8,0,2.5)})
 
 JA = {'rice':'ご飯','onigiri_rice':'ご飯(塩)','salad_chicken':'鶏むね肉(味付)','sushi_rice':'酢飯','sekihan':'赤飯','mochigome':'もち米','bread':'食パン','bun':'バンズ','muffin':'マフィン','croissant':'パイ生地','sweet_bun':'菓子パン生地',
 'udon':'うどん','soba':'そば','ramen':'中華麺','yakisoba_noodle':'蒸し麺','pasta':'パスタ','oats':'オートミール','tortilla':'トルティーヤ','harusame':'春雨',
@@ -142,6 +143,7 @@ add('自炊', [
  ('白米 150g（茶碗1杯）','rice',55,'rice:150'),
  ('白米 200g（大盛り）','rice',73,'rice:200'),
  ('白米 250g（特盛り・丼1杯）','rice',92,'rice:250'),
+ ('牡蠣とブロッコリーのクリーム煮（1人分）','protein',390,'oyster:100,broccoli:80,onion:50,butter:10,flour:8,milk:150,consomme:50'),
  # 白米150g ＋ ご飯のお供
  ('白米150g＋ふりかけ（1袋2.5g）','rice',70,'rice:150,furikake:2.5'),
  ('白米150g＋納豆（たれ付き）','meal',92,'rice:150,natto:45,sauce_sweet:5'),
@@ -519,7 +521,7 @@ ING.update({
  'pasta_cooked_sauce':(160,4.5,5,24,1.0,1.2),'kinpira_like':(90,1.5,4,11,1.3,3.5),'corn_croquette':(230,4,13,24,0.7,1.2),
  'ham_katsu':(280,11,17,20,1.3,0.8),'oyster_like':(0,0,0,0,0,0),'curry_udon':(110,3,3,17,1.0,0.8),
 })
-JA.update({'furikake':'ふりかけ','soy_sauce':'醤油','butter':'バター','salmon_flake':'鮭フレーク','shirasu':'しらす','ajinori':'味付けのり','nori_tsukudani':'のりの佃煮','shio_kombu':'塩昆布','chazuke_moto':'お茶漬けの素','katsuobushi':'かつお節'})
+JA.update({'furikake':'ふりかけ','soy_sauce':'醤油','butter':'バター','salmon_flake':'鮭フレーク','shirasu':'しらす','ajinori':'味付けのり','nori_tsukudani':'のりの佃煮','shio_kombu':'塩昆布','chazuke_moto':'お茶漬けの素','katsuobushi':'かつお節','oyster':'牡蠣','flour':'小麦粉'})
 JA.update({k: v for k, v in {
  'water':'水','apple_juice':'りんご果汁','grape_juice':'ぶどう果汁','tomato_juice':'トマト','almond_milk':'アーモンドミルク','almond_milk_sweet':'アーモンドミルク',
  'soy_milk_adj':'調製豆乳','cafe_au_lait':'カフェオレ','strawberry_milk':'いちごオレ','drink_yogurt':'飲むヨーグルト','drink_yogurt_light':'飲むヨーグルト',

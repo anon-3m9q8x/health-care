@@ -641,6 +641,28 @@
     ]
   },
   {
+    "id": "ed10094b36",
+    "store": "自炊",
+    "name": "牡蠣とブロッコリーのクリーム煮（1人分）",
+    "kcal": 299,
+    "protein": 17.6,
+    "fat": 16.7,
+    "carbs": 28.4,
+    "salt": 1.9,
+    "fiber": 5.2,
+    "price": 390,
+    "source": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html",
+    "quality": "estimate",
+    "note": "食材の成分値から算出した想定値。価格は1食あたりの食材費の想定。",
+    "time": "any",
+    "kind": "protein",
+    "price_type": "approx",
+    "est": [
+      "nutrition",
+      "price"
+    ]
+  },
+  {
     "id": "e7ce5e3039",
     "store": "自炊",
     "name": "白米150g＋ふりかけ（1袋2.5g）",
