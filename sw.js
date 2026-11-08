@@ -1,5 +1,5 @@
 /* Offline support for the main app; OCR is fetched separately when requested. */
-const CACHE='nutripath-v16-sachifukuya-1';
+const CACHE='nutripath-v17-sachifukuya-2';
 const ASSETS=['./','./index.html','./styles.css','./data.js','./data_teishoku.js','./data_fastfood.js','./data_lawson.js','./data_sachifukuya.js','./health_ocr.js','./food_ocr.js','./nutrients_info.js','./app.js','./account.js','./account.css','./theme.css','./config.js','./vendor/supabase.js','./manifest.webmanifest','./icon-192.png','./icon-512.png'];
 self.addEventListener('install',e=>{e.waitUntil(caches.open(CACHE).then(c=>c.addAll(ASSETS)).then(()=>self.skipWaiting()))});
 self.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith('nutripath-')&&k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim()))});
