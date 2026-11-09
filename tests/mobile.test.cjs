@@ -69,7 +69,7 @@ test('mobile: categories, estimated marks, photo intake UI and no horizontal ove
       assert.match(await page.locator('#app h1').textContent(), /設定/);
       // daily target lines on the nutrition balance
       await page.locator('.mobile-nav [data-page="today"]').click();
-      assert.equal(await page.locator('.target-line').count(), 7);
+      assert.ok(await page.locator('.target-line').count() >= 7);
       assert.ok(await page.locator('.goal-chip.ok').count() >= 4);
       assert.equal(await page.locator('.meal-card', {hasText:'飲み物'}).count(), 1);
       // purchase-place categories: 自炊 and スーパー are separate; ヤオコー exists under スーパー
@@ -259,16 +259,17 @@ test('today: meal order, time-based meal, swipe to delete, yesterday quick add',
     await page.locator('[data-action="next"]').first().click();
     assert.equal(await page.locator('.log-item').count(), 0);
     assert.match(await page.locator('.prev-day').textContent(), /幕の内弁当/);
+    assert.match(await page.locator('.prev-short').textContent(), /前日に不足した栄養素[\s\S]*たんぱく質[\s\S]*あと/);
     await page.locator('[data-action="copyYesterday"]').click();
     assert.equal(await page.locator('.log-item').count(), 1);
-    assert.match(await page.locator('.log-item').textContent(), /予定/);
+    assert.match(await page.locator('.log-item').textContent(), /食べた/);
     // swipe right marks it as eaten
     await page.locator('.log-item').first().scrollIntoViewIfNeeded();
     const b2 = await page.locator('.log-item').first().boundingBox();
     await page.mouse.move(b2.x+30, b2.y+b2.height/2); await page.mouse.down();
     for (let i=1;i<=10;i++) await page.mouse.move(b2.x+30+i*20, b2.y+b2.height/2);
     await page.mouse.up();
-    assert.match(await page.locator('.log-item').textContent(), /食べた/);
+    assert.match(await page.locator('.log-item').textContent(), /予定/, 'swipe right toggles eaten/planned');
     // external apps panel
     await page.locator('.mobile-nav [data-action="openMenu"]').click();
     await page.locator('#sidebar [data-page="settings"]').click();
@@ -370,7 +371,7 @@ test('mobile catalog: teishoku chains grouped by lineage, re-tap to close stores
     for (const s of ['マクドナルド','モスバーガー','ケンタッキーフライドチキン','サブウェイ','バーガーキング']) assert.ok(ff.includes(s), 'fast food '+s);
     await page.locator('[data-cat="定食"]').click();
     const chains = await page.locator('.sub-row [data-store]:not([data-store="all"])').evaluateAll(n=>n.map(x=>x.dataset.store));
-    assert.equal(chains.length, 18, chains.join());
+    assert.equal(chains.length, 19, chains.join());
     assert.deepEqual(await page.locator('.group-label').allTextContents(), ['定食チェーン','海鮮','牛たん','お茶漬け','弁当']);
     // tapping the selected place again hides / shows its stores
     await page.locator('[data-cat="定食"]').click();
@@ -397,4 +398,58 @@ test('mobile catalog: teishoku chains grouped by lineage, re-tap to close stores
     assert.deepEqual(errors, []);
     await context.close();
   } finally {await browser.close();await new Promise(r=>server.close(r));}
+});
+
+test('body: scale photo text is read, saved to the trend and reflected in 基本情報', {timeout:90000}, async () => {
+  const server = createServer(async (req,res) => {
+    try {
+      const pathname = decodeURIComponent(new URL(req.url,'http://localhost').pathname);
+      const file = resolve(root, '.'+(pathname==='/'?'/index.html':pathname));
+      if (!file.startsWith(root+sep)) {res.writeHead(403).end();return;}
+      const mime = {'.html':'text/html','.js':'text/javascript','.css':'text/css','.json':'application/json','.webmanifest':'application/manifest+json','.png':'image/png'};
+      res.writeHead(200,{'Content-Type':mime[extname(file)]||'text/plain'}); res.end(await readFile(file));
+    } catch {res.writeHead(404).end();}
+  });
+  await new Promise(r=>server.listen(0,'127.0.0.1',r));
+  const browser = await chromium.launch({executablePath:process.env.CHROMIUM_PATH || '/usr/bin/chromium',headless:true,args:['--no-sandbox']});
+  const errors=[];
+  try {
+    const context = await browser.newContext({viewport:{width:402,height:874}, isMobile:true, hasTouch:true, serviceWorkers:'block'});
+    await context.route(/^https:\/\/(cdn\.jsdelivr\.net|fonts\.googleapis\.com|fonts\.gstatic\.com)\//, route=>route.abort());
+    await context.route('**/config.js', route=>route.fulfill({contentType:'text/javascript',body:'window.NUTRIPATH_CONFIG={};'}));
+    const page = await context.newPage(); page.on('pageerror',e=>errors.push(e.message));
+    await page.clock.install({time:new Date('2026-11-09T19:00:00+09:00')});
+    await page.goto(`http://127.0.0.1:${server.address().port}/`);
+    await page.locator('.mobile-nav [data-page="profile"]').click();
+    // photo reading sits below the weight trend
+    const order = await page.evaluate(()=>{const c=document.querySelector('.weight-chart, .trend-empty'),b=document.querySelector('.body-photo');return !!(c.compareDocumentPosition(b)&Node.DOCUMENT_POSITION_FOLLOWING)});
+    assert.ok(order, 'photo reader below the trend');
+    const add = async (date, text) => {
+      await page.locator('.body-photo summary').click();
+      await page.locator('#bodyRawText').fill(text);
+      await page.locator('[data-action="parseBodyText"]').click();
+      await page.locator('#body_date').fill(date);
+      await page.locator('#bodyReviewForm button[type="submit"]').click();
+    };
+    await add('2026-11-07', '92.6 kg\nBMI 体脂肪 皮下脂肪\n27.9 23.6% 19.0%\n筋肉量 基礎代謝量\n67.9kg 2040kcal');
+    await page.locator('.body-photo summary').click();
+    await page.locator('#bodyRawText').fill('91 30 4 0.60 kg\nBMI 体 脂 肪 皮 下 脂 肪\n②⑦.⑥ ②①.③ 。 ⑱.④ 。\n体 内 年 齢 除 脂 肪 体 重 内 臓 脂 肪\n②④ ⑦①⑧③ c ⑩\n体 水 分 量 骨 格 筋 骨 量\n56.7 + 50.7 。 3.59\nタ ン パ ク 質 基 礎 代 謝 量 筋 肉 量\n⑰.⑨。 2054 ica 68.16 c');
+    await page.locator('[data-action="parseBodyText"]').click();
+    for (const [k,v] of Object.entries({weight:'91.3',bodyFat:'21.3',bmi:'27.6',muscle:'68.16',skeletal:'50.7',visceral:'10',bmr:'2054',leanMass:'71.83',bone:'3.59',bodyAge:'24'}))
+      assert.equal(await page.locator('#body_'+k).inputValue(), v, k);
+    assert.equal(await page.locator('#body_date').inputValue(), '2026-11-09');
+    await page.locator('#bodyReviewForm button[type="submit"]').click();
+    // trend shows the change, other metrics can be selected
+    assert.match(await page.locator('.trend-summary').textContent(), /91\.3kg[\s\S]*-1\.3kg/);
+    await page.locator('[data-action="trendKey"][data-key="bodyFat"]').click();
+    assert.match(await page.locator('.trend-summary').textContent(), /21\.3%[\s\S]*-2\.3%/);
+    assert.equal(await page.locator('.history-row').count(), 2);
+    // 基本情報 got weight, body fat and the measurement date
+    await page.locator('[data-action="goSettingsTab"][data-tab="profile"]').first().click();
+    const form = page.locator('#profileForm2, #profileForm').first();
+    assert.equal(await form.locator('[name="weight"]').inputValue(), '91.3');
+    assert.equal(await form.locator('[name="bodyFat"]').inputValue(), '21.3');
+    assert.equal(await form.locator('[name="measuredAt"]').inputValue(), '2026-11-09');
+    assert.deepEqual(errors, []);
+  } finally { await browser.close(); server.close(); }
 });

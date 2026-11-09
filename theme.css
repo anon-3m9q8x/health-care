@@ -167,3 +167,24 @@ input[type="date"]::-webkit-calendar-picker-indicator { margin-left: auto; }
 .field input:not([type="checkbox"]):not([type="radio"]):not([type="file"]):not([type="range"]), .field select { height: 48px; min-height: 48px; }
 .form-row > *, .settings-grid > * { min-width: 0; }
 .btn:focus-visible, input:focus-visible, select:focus-visible { outline-color: color-mix(in srgb, var(--accent) 45%, transparent); }
+
+/* ---- 前日の不足栄養素 / 体組成の推移 ---- */
+.short-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px 16px; }
+.short-item .bar { margin: 5px 0 3px; }
+.short-lack { color: var(--target); font-weight: 800; font-size: 12px; }
+.trend-chips { display: flex; gap: 6px; overflow-x: auto; padding-bottom: 6px; margin-bottom: 8px; scrollbar-width: none; }
+.trend-chips::-webkit-scrollbar { display: none; }
+.trend-chips .chip { flex: none; padding: 6px 11px; }
+.trend-summary { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; margin: 4px 0 2px; }
+.trend-summary b { font-size: 24px; font-family: var(--head-font); }
+.trend-summary span { font-weight: 800; font-size: 13px; color: var(--muted); }
+.trend-summary span.down { color: var(--green); }
+.trend-summary span.up { color: var(--target); }
+.trend-summary small { color: var(--muted); font-size: 11px; }
+.history-vals { text-align: right; flex: 1; min-width: 0; }
+.visually-hidden { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.photo-pick { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 10px; }
+.photo-pick label.btn { cursor: pointer; }
+.body-photo details summary { cursor: pointer; }
+.body-photo textarea { width: 100%; margin-top: 8px; padding: 10px; border: 1px solid var(--input-line); border-radius: 9px; background: var(--panel-solid); color: var(--ink); font: inherit; font-size: 14px; }
+.body-photo .form-row { grid-template-columns: repeat(2, minmax(0, 1fr)); }
